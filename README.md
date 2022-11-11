@@ -8,4 +8,5 @@
 8. check status at https://beaker.org/experiments
 
 `python demo.py <model> <input> <output>`
+
 `CUDA_VISIBLE_DEVICES=0 nohup python demo.py ./ /shared/corpora-tmp/annotated_nyt/156 ./output > 156.out 2>&1 &`
