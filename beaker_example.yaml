@@ -1,0 +1,26 @@
+description: first beaker run with the TempRel code
+tasks:
+  - name: first_TempRel_run
+    image:
+      beaker: haoyuw/haoyuw-6046c23_1_cuda111_1
+    arguments: [python, demo.py, /model, /input, /output]
+    envVars:
+      - name: MY_VAR
+        value: "hello"
+    datasets:
+      - mountPath: /model
+        source:
+          beaker: haoyuw/0511pm.pt
+      - mountPath: /input
+        source:
+          beaker: haoyuw/NYT_426
+    result:
+      path: /output
+    resources:
+      gpuCount: 1
+    context:
+      priority: normal
+    constraints:
+      cluster:
+        - ai2/aristo-cirrascale
+
