@@ -16,7 +16,7 @@
 # Nov 11, 2022
 
 ## demo.py: accept a folder that contains srl results as input; output to a json file that contains all the event temporal graphs. 
-## Problem: some files are too big so that either taking too much time to run or taking too much GPU memory -> error
+### Problem: some files are too big so that either taking too much time to run or taking too much GPU memory -> error
 
 `python demo.py <model> <input> <output>`
 
