@@ -701,6 +701,7 @@ class MyWebService(object):
             t0 = time.time()
             art_split = {}
             folder = data['folder']
+            print("$$$$$$$$$$$$$$$$$$ processing " + folder + " $$$$$$$$$$$$$$$$$$")
             view_map = {}
             count = 0
             for view in data['views']:

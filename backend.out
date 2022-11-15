@@ -1,12 +1,12 @@
 nohup: ignoring input
 normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
-Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight']
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight']
 - This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-[15/Nov/2022:14:45:05] ENGINE Listening for SIGTERM.
-[15/Nov/2022:14:45:05] ENGINE Listening for SIGHUP.
-[15/Nov/2022:14:45:05] ENGINE Listening for SIGUSR1.
-[15/Nov/2022:14:45:05] ENGINE Bus STARTING
+[15/Nov/2022:16:00:52] ENGINE Listening for SIGTERM.
+[15/Nov/2022:16:00:52] ENGINE Listening for SIGHUP.
+[15/Nov/2022:16:00:52] ENGINE Listening for SIGUSR1.
+[15/Nov/2022:16:00:52] ENGINE Bus STARTING
 CherryPy Checker:
 '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
 section: [/static]
@@ -19,62 +19,1901 @@ section: [/html]
 root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
 dir: './html'
 
-[15/Nov/2022:14:45:05] ENGINE Started monitor thread 'Autoreloader'.
-[15/Nov/2022:14:45:05] ENGINE Serving on http://127.0.0.1:6010
-[15/Nov/2022:14:45:05] ENGINE Bus STARTED
-date and time = 11/15/2022 14:44:57
+[15/Nov/2022:16:00:52] ENGINE Started monitor thread 'Autoreloader'.
+[15/Nov/2022:16:00:52] ENGINE Serving on http://127.0.0.1:6010
+[15/Nov/2022:16:00:52] ENGINE Bus STARTED
+[15/Nov/2022:16:05:57] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:05:57] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+date and time = 11/15/2022 16:00:44
 Processing MATRES dataset...
 # of parameters: 364568582
 
 Starting rest service...
-first event: calling
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:05:57] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1553374.ta.xml $$$$$$$$$$$$$$$$$$
+first event: read
+second event: Doing
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's # ~ None ~ Doing # in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP]
+first event: read
+second event: is
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It # ~ Present Simple ~ is # a city I have visited at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
+second event: visited
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have # ~ Present Perfect Simple ~ visited # at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
 second event: was
-TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina # ~ Past Simple ~ was # by rail.[SEP] I had meals in a dining car and arrived at Penn Station relaxed and ready for fun.[SEP]
-first event: calling
-second event: had
-TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I # ~ Past Simple ~ had # meals in a dining car and arrived at Penn Station relaxed and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
-first event: calling
-second event: arrived
-TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I had meals in a dining car and # ~ Past Simple ~ arrived # at Penn Station relaxed and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
-first event: calling
-second event: relaxed
-TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I had meals in a dining car and arrived at Penn Station # ~ Past Simple ~ relaxed # and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP] But I # ~ Past Simple Passive ~ was # disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP] If visitors from other nationalities do not pay the same fee, I wonder why we must.[SEP]
   Data processing took: 0:00:00
 
 loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
 (from epoch 0 )
 Running Evaluation on MATRES Test Set...
-Eval took: 0:00:06
-  macro F1: 0.451
-  micro F1: 0.822
-[[37  8]
- [ 0  0]]
-  macro F1: 0.451
-  micro F1: 0.822
-127.0.0.1 - - [15/Nov/2022:14:46:04] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
-first event: remained
-second event: pondered
-TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team # ~ Past Simple ~ pondered # playing the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP]
-first event: remained
-second event: playing
-TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered # ~ None ~ playing # the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP]
-first event: remained
-second event: hit
-TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered playing the rest of the Major League Soccer season without him.[SEP] Ammann, # ~ None ~ hit # by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP] Orlando Conguta, a recently hired MetroStars employee for team affairs, is staying in Tampa with him.[SEP]
-first event: remained
-second event: tried
-TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered playing the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he # ~ Past Simple ~ tried # to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP] Orlando Conguta, a recently hired MetroStars employee for team affairs, is staying in Tampa with him.[SEP]
-  Data processing took: 0:00:00
-
-loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
-(from epoch 0 )
-Running Evaluation on MATRES Test Set...
-Eval took: 0:01:25
-  macro F1: 0.276
-  micro F1: 0.706
-[[470 190   6]
+Eval took: 0:00:19
+  macro F1: 0.286
+  micro F1: 0.752
+[[115  36   2]
  [  0   0   0]
  [  0   0   0]]
-  macro F1: 0.276
-  micro F1: 0.706
-127.0.0.1 - - [15/Nov/2022:14:47:30] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+  macro F1: 0.286
+  micro F1: 0.752
+127.0.0.1 - - [15/Nov/2022:16:06:17] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1557422.ta.xml $$$$$$$$$$$$$$$$$$
+first event: selling
+second event: includes
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers # ~ Present Simple ~ includes # a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while allowing it by current owners.[SEP]
+first event: selling
+second event: said
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally # ~ Past Simple ~ said # that some boards were banning smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: banning
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were # ~ Past Continuous ~ banning # smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: allowing
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while # ~ None ~ allowing # it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:16
+  macro F1: 0.216
+  micro F1: 0.478
+[[65 70  1]
+ [ 0  0  0]
+ [ 0  0  0]]
+  macro F1: 0.216
+  micro F1: 0.478
+127.0.0.1 - - [15/Nov/2022:16:06:33] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/366284.ta.xml $$$$$$$$$$$$$$$$$$
+first event: suffered
+second event: underwent
+TokenIDs: [CLS] LEAD: Don Mattingly, who @ * Past Simple * suffered @ back spasms Monday in Kansas City, Mo., # ~ Past Simple ~ underwent # more treatment yesterday at Yankee Stadium and was examined by the team physician, Dr. Stewart Hershon.[SEP] His condition was listed as day-to-day.[SEP]
+first event: suffered
+second event: examined
+TokenIDs: [CLS] LEAD: Don Mattingly, who @ * Past Simple * suffered @ back spasms Monday in Kansas City, Mo., underwent more treatment yesterday at Yankee Stadium and was # ~ Past Simple Passive ~ examined # by the team physician, Dr. Stewart Hershon.[SEP] His condition was listed as day-to-day.[SEP]
+first event: suffered
+second event: listed
+TokenIDs: [CLS] LEAD: Don Mattingly, who @ * Past Simple * suffered @ back spasms Monday in Kansas City, Mo., underwent more treatment yesterday at Yankee Stadium and was examined by the team physician, Dr. Stewart Hershon.[SEP] His condition was # ~ Past Simple Passive ~ listed # as day-to-day.[SEP] The team will decide today whether he will play in tonight's doubleheader against Minnesota.[SEP]
+first event: suffered
+second event: decide
+TokenIDs: [CLS] LEAD: Don Mattingly, who @ * Past Simple * suffered @ back spasms Monday in Kansas City, Mo., underwent more treatment yesterday at Yankee Stadium and was examined by the team physician, Dr. Stewart Hershon.[SEP] His condition was listed as day-to-day.[SEP] The team will # ~ Future Simple ~ decide # today whether he will play in tonight's doubleheader against Minnesota.[SEP] Don Mattingly, who suffered back spasms Monday in Kansas City, Mo., underwent more treatment yesterday at Yankee Stadium and was examined by the team physician, Dr. Stewart Hershon.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:08
+  macro F1: 0.291
+  micro F1: 0.773
+[[51 14  1]
+ [ 0  0  0]
+ [ 0  0  0]]
+  macro F1: 0.291
+  micro F1: 0.773
+127.0.0.1 - - [15/Nov/2022:16:06:42] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1465: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  average, "true nor predicted", 'F-score is', len(true_sum)
+[15/Nov/2022:16:06:43] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:06:43] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:06:43] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:19:47] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:19:47] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:04
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:19:47] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1553374.ta.xml $$$$$$$$$$$$$$$$$$
+first event: read
+second event: Doing
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's # ~ None ~ Doing # in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP]
+first event: read
+second event: is
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It # ~ Present Simple ~ is # a city I have visited at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
+second event: visited
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have # ~ Present Perfect Simple ~ visited # at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
+second event: was
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP] But I # ~ Past Simple Passive ~ was # disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP] If visitors from other nationalities do not pay the same fee, I wonder why we must.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:06
+  macro F1: 0.286
+  micro F1: 0.752
+[[115  36   2]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.286
+  micro F1: 0.752
+127.0.0.1 - - [15/Nov/2022:16:20:53] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1557422.ta.xml $$$$$$$$$$$$$$$$$$
+first event: selling
+second event: includes
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers # ~ Present Simple ~ includes # a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while allowing it by current owners.[SEP]
+first event: selling
+second event: said
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally # ~ Past Simple ~ said # that some boards were banning smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: banning
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were # ~ Past Continuous ~ banning # smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: allowing
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while # ~ None ~ allowing # it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:59
+  macro F1: 0.216
+  micro F1: 0.478
+[[65 70  1]
+ [ 0  0  0]
+ [ 0  0  0]]
+  macro F1: 0.216
+  micro F1: 0.478
+127.0.0.1 - - [15/Nov/2022:16:21:53] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+[15/Nov/2022:16:25:55] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:25:55] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:25:55] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1553374.ta.xml $$$$$$$$$$$$$$$$$$
+first event: read
+second event: Doing
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's # ~ None ~ Doing # in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP]
+first event: read
+second event: is
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It # ~ Present Simple ~ is # a city I have visited at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
+second event: visited
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have # ~ Present Perfect Simple ~ visited # at least 10 times over the last few decades.[SEP] But I was disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP]
+first event: read
+second event: was
+TokenIDs: [CLS] To the Editor: I @ * Present Simple * read @ with great interest ''What's Doing in Santiago'' (Dec. 21).[SEP] It is a city I have visited at least 10 times over the last few decades.[SEP] But I # ~ Past Simple Passive ~ was # disappointed to learn about yet another annoying addition to the many discomforts of modern travel -- the $100 ''entrance fee'' for Americans.[SEP] If visitors from other nationalities do not pay the same fee, I wonder why we must.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:03
+  macro F1: 0.286
+  micro F1: 0.752
+[[115  36   2]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.286
+  micro F1: 0.752
+127.0.0.1 - - [15/Nov/2022:16:26:58] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+[15/Nov/2022:16:27:46] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:27:46] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1557422.ta.xml $$$$$$$$$$$$$$$$$$
+first event: selling
+second event: includes
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers # ~ Present Simple ~ includes # a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while allowing it by current owners.[SEP]
+first event: selling
+second event: said
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally # ~ Past Simple ~ said # that some boards were banning smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: banning
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were # ~ Past Continuous ~ banning # smoking by new residents while allowing it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+first event: selling
+second event: allowing
+TokenIDs: [CLS] An article on Page 1 of the Real Estate section today about @ * None * selling @ homes occupied by smokers includes a lawyer's erroneous reference to the policy of some co-op boards.[SEP] Christopher Hitchcock, a lawyer for boards, originally said that some boards were banning smoking by new residents while # ~ None ~ allowing # it by current owners.[SEP] After the article had gone to press, Mr. Hitchcock was approached for a proposed article on boards that had done that.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:27:46] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:27:47] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:27:47] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:27:47] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:05
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:01
+  macro F1: 0.216
+  micro F1: 0.478
+[[65 70  1]
+ [ 0  0  0]
+ [ 0  0  0]]
+  macro F1: 0.216
+  micro F1: 0.478
+127.0.0.1 - - [15/Nov/2022:16:27:59] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+[15/Nov/2022:16:28:22] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:28:22] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:28:22] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:28:23] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:28:23] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:28:23] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:48:19] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:48:19] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:05
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml $$$$$$$$$$$$$$$$$$
+first event: said
+second event: extended
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be # ~ Future Perfect Simple ~ extended # across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: disarm
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to # ~ None ~ disarm # Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: promote
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and # ~ Present Simple ~ promote # stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: responding
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, # ~ None ~ responding # to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP] South of Baghdad, where American troops are sweeping small towns to find insurgents, marines reported that they had captured a top leader in the financing chain of the Islamist militant Abu Musab al-Zarqawi.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:48:19] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:48:20] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:48:20] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:48:20] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:48:51] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:48:51] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:05
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:48:51] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:48:52] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:48:52] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:48:52] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:49:13] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:49:13] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31371
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:06
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml $$$$$$$$$$$$$$$$$$
+first event: said
+second event: extended
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be # ~ Future Perfect Simple ~ extended # across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: disarm
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to # ~ None ~ disarm # Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: promote
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and # ~ Present Simple ~ promote # stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: responding
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, # ~ None ~ responding # to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP] South of Baghdad, where American troops are sweeping small towns to find insurgents, marines reported that they had captured a top leader in the financing chain of the Islamist militant Abu Musab al-Zarqawi.[SEP]
+  Data processing took: 0:00:02
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1365396.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:49:13] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:49:20] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 197, in evaluate
+    logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 144.00 MiB (GPU 0; 23.65 GiB total capacity; 14.70 GiB already allocated; 133.31 MiB free; 22.27 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:49:20] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/578667.ta.xml $$$$$$$$$$$$$$$$$$
+first event: is
+second event: urge
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to # ~ None ~ urge # the President-elect (and those following him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: following
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those # ~ None ~ following # him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: return
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to # ~ None ~ return # to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: hold
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to return to tradition and # ~ None ~ hold # inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:16:49:20] "POST /annotate HTTP/1.1" 500 4589 "" "python-requests/2.28.1"
+[15/Nov/2022:16:50:51] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:50:51] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1149629.ta.xml $$$$$$$$$$$$$$$$$$
+first event: march
+second event: dictates
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary # ~ None ~ dictates #.[SEP] My ''winter'' garden, for example, started to show in late September.[SEP]
+first event: march
+second event: started
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, # ~ Past Simple ~ started # to show in late September.[SEP] At least, that's when I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP]
+first event: march
+second event: show
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, started to # ~ None ~ show # in late September.[SEP] At least, that's when I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP]
+first event: march
+second event: 's when
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, started to show in late September.[SEP] At least, that # ~ None ~'s when # I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP] Marmoratum).[SEP]
+  Data processing took: 0:00:03
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:50:51] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:50:53] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:50:53] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:50:53] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:51:01] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 198, in evaluate
+    logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 102.00 MiB (GPU 0; 23.65 GiB total capacity; 20.44 GiB already allocated; 33.31 MiB free; 22.37 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:51:01] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:06
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:16:51:01] "POST /annotate HTTP/1.1" 500 4620 "" "python-requests/2.28.1"
+[15/Nov/2022:16:51:12] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 197, in evaluate
+    logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 387, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 82.00 MiB (GPU 0; 23.65 GiB total capacity; 19.00 GiB already allocated; 21.31 MiB free; 22.38 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:51:12] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml $$$$$$$$$$$$$$$$$$
+first event: said
+second event: extended
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be # ~ Future Perfect Simple ~ extended # across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: disarm
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to # ~ None ~ disarm # Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: promote
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and # ~ Present Simple ~ promote # stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: responding
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, # ~ None ~ responding # to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP] South of Baghdad, where American troops are sweeping small towns to find insurgents, marines reported that they had captured a top leader in the financing chain of the Islamist militant Abu Musab al-Zarqawi.[SEP]
+  Data processing took: 0:00:02
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:16:51:12] "POST /annotate HTTP/1.1" 500 4587 "" "python-requests/2.28.1"
+[15/Nov/2022:16:51:14] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:51:14] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31371
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1365396.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:51:14] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:51:34] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 198, in evaluate
+    logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 60.00 MiB (GPU 0; 23.65 GiB total capacity; 19.03 GiB already allocated; 11.31 MiB free; 22.39 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:51:34] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 879540
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/578667.ta.xml $$$$$$$$$$$$$$$$$$
+first event: is
+second event: urge
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to # ~ None ~ urge # the President-elect (and those following him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: following
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those # ~ None ~ following # him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: return
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to # ~ None ~ return # to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: hold
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to return to tradition and # ~ None ~ hold # inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:16:51:34] "POST /annotate HTTP/1.1" 500 4619 "" "python-requests/2.28.1"
+[15/Nov/2022:16:52:04] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 197, in evaluate
+    logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 108.00 MiB (GPU 0; 23.65 GiB total capacity; 17.27 GiB already allocated; 105.31 MiB free; 22.30 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:52:04] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+127.0.0.1 - - [15/Nov/2022:16:52:04] "POST /annotate HTTP/1.1" 500 4589 "" "python-requests/2.28.1"
+[15/Nov/2022:16:52:25] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 715, in annotate
+    for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+KeyError: 'SRL_VERB'
+[15/Nov/2022:16:52:25] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 9963
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml $$$$$$$$$$$$$$$$$$
+127.0.0.1 - - [15/Nov/2022:16:52:25] "POST /annotate HTTP/1.1" 500 1931 "" "python-requests/2.28.1"
+[15/Nov/2022:16:52:26] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:52:26] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 49409
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:52:26] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:16:52:34] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 198, in evaluate
+    logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 92.00 MiB (GPU 0; 23.65 GiB total capacity; 17.20 GiB already allocated; 87.31 MiB free; 22.32 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:52:34] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml $$$$$$$$$$$$$$$$$$
+first event: are
+second event: are
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others # ~ Present Simple ~ are # for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP]
+first event: are
+second event: is
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds # ~ Present Simple ~ is # more oriented toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: oriented
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more # ~ None ~ oriented # toward gamblers than ProFunds, which specializes in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+first event: are
+second event: specializes
+TokenIDs: [CLS] SOME mutual funds @ * Present Simple * are @ for investors.[SEP] Others are for gamblers.[SEP] Perhaps no group of funds is more oriented toward gamblers than ProFunds, which # ~ Present Simple ~ specializes # in leveraged bets.[SEP] Investors who want to time markets and get a lot of bang for their buck can leap in and out of them at will.[SEP]
+  Data processing took: 0:00:06
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:16:52:34] "POST /annotate HTTP/1.1" 500 4619 "" "python-requests/2.28.1"
+[15/Nov/2022:16:54:37] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 197, in evaluate
+    logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 118.00 MiB (GPU 0; 23.65 GiB total capacity; 15.37 GiB already allocated; 105.31 MiB free; 22.30 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:54:37] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+127.0.0.1 - - [15/Nov/2022:16:54:37] "POST /annotate HTTP/1.1" 500 4589 "" "python-requests/2.28.1"
+[15/Nov/2022:16:55:18] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 199, in evaluate
+    logits_xb, loss_xb = self.model(batch[0].to(self.cuda), batch[7].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on Jun 14, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 387, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 90.00 MiB (GPU 0; 23.65 GiB total capacity; 14.74 GiB already allocated; 79.31 MiB free; 22.32 GiB reserved in total by PyTorch)
+[15/Nov/2022:16:55:18] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1613402
+127.0.0.1 - - [15/Nov/2022:16:55:18] "POST /annotate HTTP/1.1" 500 4619 "" "python-requests/2.28.1"
+[15/Nov/2022:16:58:19] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 838, in annotate
+    scaled_logits = scaled_model(logits)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 38, in forward
+    return self.temperature_scale(logits)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/ts.py", line 46, in temperature_scale
+    temperature = self.temperature.unsqueeze(1).expand(logits.size(0), logits.size(1))
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
+[15/Nov/2022:16:58:19] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31371
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml $$$$$$$$$$$$$$$$$$
+first event: said
+second event: extended
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be # ~ Future Perfect Simple ~ extended # across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: disarm
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to # ~ None ~ disarm # Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: promote
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and # ~ Present Simple ~ promote # stability before national elections in January.[SEP] Meanwhile, responding to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP]
+first event: said
+second event: responding
+TokenIDs: [CLS] Prime Minister Ayad Allawi @ * Past Simple * said @ Monday that an exchange of weapons for cash would be extended across the country in an effort to disarm Shiite militiamen and promote stability before national elections in January.[SEP] Meanwhile, # ~ None ~ responding # to a request by the United States, Defense Minister Geoff Hoon of Britain told Parliament on Monday that the government was weighing whether to move troops to central Iraq from the southeast to free more Americans to fight insurgents.[SEP] South of Baghdad, where American troops are sweeping small towns to find insurgents, marines reported that they had captured a top leader in the financing chain of the Islamist militant Abu Musab al-Zarqawi.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1365396.ta.xml $$$$$$$$$$$$$$$$$$
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: nan
+  micro F1: 0.000
+[]
+  macro F1: nan
+  micro F1: 0.000
+127.0.0.1 - - [15/Nov/2022:16:58:19] "POST /annotate HTTP/1.1" 500 2488 "" "python-requests/2.28.1"
+[15/Nov/2022:17:07:18] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 199, in evaluate
+    logits_xb, loss_xb = self.model(batch[0].to(self.cuda), batch[7].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on Jun 14, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 387, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 58.00 MiB (GPU 0; 23.65 GiB total capacity; 19.51 GiB already allocated; 23.31 MiB free; 22.38 GiB reserved in total by PyTorch)
+[15/Nov/2022:17:07:18] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1053562
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/578667.ta.xml $$$$$$$$$$$$$$$$$$
+first event: is
+second event: urge
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to # ~ None ~ urge # the President-elect (and those following him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: following
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those # ~ None ~ following # him in office) to return to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: return
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to # ~ None ~ return # to tradition and hold inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+first event: is
+second event: hold
+TokenIDs: [CLS] To the Editor:<unk>Martin Filler @ * Present Simple * is @ right to urge the President-elect (and those following him in office) to return to tradition and # ~ None ~ hold # inaugurations in front of the facade of the Capitol facing east toward the morning sun (Op-Ed, Nov. 25).[SEP] There are compelling historical reasons to do so: the function of the Rotunda and the decoration of the entrance to the Capitol.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1149629.ta.xml $$$$$$$$$$$$$$$$$$
+first event: march
+second event: dictates
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary # ~ None ~ dictates #.[SEP] My ''winter'' garden, for example, started to show in late September.[SEP]
+first event: march
+second event: started
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, # ~ Past Simple ~ started # to show in late September.[SEP] At least, that's when I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP]
+first event: march
+second event: show
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, started to # ~ None ~ show # in late September.[SEP] At least, that's when I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP]
+first event: march
+second event: 's when
+TokenIDs: [CLS] PLANTS @ * Present Simple * march @ to their own tune, not the calendar's arbitrary dictates.[SEP] My ''winter'' garden, for example, started to show in late September.[SEP] At least, that # ~ None ~'s when # I saw the first cream-incised leaves of the ever so elegant Italian arum (A. italicum var.[SEP] Marmoratum).[SEP]
+  Data processing took: 0:00:03
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/371949.ta.xml $$$$$$$$$$$$$$$$$$
+first event: defaulted
+second event: asked
+TokenIDs: [CLS] LEAD: Two developers who @ * Past Simple * defaulted @ on loans to the Silverado Banking, Savings and Loan Association of Denver were # ~ Past Simple Passive ~ asked # by a House subcommittee today to testify at a hearing next month.[SEP] Representative Frank Annunzio, Democrat of Illinois, said he wanted to find out how the developers, William Walters and Kenneth Good, could still live in expensive homes and drive luxury cars while claiming they could not repay their loans.[SEP]
+first event: defaulted
+second event: testify
+TokenIDs: [CLS] LEAD: Two developers who @ * Past Simple * defaulted @ on loans to the Silverado Banking, Savings and Loan Association of Denver were asked by a House subcommittee today to # ~ None ~ testify # at a hearing next month.[SEP] Representative Frank Annunzio, Democrat of Illinois, said he wanted to find out how the developers, William Walters and Kenneth Good, could still live in expensive homes and drive luxury cars while claiming they could not repay their loans.[SEP]
+first event: defaulted
+second event: said
+TokenIDs: [CLS] LEAD: Two developers who @ * Past Simple * defaulted @ on loans to the Silverado Banking, Savings and Loan Association of Denver were asked by a House subcommittee today to testify at a hearing next month.[SEP] Representative Frank Annunzio, Democrat of Illinois, # ~ Past Simple ~ said # he wanted to find out how the developers, William Walters and Kenneth Good, could still live in expensive homes and drive luxury cars while claiming they could not repay their loans.[SEP] Two developers who defaulted on loans to the Silverado Banking, Savings and Loan Association of Denver were asked by a House subcommittee today to testify at a hearing next month.[SEP]
+first event: defaulted
+second event: wanted
+TokenIDs: [CLS] LEAD: Two developers who @ * Past Simple * defaulted @ on loans to the Silverado Banking, Savings and Loan Association of Denver were asked by a House subcommittee today to testify at a hearing next month.[SEP] Representative Frank Annunzio, Democrat of Illinois, said he # ~ Past Simple ~ wanted # to find out how the developers, William Walters and Kenneth Good, could still live in expensive homes and drive luxury cars while claiming they could not repay their loans.[SEP] Two developers who defaulted on loans to the Silverado Banking, Savings and Loan Association of Denver were asked by a House subcommittee today to testify at a hearing next month.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:17:07:18] "POST /annotate HTTP/1.1" 500 4619 "" "python-requests/2.28.1"
+[15/Nov/2022:17:09:37] HTTP 
+Traceback (most recent call last):
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/lib/jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/cherrypy/_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "backend.py", line 829, in annotate
+    flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/exp.py", line 198, in evaluate
+    logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/model.py", line 81, in forward
+    output_attentions=True,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 2150, in forward
+    return_dict=return_dict,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1641, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1494, in forward
+    to_blocked_mask=blocked_encoder_mask,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 1390, in forward
+    output_attentions,
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/transformers/models/big_bird/modeling_big_bird.py", line 389, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 76.00 MiB (GPU 0; 23.65 GiB total capacity; 18.56 GiB already allocated; 23.31 MiB free; 22.38 GiB reserved in total by PyTorch)
+[15/Nov/2022:17:09:37] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: localhost:6010
+  USER-AGENT: python-requests/2.28.1
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 1053562
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1032750.ta.xml $$$$$$$$$$$$$$$$$$
+first event: based
+second event: trying
+TokenIDs: [CLS] For several years, Graham Hawkes, an engineer @ * None * based @ in Point Richmond, Calif., has been # ~ Present Perfect Continuous ~ trying # to interest investors in his Deep Flight submersible, a one-person submarine that in theory would allow plucky explorers to scoot down to the deepest parts of the ocean.[SEP] The prototype is ready but.[SEP]
+first event: based
+second event: allow
+TokenIDs: [CLS] For several years, Graham Hawkes, an engineer @ * None * based @ in Point Richmond, Calif., has been trying to interest investors in his Deep Flight submersible, a one-person submarine that in theory would # ~ Future Simple ~ allow # plucky explorers to scoot down to the deepest parts of the ocean.[SEP] The prototype is ready but.[SEP]
+first event: based
+second event: scoot
+TokenIDs: [CLS] For several years, Graham Hawkes, an engineer @ * None * based @ in Point Richmond, Calif., has been trying to interest investors in his Deep Flight submersible, a one-person submarine that in theory would allow plucky explorers to # ~ None ~ scoot # down to the deepest parts of the ocean.[SEP] The prototype is ready but.[SEP]
+first event: based
+second event: is
+TokenIDs: [CLS] For several years, Graham Hawkes, an engineer @ * None * based @ in Point Richmond, Calif., has been trying to interest investors in his Deep Flight submersible, a one-person submarine that in theory would allow plucky explorers to scoot down to the deepest parts of the ocean.[SEP] The prototype # ~ Present Simple ~ is # ready but.[SEP].[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+127.0.0.1 - - [15/Nov/2022:17:09:37] "POST /annotate HTTP/1.1" 500 4619 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/411413.ta.xml $$$$$$$$$$$$$$$$$$
+first event: begin
+second event: detect
+TokenIDs: [CLS] Milk Tests Nationwide The Food and Drug Administration will @ * Future Simple * begin @ checks to # ~ None ~ detect # residues of antibiotics and drugs given to cows.[SEP] The move was attacked as insufficient by a consumer group.[SEP]
+first event: begin
+second event: given
+TokenIDs: [CLS] Milk Tests Nationwide The Food and Drug Administration will @ * Future Simple * begin @ checks to detect residues of antibiotics and drugs # ~ None ~ given # to cows.[SEP] The move was attacked as insufficient by a consumer group.[SEP]
+first event: begin
+second event: attacked
+TokenIDs: [CLS] Milk Tests Nationwide The Food and Drug Administration will @ * Future Simple * begin @ checks to detect residues of antibiotics and drugs given to cows.[SEP] The move was # ~ Past Simple Passive ~ attacked # as insufficient by a consumer group.[SEP] Page A14.[SEP]
+first event: begin
+second event: died
+TokenIDs: [CLS] Milk Tests Nationwide The Food and Drug Administration will @ * Future Simple * begin @ checks to detect residues of antibiotics and drugs given to cows.[SEP] The move was attacked as insufficient by a consumer group.[SEP] Page A14.[SEP] Brooklyn Fire Kills 4 Two small cousins and their grandparents # ~ Past Simple ~ died # when a fire, apparently caused by an overloaded extension cord, engulfed their home.[SEP] Page B1.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:22
+  macro F1: 0.192
+  micro F1: 0.238
+[[ 5 16]
+ [ 0  0]]
+  macro F1: 0.192
+  micro F1: 0.238
+127.0.0.1 - - [15/Nov/2022:17:10:42] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1779229.ta.xml $$$$$$$$$$$$$$$$$$
+first event: BRODERICK
+second event: be
+TokenIDs: [CLS] @ * None * BRODERICK @--Bishop Edwin B. January 16, 1917-July 2, 2006.[SEP] On Thursday, August 3, 2006, at noon in St. Patrick's Cathedral His Eminence Edward Cardinal Egan will # ~ Future Simple ~ be # the celebrant of a Month's Mind Mass for His Excellency Bishop Edwin B. Broderick.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:02
+  macro F1: 1.000
+  micro F1: 1.000
+[[1]]
+  macro F1: 1.000
+  micro F1: 1.000
+127.0.0.1 - - [15/Nov/2022:17:10:44] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/153663.ta.xml $$$$$$$$$$$$$$$$$$
+first event: going
+second event: won
+TokenIDs: [CLS] LEAD: The Mullen ad agency in Wenham, Mass., is @ * Present Continuous * going @ on a health kick: it has # ~ Present Perfect Simple ~ won # the accounts of the Tufts Associated Health Plan and Medivision.[SEP] The Mullen ad agency in Wenham, Mass., is going on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP]
+first event: going
+second event: going
+TokenIDs: [CLS] LEAD: The Mullen ad agency in Wenham, Mass., is @ * Present Continuous * going @ on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP] The Mullen ad agency in Wenham, Mass., is # ~ Present Continuous ~ going # on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP] Tufts is not disclosing its ad budget.[SEP]
+first event: going
+second event: won
+TokenIDs: [CLS] LEAD: The Mullen ad agency in Wenham, Mass., is @ * Present Continuous * going @ on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP] The Mullen ad agency in Wenham, Mass., is going on a health kick: it has # ~ Present Perfect Simple ~ won # the accounts of the Tufts Associated Health Plan and Medivision.[SEP] Tufts is not disclosing its ad budget.[SEP]
+first event: going
+second event: disclosing
+TokenIDs: [CLS] LEAD: The Mullen ad agency in Wenham, Mass., is @ * Present Continuous * going @ on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP] The Mullen ad agency in Wenham, Mass., is going on a health kick: it has won the accounts of the Tufts Associated Health Plan and Medivision.[SEP] Tufts is not # ~ Present Continuous ~ disclosing # its ad budget.[SEP] Based in Waltham, Mass., it has 110,000 members and a network of 25 hospitals and 2,000 physicians.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:07:19
+  macro F1: 0.265
+  micro F1: 0.662
+[[215 105   5]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.265
+  micro F1: 0.662
+127.0.0.1 - - [15/Nov/2022:17:11:38] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:01:06
+  macro F1: 0.259
+  micro F1: 0.636
+[[35 17  3]
+ [ 0  0  0]
+ [ 0  0  0]]
+  macro F1: 0.259
+  micro F1: 0.636
+127.0.0.1 - - [15/Nov/2022:17:11:50] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/621647.ta.xml $$$$$$$$$$$$$$$$$$
+first event: known
+second event: found
+TokenIDs: [CLS] Paul Sharits, an experimental film maker widely @ * None * known @ in his field as a master of abstract film and film-projector installation, was # ~ Past Simple Passive ~ found # dead last Thursday in his home in Buffalo.[SEP] He was 50.[SEP]
+first event: known
+second event: was
+TokenIDs: [CLS] Paul Sharits, an experimental film maker widely @ * None * known @ in his field as a master of abstract film and film-projector installation, was found dead last Thursday in his home in Buffalo.[SEP] He # ~ Past Simple ~ was # 50.[SEP] He died of natural causes, said his son, Christopher Sharits of San Francisco.[SEP]
+first event: known
+second event: died
+TokenIDs: [CLS] Paul Sharits, an experimental film maker widely @ * None * known @ in his field as a master of abstract film and film-projector installation, was found dead last Thursday in his home in Buffalo.[SEP] He was 50.[SEP] He # ~ Past Simple ~ died # of natural causes, said his son, Christopher Sharits of San Francisco.[SEP] He was born in Denver on Feb. 8, 1943, and began experimenting with film while a teen-ager.[SEP]
+first event: known
+second event: said
+TokenIDs: [CLS] Paul Sharits, an experimental film maker widely @ * None * known @ in his field as a master of abstract film and film-projector installation, was found dead last Thursday in his home in Buffalo.[SEP] He was 50.[SEP] He died of natural causes, # ~ Past Simple ~ said # his son, Christopher Sharits of San Francisco.[SEP] He was born in Denver on Feb. 8, 1943, and began experimenting with film while a teen-ager.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:23:48
+  macro F1: 0.236
+  micro F1: 0.547
+[[591 475  15]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.236
+  micro F1: 0.547
+127.0.0.1 - - [15/Nov/2022:17:13:02] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:22:31
+  macro F1: 0.236
+  micro F1: 0.547
+[[591 475  15]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.236
+  micro F1: 0.547
+127.0.0.1 - - [15/Nov/2022:17:13:46] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1621145.ta.xml $$$$$$$$$$$$$$$$$$
+first event: losing
+second event: is
+TokenIDs: [CLS] SENATOR JOHNKERRY Remarks yesterday in Columbus, Ohio.[SEP] ''Under this president, America has been @ * Present Perfect Continuous * losing @ its lead in science.[SEP] Our share of industrial patents # ~ Present Simple ~ is # down, our share of Nobel prizes is down, our published research is down, and the number of new doctorates in sciences is down.[SEP] The rest of the world isn't waiting for us to somehow catch back up.[SEP]
+first event: losing
+second event: is
+TokenIDs: [CLS] SENATOR JOHNKERRY Remarks yesterday in Columbus, Ohio.[SEP] ''Under this president, America has been @ * Present Perfect Continuous * losing @ its lead in science.[SEP] Our share of industrial patents is down, our share of Nobel prizes # ~ Present Simple ~ is # down, our published research is down, and the number of new doctorates in sciences is down.[SEP] The rest of the world isn't waiting for us to somehow catch back up.[SEP]
+first event: losing
+second event: published
+TokenIDs: [CLS] SENATOR JOHNKERRY Remarks yesterday in Columbus, Ohio.[SEP] ''Under this president, America has been @ * Present Perfect Continuous * losing @ its lead in science.[SEP] Our share of industrial patents is down, our share of Nobel prizes is down, our # ~ Present Simple ~ published # research is down, and the number of new doctorates in sciences is down.[SEP] The rest of the world isn't waiting for us to somehow catch back up.[SEP]
+first event: losing
+second event: is
+TokenIDs: [CLS] SENATOR JOHNKERRY Remarks yesterday in Columbus, Ohio.[SEP] ''Under this president, America has been @ * Present Perfect Continuous * losing @ its lead in science.[SEP] Our share of industrial patents is down, our share of Nobel prizes is down, our published research # ~ Present Simple ~ is # down, and the number of new doctorates in sciences is down.[SEP] The rest of the world isn't waiting for us to somehow catch back up.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml $$$$$$$$$$$$$$$$$$
+first event: wants
+second event: know
+TokenIDs: [CLS] To the Editor:<unk>Re ''Ain't It Strange?,'' by Patti Smith (Op-Ed, March 12):<unk>Ms. Smith @ * Present Simple * wants @ us to # ~ Present Simple Passive ~ know # she is conflicted about being inducted into the Rock and Roll Hall of Fame.[SEP] The spirit of rock, after all, sneers at institutions attempting to sanitize it by conferring laurels and popular recognition.[SEP]
+first event: wants
+second event: conflicted
+TokenIDs: [CLS] To the Editor:<unk>Re ''Ain't It Strange?,'' by Patti Smith (Op-Ed, March 12):<unk>Ms. Smith @ * Present Simple * wants @ us to know she is # ~ Present Simple Passive ~ conflicted # about being inducted into the Rock and Roll Hall of Fame.[SEP] The spirit of rock, after all, sneers at institutions attempting to sanitize it by conferring laurels and popular recognition.[SEP]
+first event: wants
+second event: inducted
+TokenIDs: [CLS] To the Editor:<unk>Re ''Ain't It Strange?,'' by Patti Smith (Op-Ed, March 12):<unk>Ms. Smith @ * Present Simple * wants @ us to know she is conflicted about being # ~ None ~ inducted # into the Rock and Roll Hall of Fame.[SEP] The spirit of rock, after all, sneers at institutions attempting to sanitize it by conferring laurels and popular recognition.[SEP]
+first event: wants
+second event: attempting
+TokenIDs: [CLS] To the Editor:<unk>Re ''Ain't It Strange?,'' by Patti Smith (Op-Ed, March 12):<unk>Ms. Smith @ * Present Simple * wants @ us to know she is conflicted about being inducted into the Rock and Roll Hall of Fame.[SEP] The spirit of rock, after all, sneers at institutions # ~ None ~ attempting # to sanitize it by conferring laurels and popular recognition.[SEP] Jonathan Franzen was also conflicted over his art being awarded a certain type of recognition.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:04:29
+  macro F1: 0.311
+  micro F1: 0.877
+[[242  32   2]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.311
+  micro F1: 0.877
+127.0.0.1 - - [15/Nov/2022:17:19:20] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:21:35
+  macro F1: 0.236
+  micro F1: 0.547
+[[591 475  15]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.236
+  micro F1: 0.547
+127.0.0.1 - - [15/Nov/2022:17:19:55] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"

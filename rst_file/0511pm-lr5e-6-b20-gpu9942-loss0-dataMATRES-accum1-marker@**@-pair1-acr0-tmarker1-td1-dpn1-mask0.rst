@@ -34,3 +34,61 @@ Test result:
   micro F1: 0.822
 Test result:
   micro F1: 0.706
+Test result:
+  micro F1: 0.752
+Test result:
+  micro F1: 0.478
+Test result:
+  micro F1: 0.773
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.752
+Test result:
+  micro F1: 0.478
+Test result:
+  micro F1: 0.773
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.752
+Test result:
+  micro F1: 0.478
+Test result:
+  micro F1: 0.752
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.478
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.000
+Test result:
+  micro F1: 0.238
+Test result:
+  micro F1: 1.000
+Test result:
+  micro F1: 0.662
+Test result:
+  micro F1: 0.636
+Test result:
+  micro F1: 0.547
+Test result:
+  micro F1: 0.547
+Test result:
+  micro F1: 0.877
+Test result:
+  micro F1: 0.547
