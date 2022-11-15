@@ -192,11 +192,23 @@ class exp:
         # Evaluate for one epoch.
         for batch in dataloader:
             with torch.no_grad():
-                logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
-                logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
-                logits_xb, loss_xb = self.model(batch[0].to(self.cuda), batch[7].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on Jun 14, 2022
-                logits = nn.Softmax(dim=1)(logits) - torch.tensor(self.lambda_1) * nn.Softmax(dim=1)(logits_eo) - torch.tensor(self.lambda_2) * nn.Softmax(dim=1)(logits_xb) # Updated on Jun 14, 2022
-                
+                if True:
+                #try:
+                    logits, loss = self.model(batch[0].to(self.cuda), batch[1].to(self.cuda), batch[2], batch[3], batch[4], batch[5])
+                    logits_eo, loss_eo = self.model(batch[0].to(self.cuda), batch[6].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on May 17, 2022
+                    logits_xb, loss_xb = self.model(batch[0].to(self.cuda), batch[7].to(self.cuda), batch[2], batch[3], batch[4], batch[5]) # Updated on Jun 14, 2022
+                    logits = nn.Softmax(dim=1)(logits) - torch.tensor(self.lambda_1) * nn.Softmax(dim=1)(logits_eo) - torch.tensor(self.lambda_2) * nn.Softmax(dim=1)(logits_xb) # Updated on Jun 14, 2022
+                """except RuntimeError as e:
+                    if 'out of memory' in str(e) and not raise_oom:
+                        print('| WARNING: ran out of memory, retrying batch')
+                        for p in self.model.parameters():
+                            if p.grad is not None:
+                                del p.grad  # free some memory
+                        torch.cuda.empty_cache()
+                        continue
+                    else:
+                        raise e
+                """
             # Move logits and labels to CPU
             y_predict = torch.max(logits[:, 0:self.out_class], 1).indices.cpu().numpy()
             y_pred.extend(y_predict)

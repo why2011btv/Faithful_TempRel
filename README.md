@@ -10,3 +10,17 @@
 `python demo.py <model> <input> <output>`
 
 `CUDA_VISIBLE_DEVICES=0 nohup python demo.py ./ /shared/corpora-tmp/annotated_nyt/156 ./output > 156.out 2>&1 &`
+
+
+# Nov 15, 2022:
+## How to run the backend service:
+`nohup python backend.py > backend.out 2>&1 &`
+
+## The files to be processed is in "files.txt"
+
+## How to process the files (building event temporal graphs for them):
+`python run.py`
+
+## The results are stored in the folder "/shared/corpora-tmp/nyt_event_temporal_graph/"
+
+## The intermediate files are stored in "/shared/cache/"

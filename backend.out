@@ -1,0 +1,80 @@
+nohup: ignoring input
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[15/Nov/2022:14:45:05] ENGINE Listening for SIGTERM.
+[15/Nov/2022:14:45:05] ENGINE Listening for SIGHUP.
+[15/Nov/2022:14:45:05] ENGINE Listening for SIGUSR1.
+[15/Nov/2022:14:45:05] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[15/Nov/2022:14:45:05] ENGINE Started monitor thread 'Autoreloader'.
+[15/Nov/2022:14:45:05] ENGINE Serving on http://127.0.0.1:6010
+[15/Nov/2022:14:45:05] ENGINE Bus STARTED
+date and time = 11/15/2022 14:44:57
+Processing MATRES dataset...
+# of parameters: 364568582
+
+Starting rest service...
+first event: calling
+second event: was
+TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina # ~ Past Simple ~ was # by rail.[SEP] I had meals in a dining car and arrived at Penn Station relaxed and ready for fun.[SEP]
+first event: calling
+second event: had
+TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I # ~ Past Simple ~ had # meals in a dining car and arrived at Penn Station relaxed and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
+first event: calling
+second event: arrived
+TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I had meals in a dining car and # ~ Past Simple ~ arrived # at Penn Station relaxed and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
+first event: calling
+second event: relaxed
+TokenIDs: [CLS] To the Editor:<unk>Re an Aug. 18 letter @ * None * calling @ for more rail options: My first trip to New York from my hometown in South Carolina was by rail.[SEP] I had meals in a dining car and arrived at Penn Station # ~ Past Simple ~ relaxed # and ready for fun.[SEP] Now there's only one train a day to my hometown, and it arrives at 2:30 a.m. And it's almost as expensive as plane fare.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:06
+  macro F1: 0.451
+  micro F1: 0.822
+[[37  8]
+ [ 0  0]]
+  macro F1: 0.451
+  micro F1: 0.822
+127.0.0.1 - - [15/Nov/2022:14:46:04] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+first event: remained
+second event: pondered
+TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team # ~ Past Simple ~ pondered # playing the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP]
+first event: remained
+second event: playing
+TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered # ~ None ~ playing # the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP]
+first event: remained
+second event: hit
+TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered playing the rest of the Major League Soccer season without him.[SEP] Ammann, # ~ None ~ hit # by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he tried to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP] Orlando Conguta, a recently hired MetroStars employee for team affairs, is staying in Tampa with him.[SEP]
+first event: remained
+second event: tried
+TokenIDs: [CLS] MetroStars goalkeeper Mike Ammann @ * None * remained @ in St. Joseph's Hospital in Tampa, Fla., yesterday with three fractured ribs, a punctured lung and facial bruises as the team pondered playing the rest of the Major League Soccer season without him.[SEP] Ammann, hit by the hard-charging Tampa Bay Mutiny forward Mamadou Diallo on Wednesday night as he # ~ Past Simple ~ tried # to smother a loose ball at the top of the penalty area, will be unable to travel for several days because of the punctured lung, a team spokesman said.[SEP] Orlando Conguta, a recently hired MetroStars employee for team affairs, is staying in Tampa with him.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:25
+  macro F1: 0.276
+  micro F1: 0.706
+[[470 190   6]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.276
+  micro F1: 0.706
+127.0.0.1 - - [15/Nov/2022:14:47:30] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
