@@ -1969,3 +1969,78 @@ Eval took: 0:02:24
   macro F1: 0.356
   micro F1: 0.552
 127.0.0.1 - - [15/Nov/2022:17:23:14] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/891318.ta.xml $$$$$$$$$$$$$$$$$$
+first event: anchored
+second event: bullpen
+TokenIDs: [CLS] The free-agent pitcher JOHN WETTELAND, who @ * Past Simple * anchored @ the Yankees' # ~ None ~ bullpen # this past season with 43 saves and starred in the World Series with 4 more, has yet to receive a contract offer from his former team.[SEP] But there is no panic.[SEP]
+first event: anchored
+second event: saves
+TokenIDs: [CLS] The free-agent pitcher JOHN WETTELAND, who @ * Past Simple * anchored @ the Yankees' bullpen this past season with 43 # ~ None ~ saves # and starred in the World Series with 4 more, has yet to receive a contract offer from his former team.[SEP] But there is no panic.[SEP]
+first event: anchored
+second event: starred
+TokenIDs: [CLS] The free-agent pitcher JOHN WETTELAND, who @ * Past Simple * anchored @ the Yankees' bullpen this past season with 43 saves and # ~ None ~ starred # in the World Series with 4 more, has yet to receive a contract offer from his former team.[SEP] But there is no panic.[SEP]
+first event: anchored
+second event: has
+TokenIDs: [CLS] The free-agent pitcher JOHN WETTELAND, who @ * Past Simple * anchored @ the Yankees' bullpen this past season with 43 saves and starred in the World Series with 4 more, # ~ Present Simple ~ has # yet to receive a contract offer from his former team.[SEP] But there is no panic.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:02:03
+  macro F1: 0.272
+  micro F1: 0.690
+[[145  62   3]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.272
+  micro F1: 0.690
+127.0.0.1 - - [15/Nov/2022:17:25:17] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1278997.ta.xml $$$$$$$$$$$$$$$$$$
+first event: Born
+second event: survived
+TokenIDs: [CLS] On Saturday, March 3, 2001 of Vero Beach, FL.[SEP] @ * None * Born @ in Greenwich, CT. June 27, 1927.[SEP] Member of Riomar Bay Yacht Club.[SEP] Devoted mother of Anne Bertram Endler, Caroline Bolling Bertram, Morgan Bertram, Colin Bertram, Digby Bertram and Madelaine Bertram Osborne.[SEP] Also # ~ None ~ survived # by brother Richard Hayes Meagher,nieces and nephews Elizabeth Meagher Bartram, Susan Smithers Dukehart, Pauline Rice, Dorothy Meagher, Marcia Meagher, Richard Meagher, and a great niece and great nephew.[SEP] In lieu of flowers, donations may be made to the American Lung Association and the Humane Society.[SEP]
+first event: Born
+second event: made
+TokenIDs: [CLS] On Saturday, March 3, 2001 of Vero Beach, FL.[SEP] @ * None * Born @ in Greenwich, CT. June 27, 1927.[SEP] Member of Riomar Bay Yacht Club.[SEP] Devoted mother of Anne Bertram Endler, Caroline Bolling Bertram, Morgan Bertram, Colin Bertram, Digby Bertram and Madelaine Bertram Osborne.[SEP] Also survived by brother Richard Hayes Meagher,nieces and nephews Elizabeth Meagher Bartram, Susan Smithers Dukehart, Pauline Rice, Dorothy Meagher, Marcia Meagher, Richard Meagher, and a great niece and great nephew.[SEP] In lieu of flowers, donations may be # ~ Future Perfect Simple ~ made # to the American Lung Association and the Humane Society.[SEP]
+first event: survived
+second event: made
+TokenIDs: [CLS] Devoted mother of Anne Bertram Endler, Caroline Bolling Bertram, Morgan Bertram, Colin Bertram, Digby Bertram and Madelaine Bertram Osborne.[SEP] Also @ * None * survived @ by brother Richard Hayes Meagher,nieces and nephews Elizabeth Meagher Bartram, Susan Smithers Dukehart, Pauline Rice, Dorothy Meagher, Marcia Meagher, Richard Meagher, and a great niece and great nephew.[SEP] In lieu of flowers, donations may be # ~ Future Perfect Simple ~ made # to the American Lung Association and the Humane Society.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:03
+  macro F1: 1.000
+  micro F1: 1.000
+[[3]]
+  macro F1: 1.000
+  micro F1: 1.000
+127.0.0.1 - - [15/Nov/2022:17:25:21] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/956879.ta.xml $$$$$$$$$$$$$$$$$$
+first event: charmed
+second event: be
+TokenIDs: [CLS] New York City's farewell to Diana, Princess of Wales, who @ * Past Simple * charmed @ New Yorkers from Fifth Avenue to the South Bronx, will # ~ Future Simple ~ be # a sedate Central Park service on Sunday punctuated by classical music and traditional prayers.[SEP] ''The service's origins will be from the religious traditions of Diana and her family,'' the Very Rev.[SEP]
+first event: charmed
+second event: punctuated
+TokenIDs: [CLS] New York City's farewell to Diana, Princess of Wales, who @ * Past Simple * charmed @ New Yorkers from Fifth Avenue to the South Bronx, will be a sedate Central Park service on Sunday # ~ None ~ punctuated # by classical music and traditional prayers.[SEP] ''The service's origins will be from the religious traditions of Diana and her family,'' the Very Rev.[SEP]
+first event: charmed
+second event: be
+TokenIDs: [CLS] New York City's farewell to Diana, Princess of Wales, who @ * Past Simple * charmed @ New Yorkers from Fifth Avenue to the South Bronx, will be a sedate Central Park service on Sunday punctuated by classical music and traditional prayers.[SEP] ''The service's origins will # ~ Future Simple ~ be # from the religious traditions of Diana and her family,'' the Very Rev.[SEP] Harry H. Pritchett Jr., dean of the Cathedral of St. John the Divine, said yesterday.[SEP]
+first event: charmed
+second event: said
+TokenIDs: [CLS] New York City's farewell to Diana, Princess of Wales, who @ * Past Simple * charmed @ New Yorkers from Fifth Avenue to the South Bronx, will be a sedate Central Park service on Sunday punctuated by classical music and traditional prayers.[SEP] ''The service's origins will be from the religious traditions of Diana and her family,'' the Very Rev.[SEP] Harry H. Pritchett Jr., dean of the Cathedral of St. John the Divine, # ~ Past Simple ~ said # yesterday.[SEP] ''But it will affirm the diversity of faiths in this city that she loved.''[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:29
+  macro F1: 0.317
+  micro F1: 0.464
+[[71 82]
+ [ 0  0]]
+  macro F1: 0.317
+  micro F1: 0.464
+127.0.0.1 - - [15/Nov/2022:17:26:50] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"

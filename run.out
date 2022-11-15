@@ -46,3 +46,9 @@ Processing /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml
 Processing /shared/corpora-tmp/annotated_nyt/156/1221278.ta.xml
 Calling service from http://localhost:6010/annotate
   2%|▏         | 19/946 [30:49<37:07:48, 144.19s/it]Processing /shared/corpora-tmp/annotated_nyt/156/891318.ta.xml
+Calling service from http://localhost:6010/annotate
+  2%|▏         | 20/946 [32:52<35:28:33, 137.92s/it]Processing /shared/corpora-tmp/annotated_nyt/156/1278997.ta.xml
+Calling service from http://localhost:6010/annotate
+  2%|▏         | 21/946 [32:56<25:04:13, 97.57s/it] Processing /shared/corpora-tmp/annotated_nyt/156/956879.ta.xml
+Calling service from http://localhost:6010/annotate
+  2%|▏         | 22/946 [34:25<24:27:12, 95.27s/it]Processing /shared/corpora-tmp/annotated_nyt/156/282199.ta.xml
