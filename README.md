@@ -1,3 +1,5 @@
+# Code for [Extracting or Guessing? Improving Faithfulness of Event Temporal Relation Extraction](https://arxiv.org/pdf/2210.04992.pdf)
+
 # Nov 15, 2022:
 ## backend.py: cherrypy api; accept srl result as input; write event temporal graph (.etg file) to /shared disk
 
@@ -31,4 +33,5 @@
 6. `beaker group create my_big_parallel_experiment_x`
 7. `beaker experiment create -n temprel_run_x.xx beaker_example.yaml` or `nohup python3 my_big_parallel_experiment.py > mbpe.out 2>&1 &`
 8. check status at https://beaker.org/experiments
+
 
