@@ -92,3 +92,11 @@ Test result:
   micro F1: 0.877
 Test result:
   micro F1: 0.547
+Test result:
+  micro F1: 0.651
+Test result:
+  micro F1: 0.689
+Test result:
+  micro F1: 0.643
+Test result:
+  micro F1: 0.552

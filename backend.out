@@ -1917,3 +1917,55 @@ Eval took: 0:21:35
   macro F1: 0.236
   micro F1: 0.547
 127.0.0.1 - - [15/Nov/2022:17:19:55] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/1221278.ta.xml $$$$$$$$$$$$$$$$$$
+first event: brought
+second event: bring
+TokenIDs: [CLS] To the Editor:<unk>Just as Dick Cheney @ * Past Simple * brought @ George W. Bush gravitas in foreign policy, Senator Joseph I. Lieberman will # ~ Future Simple ~ bring # Al Gore ethical gravitas (front page, Aug. 8).[SEP] But I wonder how this choice, an obvious effort by Mr. Gore to distance himself from the Clinton legacy and his own shadow of campaign corruption, will do anything more than reinforce those very connections.[SEP]
+first event: brought
+second event: wonder
+TokenIDs: [CLS] To the Editor:<unk>Just as Dick Cheney @ * Past Simple * brought @ George W. Bush gravitas in foreign policy, Senator Joseph I. Lieberman will bring Al Gore ethical gravitas (front page, Aug. 8).[SEP] But I # ~ Present Simple ~ wonder # how this choice, an obvious effort by Mr. Gore to distance himself from the Clinton legacy and his own shadow of campaign corruption, will do anything more than reinforce those very connections.[SEP] It seems as if Mr. Gore, by selecting the senator from Connecticut as his running mate, has in effect admitted that Mr. Bush and Mr. Cheney were correct in pointing out his vulnerabilities.[SEP]
+first event: brought
+second event: distance
+TokenIDs: [CLS] To the Editor:<unk>Just as Dick Cheney @ * Past Simple * brought @ George W. Bush gravitas in foreign policy, Senator Joseph I. Lieberman will bring Al Gore ethical gravitas (front page, Aug. 8).[SEP] But I wonder how this choice, an obvious effort by Mr. Gore to # ~ None ~ distance # himself from the Clinton legacy and his own shadow of campaign corruption, will do anything more than reinforce those very connections.[SEP] It seems as if Mr. Gore, by selecting the senator from Connecticut as his running mate, has in effect admitted that Mr. Bush and Mr. Cheney were correct in pointing out his vulnerabilities.[SEP]
+first event: brought
+second event: do
+TokenIDs: [CLS] To the Editor:<unk>Just as Dick Cheney @ * Past Simple * brought @ George W. Bush gravitas in foreign policy, Senator Joseph I. Lieberman will bring Al Gore ethical gravitas (front page, Aug. 8).[SEP] But I wonder how this choice, an obvious effort by Mr. Gore to distance himself from the Clinton legacy and his own shadow of campaign corruption, will # ~ Future Simple ~ do # anything more than reinforce those very connections.[SEP] It seems as if Mr. Gore, by selecting the senator from Connecticut as his running mate, has in effect admitted that Mr. Bush and Mr. Cheney were correct in pointing out his vulnerabilities.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:09:01
+  macro F1: 0.394
+  micro F1: 0.651
+[[365 196]
+ [  0   0]]
+  macro F1: 0.394
+  micro F1: 0.651
+127.0.0.1 - - [15/Nov/2022:17:20:51] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:14:11
+  macro F1: 0.272
+  micro F1: 0.689
+[[565 248   7]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.272
+  micro F1: 0.689
+127.0.0.1 - - [15/Nov/2022:17:21:31] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:04:19
+  macro F1: 0.261
+  micro F1: 0.643
+[[193 106   1]
+ [  0   0   0]
+ [  0   0   0]]
+  macro F1: 0.261
+  micro F1: 0.643
+127.0.0.1 - - [15/Nov/2022:17:22:09] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"
+Eval took: 0:02:24
+  macro F1: 0.356
+  micro F1: 0.552
+[[116  94]
+ [  0   0]]
+  macro F1: 0.356
+  micro F1: 0.552
+127.0.0.1 - - [15/Nov/2022:17:23:14] "POST /annotate HTTP/1.1" 200 48 "" "python-requests/2.28.1"

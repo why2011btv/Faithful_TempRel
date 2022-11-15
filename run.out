@@ -42,3 +42,7 @@ Calling service from http://localhost:6010/annotate
 Processing /shared/corpora-tmp/annotated_nyt/156/1621145.ta.xml
   2%|▏         | 17/946 [25:25<33:16:08, 128.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1621145.ta.xml TIMEOUT!
 Processing /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml
+  2%|▏         | 18/946 [28:25<37:11:21, 144.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/156/1221278.ta.xml
+Calling service from http://localhost:6010/annotate
+  2%|▏         | 19/946 [30:49<37:07:48, 144.19s/it]Processing /shared/corpora-tmp/annotated_nyt/156/891318.ta.xml
