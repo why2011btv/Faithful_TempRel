@@ -66,7 +66,7 @@ class temporal_graph:
         #edge_list = [(self.edges[edge_id]['edge'][0], self.edges[edge_id]['edge'][0], {'conf': self.confidence[edge_id]}) for edge_id in self.edges.keys()]
         #final_g = nx.DiGraph(edge_list)
         TR = nx.transitive_reduction(self.g)
-        return list(nx.topological_sort(self.g))#, list(TR.edges)
+        return list(nx.all_topological_sorts(self.g))#, list(TR.edges)
     
     def longest_path(self):
         while list(nx.simple_cycles(self.g)) != []:
@@ -151,6 +151,15 @@ def tdd_perf(json_file, long = True):
 #tdd_perf(json_file, False)
 #tdd_perf(json_file, True)
 """
+
+def check_feasibility(timeline, edges):
+    num_node = len(timeline)
+    for i in range(num_node-1):
+        if [timeline[i], timeline[i+1]] not in edges:
+            return False
+    return True
+           
+
 def tl_construction(logits, art_split, long = True, softmax = True, predict_with_abstention = []):
     if softmax:
         y_conf = np.max(softmax(logits), axis = 1)
@@ -168,16 +177,16 @@ def tl_construction(logits, art_split, long = True, softmax = True, predict_with
     for tl_id in art_split.keys():
         pairs = art_split[tl_id]
 
-        tdd[tl_id] = {#'event_pairs': [], 'conf': [], 
+        tdd[tl_id] = {'event_pairs': [], 'conf': [], 
                       'event_pairs_pwa': [], 'conf_pwa': []}
         for pair in pairs:
             i += 1
-            #if y_pred[i] == 0:
-            #    tdd[tl_id]['conf'].append(y_conf[i])
-            #    tdd[tl_id]['event_pairs'].append(pair)
-            #if y_pred[i] == 1:
-            #    tdd[tl_id]['conf'].append(y_conf[i])
-            #    tdd[tl_id]['event_pairs'].append([pair[1], pair[0]])
+            if y_pred[i] == 0:
+                tdd[tl_id]['conf'].append(y_conf[i])
+                tdd[tl_id]['event_pairs'].append(pair)
+            if y_pred[i] == 1:
+                tdd[tl_id]['conf'].append(y_conf[i])
+                tdd[tl_id]['event_pairs'].append([pair[1], pair[0]])
             if predict_with_abstention != []:
                 if y_pred[i] == 0 and predict_with_abstention[i] == 1:
                     tdd[tl_id]['conf_pwa'].append(y_conf[i])
@@ -191,8 +200,14 @@ def tl_construction(logits, art_split, long = True, softmax = True, predict_with
 
         #tdd[tl_id]['timeline_topo_sort'] = tg.construct_timeline()
         #tdd[tl_id]['timeline_longest_path'] = tg.longest_path()
-        tdd[tl_id]['timeline_topo_sort_pwa'] = tg_pwa.construct_timeline()
         #tdd[tl_id]['timeline_longest_path_pwa'] = tg_pwa.longest_path_in_each_cc()
+        #tdd[tl_id]['timeline_topo_sort_pwa'] = tg_pwa.construct_timeline()
         
+        timelines = tg_pwa.construct_timeline()
+        tdd[tl_id]['timeline_topo_sort_pwa'] = []
+        for timeline in timelines:
+            if check_feasibility(timeline, tdd[tl_id]['event_pairs']):
+                tdd[tl_id]['timeline_topo_sort_pwa'].append(timeline)
+
     return tdd
 

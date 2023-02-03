@@ -1,0 +1,182 @@
+nohup: ignoring input
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[07/Jan/2023:09:27:13] ENGINE Listening for SIGTERM.
+[07/Jan/2023:09:27:13] ENGINE Listening for SIGHUP.
+[07/Jan/2023:09:27:13] ENGINE Listening for SIGUSR1.
+[07/Jan/2023:09:27:13] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[07/Jan/2023:09:27:13] ENGINE Started monitor thread 'Autoreloader'.
+[07/Jan/2023:09:27:13] ENGINE Serving on http://127.0.0.1:6011
+[07/Jan/2023:09:27:13] ENGINE Bus STARTED
+date and time = 01/07/2023 09:26:32
+Processing MATRES dataset...
+# of parameters: 364568582
+
+Starting rest service...
+first event: was
+second event: consisted
+TokenIDs: [CLS] Y.[SEP] Z. Kami Deitch Projects 76 Grand Street SoHo Through March 14<unk>The previous New York show by this Iranian-born artist, at Holly Solomon Gallery two years ago, @ * Past Simple * was @ a strong one.[SEP] It # ~ Past Simple ~ consisted # of bust-length paintings of young men posed against neutral ground, their faces drawn from composite photographs but modeled stylistically on large-eyed Egyptian-Roman funerary portraits.[SEP] Accompanied by mural-size photo collages of Islamic architecture, they might have been prisoners, terrorists, lovers or visitors from an earlier age.[SEP]
+first event: was
+second event: posed
+TokenIDs: [CLS] Y.[SEP] Z. Kami Deitch Projects 76 Grand Street SoHo Through March 14<unk>The previous New York show by this Iranian-born artist, at Holly Solomon Gallery two years ago, @ * Past Simple * was @ a strong one.[SEP] It consisted of bust-length paintings of young men # ~ None ~ posed # against neutral ground, their faces drawn from composite photographs but modeled stylistically on large-eyed Egyptian-Roman funerary portraits.[SEP] Accompanied by mural-size photo collages of Islamic architecture, they might have been prisoners, terrorists, lovers or visitors from an earlier age.[SEP]
+first event: was
+second event: drawn
+TokenIDs: [CLS] Y.[SEP] Z. Kami Deitch Projects 76 Grand Street SoHo Through March 14<unk>The previous New York show by this Iranian-born artist, at Holly Solomon Gallery two years ago, @ * Past Simple * was @ a strong one.[SEP] It consisted of bust-length paintings of young men posed against neutral ground, their faces # ~ Present Perfect Simple ~ drawn # from composite photographs but modeled stylistically on large-eyed Egyptian-Roman funerary portraits.[SEP] Accompanied by mural-size photo collages of Islamic architecture, they might have been prisoners, terrorists, lovers or visitors from an earlier age.[SEP]
+first event: was
+second event: modeled
+TokenIDs: [CLS] Y.[SEP] Z. Kami Deitch Projects 76 Grand Street SoHo Through March 14<unk>The previous New York show by this Iranian-born artist, at Holly Solomon Gallery two years ago, @ * Past Simple * was @ a strong one.[SEP] It consisted of bust-length paintings of young men posed against neutral ground, their faces drawn from composite photographs but # ~ Past Simple ~ modeled # stylistically on large-eyed Egyptian-Roman funerary portraits.[SEP] Accompanied by mural-size photo collages of Islamic architecture, they might have been prisoners, terrorists, lovers or visitors from an earlier age.[SEP]
+  Data processing took: 0:00:01
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:01:26
+  macro F1: 0.408
+  micro F1: 0.690
+[[321 144]
+ [  0   0]]
+  macro F1: 0.408
+  micro F1: 0.690
+127.0.0.1 - - [07/Jan/2023:09:31:28] "POST /annotate HTTP/1.1" 200 4000 "" "curl/7.79.1"
+[16/Jan/2023:20:37:15] ENGINE Restarting because /shared/why16gzl/conda/miniconda38/envs/EMNLP_env/lib/python3.7/site-packages/certifi/core.py changed.
+[16/Jan/2023:20:37:15] ENGINE Stopped thread 'Autoreloader'.
+[16/Jan/2023:20:37:15] ENGINE Bus STOPPING
+[16/Jan/2023:20:37:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
+[16/Jan/2023:20:37:15] ENGINE Bus STOPPED
+[16/Jan/2023:20:37:15] ENGINE Bus EXITING
+[16/Jan/2023:20:37:15] ENGINE Bus EXITED
+[16/Jan/2023:20:37:15] ENGINE Waiting for child threads to terminate...
+[16/Jan/2023:20:37:15] ENGINE Re-spawning python kairos_service.py
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.decoder.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[16/Jan/2023:20:38:07] ENGINE Listening for SIGTERM.
+[16/Jan/2023:20:38:07] ENGINE Listening for SIGHUP.
+[16/Jan/2023:20:38:07] ENGINE Listening for SIGUSR1.
+[16/Jan/2023:20:38:07] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[16/Jan/2023:20:38:07] ENGINE Started monitor thread 'Autoreloader'.
+[16/Jan/2023:20:38:08] ENGINE Serving on http://127.0.0.1:6011
+[16/Jan/2023:20:38:08] ENGINE Bus STARTED
+[31/Jan/2023:11:36:34] ENGINE Restarting because /mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/timeline_construct.py changed.
+[31/Jan/2023:11:36:34] ENGINE Stopped thread 'Autoreloader'.
+[31/Jan/2023:11:36:34] ENGINE Bus STOPPING
+[31/Jan/2023:11:36:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
+[31/Jan/2023:11:36:34] ENGINE Bus STOPPED
+[31/Jan/2023:11:36:34] ENGINE Bus EXITING
+[31/Jan/2023:11:36:34] ENGINE Bus EXITED
+[31/Jan/2023:11:36:35] ENGINE Waiting for child threads to terminate...
+[31/Jan/2023:11:36:35] ENGINE Re-spawning python kairos_service.py
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.seq_relationship.weight', 'cls.predictions.decoder.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[31/Jan/2023:11:36:49] ENGINE Listening for SIGTERM.
+[31/Jan/2023:11:36:49] ENGINE Listening for SIGHUP.
+[31/Jan/2023:11:36:49] ENGINE Listening for SIGUSR1.
+[31/Jan/2023:11:36:49] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[31/Jan/2023:11:36:49] ENGINE Started monitor thread 'Autoreloader'.
+[31/Jan/2023:11:36:49] ENGINE Serving on http://127.0.0.1:6011
+[31/Jan/2023:11:36:49] ENGINE Bus STARTED
+[31/Jan/2023:12:06:28] ENGINE Restarting because /mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/timeline_construct.py changed.
+[31/Jan/2023:12:06:28] ENGINE Stopped thread 'Autoreloader'.
+[31/Jan/2023:12:06:28] ENGINE Bus STOPPING
+[31/Jan/2023:12:06:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
+[31/Jan/2023:12:06:28] ENGINE Bus STOPPED
+[31/Jan/2023:12:06:28] ENGINE Bus EXITING
+[31/Jan/2023:12:06:28] ENGINE Bus EXITED
+[31/Jan/2023:12:06:28] ENGINE Waiting for child threads to terminate...
+[31/Jan/2023:12:06:28] ENGINE Re-spawning python kairos_service.py
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.decoder.bias', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[31/Jan/2023:12:06:49] ENGINE Listening for SIGTERM.
+[31/Jan/2023:12:06:49] ENGINE Listening for SIGHUP.
+[31/Jan/2023:12:06:49] ENGINE Listening for SIGUSR1.
+[31/Jan/2023:12:06:49] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[31/Jan/2023:12:06:49] ENGINE Started monitor thread 'Autoreloader'.
+[31/Jan/2023:12:06:49] ENGINE Serving on http://127.0.0.1:6011
+[31/Jan/2023:12:06:49] ENGINE Bus STARTED
+[31/Jan/2023:12:09:17] ENGINE Restarting because /mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/timeline_construct.py changed.
+[31/Jan/2023:12:09:17] ENGINE Stopped thread 'Autoreloader'.
+[31/Jan/2023:12:09:17] ENGINE Bus STOPPING
+[31/Jan/2023:12:09:17] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
+[31/Jan/2023:12:09:17] ENGINE Bus STOPPED
+[31/Jan/2023:12:09:17] ENGINE Bus EXITING
+[31/Jan/2023:12:09:17] ENGINE Bus EXITED
+[31/Jan/2023:12:09:17] ENGINE Waiting for child threads to terminate...
+[31/Jan/2023:12:09:17] ENGINE Re-spawning python kairos_service.py
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[31/Jan/2023:12:09:29] ENGINE Listening for SIGTERM.
+[31/Jan/2023:12:09:29] ENGINE Listening for SIGHUP.
+[31/Jan/2023:12:09:29] ENGINE Listening for SIGUSR1.
+[31/Jan/2023:12:09:29] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[31/Jan/2023:12:09:29] ENGINE Started monitor thread 'Autoreloader'.
+[31/Jan/2023:12:09:29] ENGINE Serving on http://127.0.0.1:6011
+[31/Jan/2023:12:09:29] ENGINE Bus STARTED

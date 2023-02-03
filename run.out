@@ -1,58 +1,2032 @@
 nohup: ignoring input
-  0%|          | 0/946 [00:00<?, ?it/s]Processing /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml
+  0%|          | 0/946 [00:00<?, ?it/s]Processing /shared/corpora-tmp/annotated_nyt/426/571728.ta.xml
+  0%|          | 1/946 [03:00<47:16:13, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/571728.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/706196.ta.xml
+  0%|          | 2/946 [06:00<47:13:13, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/706196.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1001671.ta.xml
+  0%|          | 3/946 [09:00<47:10:11, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1001671.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1134919.ta.xml
+  0%|          | 4/946 [12:00<47:07:11, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1134919.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1580078.ta.xml
+  1%|          | 5/946 [15:00<47:04:11, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1580078.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1657293.ta.xml
+  1%|          | 6/946 [18:00<47:01:08, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1657293.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1671786.ta.xml
+  1%|          | 7/946 [21:00<46:58:10, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1671786.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/760813.ta.xml
+  1%|          | 8/946 [24:00<46:55:10, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/760813.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1332347.ta.xml
+Calling service from http://localhost:6010/annotate
+  1%|          | 9/946 [26:54<46:21:46, 178.13s/it]Processing /shared/corpora-tmp/annotated_nyt/426/987837.ta.xml
+  1%|          | 10/946 [29:54<46:27:56, 178.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/987837.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/441572.ta.xml
+  1%|          | 11/946 [32:54<46:31:20, 179.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/441572.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/485016.ta.xml
+  1%|▏         | 12/946 [35:54<46:32:49, 179.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/485016.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1777296.ta.xml
+  1%|▏         | 13/946 [38:54<46:32:51, 179.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1777296.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/279662.ta.xml
+  1%|▏         | 14/946 [41:54<46:32:04, 179.75s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/279662.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/447439.ta.xml
+  2%|▏         | 15/946 [44:54<46:30:37, 179.85s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/447439.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/400787.ta.xml
+  2%|▏         | 16/946 [47:54<46:28:42, 179.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/400787.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/190049.ta.xml
+  2%|▏         | 17/946 [50:54<46:26:27, 179.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/190049.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/52456.ta.xml
+  2%|▏         | 18/946 [53:54<46:23:47, 179.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/52456.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/851778.ta.xml
+  2%|▏         | 19/946 [56:54<46:21:13, 180.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/851778.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1551419.ta.xml
+  2%|▏         | 20/946 [59:54<46:18:30, 180.03s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1551419.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/684933.ta.xml
+  2%|▏         | 21/946 [1:02:55<46:15:54, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/684933.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/249023.ta.xml
+  2%|▏         | 22/946 [1:05:55<46:12:59, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/249023.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/935288.ta.xml
+  2%|▏         | 23/946 [1:08:55<46:10:03, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/935288.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1079142.ta.xml
+  3%|▎         | 24/946 [1:11:55<46:07:06, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1079142.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1095600.ta.xml
+  3%|▎         | 25/946 [1:14:55<46:04:08, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1095600.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/760748.ta.xml
+  3%|▎         | 26/946 [1:17:55<46:01:10, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/760748.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/586421.ta.xml
+  3%|▎         | 27/946 [1:20:55<45:58:10, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/586421.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1616328.ta.xml
+  3%|▎         | 28/946 [1:23:55<45:55:10, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1616328.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/711918.ta.xml
+  3%|▎         | 29/946 [1:26:55<45:52:11, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/711918.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1505198.ta.xml
+  3%|▎         | 30/946 [1:29:55<45:49:12, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1505198.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/377989.ta.xml
+  3%|▎         | 31/946 [1:32:55<45:46:12, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/377989.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/872413.ta.xml
+  3%|▎         | 32/946 [1:35:55<45:43:13, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/872413.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1132677.ta.xml
+  3%|▎         | 33/946 [1:38:56<45:40:12, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1132677.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/497402.ta.xml
+  4%|▎         | 34/946 [1:41:56<45:37:12, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/497402.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1462577.ta.xml
+  4%|▎         | 35/946 [1:44:56<45:34:12, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1462577.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/742653.ta.xml
+Calling service from http://localhost:6010/annotate
+  4%|▍         | 36/946 [1:47:26<43:13:36, 171.01s/it]Processing /shared/corpora-tmp/annotated_nyt/426/187747.ta.xml
+  4%|▍         | 37/946 [1:50:26<43:52:00, 173.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/187747.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/623191.ta.xml
+  4%|▍         | 38/946 [1:53:26<44:17:56, 175.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/623191.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/396255.ta.xml
+Calling service from http://localhost:6010/annotate
+  4%|▍         | 39/946 [1:54:49<37:15:48, 147.90s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1805064.ta.xml
+Calling service from http://localhost:6010/annotate
+  4%|▍         | 40/946 [1:55:59<31:23:01, 124.70s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1572594.ta.xml
+  4%|▍         | 41/946 [1:59:00<35:31:31, 141.32s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1572594.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1290696.ta.xml
+Calling service from http://localhost:6010/annotate
+  4%|▍         | 42/946 [1:59:55<29:00:59, 115.55s/it]Processing /shared/corpora-tmp/annotated_nyt/426/445973.ta.xml
+  5%|▍         | 43/946 [2:02:55<33:50:24, 134.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/445973.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/892082.ta.xml
+  5%|▍         | 44/946 [2:05:55<37:11:52, 148.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/892082.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/521358.ta.xml
+  5%|▍         | 45/946 [2:08:55<39:31:50, 157.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/521358.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/245727.ta.xml
+  5%|▍         | 46/946 [2:11:55<41:08:48, 164.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/245727.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1054472.ta.xml
+  5%|▍         | 47/946 [2:14:55<42:15:48, 169.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1054472.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1255199.ta.xml
+  5%|▌         | 48/946 [2:17:56<43:01:38, 172.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1255199.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/563214.ta.xml
+Calling service from http://localhost:6010/annotate
+  5%|▌         | 49/946 [2:19:53<38:51:32, 155.96s/it]Processing /shared/corpora-tmp/annotated_nyt/426/878610.ta.xml
+  5%|▌         | 50/946 [2:22:54<40:43:51, 163.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/878610.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/723078.ta.xml
+  5%|▌         | 51/946 [2:25:55<41:54:39, 168.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/723078.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1391155.ta.xml
+Calling service from http://localhost:6010/annotate
+  5%|▌         | 52/946 [2:27:41<37:11:50, 149.79s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1263361.ta.xml
 Calling service from http://localhost:6010/annotate
 temporal_response: 500
-  0%|          | 1/946 [00:00<02:04,  7.58it/s]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1016357.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1553374.ta.xml
-Already processed this file
-Processing /shared/corpora-tmp/annotated_nyt/156/1557422.ta.xml
-Already processed this file
-Processing /shared/corpora-tmp/annotated_nyt/156/366284.ta.xml
-Already processed this file
-Processing /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml
+  6%|▌         | 53/946 [2:27:41<26:02:26, 104.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1263361.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/56664.ta.xml
+  6%|▌         | 54/946 [2:30:41<31:35:39, 127.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/56664.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1833016.ta.xml
+Calling service from http://localhost:6010/annotate
+  6%|▌         | 55/946 [2:30:44<22:17:36, 90.08s/it] Processing /shared/corpora-tmp/annotated_nyt/426/246100.ta.xml
+  6%|▌         | 56/946 [2:33:44<28:56:36, 117.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/246100.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/239835.ta.xml
 Calling service from http://localhost:6010/annotate
 temporal_response: 500
-  1%|          | 5/946 [00:01<02:55,  5.37it/s]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/570963.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml
+  6%|▌         | 57/946 [2:33:44<20:17:02, 82.14s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/239835.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/215336.ta.xml
 Calling service from http://localhost:6010/annotate
 temporal_response: 500
-  1%|          | 6/946 [02:53<13:28:56, 51.64s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1478496.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml
-  1%|          | 7/946 [05:53<23:31:07, 90.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1620509.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1365396.ta.xml
+  6%|▌         | 58/946 [2:33:45<14:13:17, 57.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/215336.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/185979.ta.xml
+  6%|▌         | 59/946 [2:36:45<23:15:17, 94.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/185979.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1387385.ta.xml
+Calling service from http://localhost:6010/annotate
+  6%|▋         | 60/946 [2:38:42<24:55:45, 101.29s/it]Processing /shared/corpora-tmp/annotated_nyt/426/166284.ta.xml
+  6%|▋         | 61/946 [2:41:43<30:42:41, 124.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/166284.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/343941.ta.xml
+  7%|▋         | 62/946 [2:44:43<34:44:22, 141.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/343941.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/846314.ta.xml
+  7%|▋         | 63/946 [2:47:43<37:32:27, 153.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/846314.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1196599.ta.xml
+  7%|▋         | 64/946 [2:50:43<39:29:04, 161.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1196599.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1163842.ta.xml
 Calling service from http://localhost:6010/annotate
 temporal_response: 500
-  1%|          | 8/946 [05:54<16:32:00, 63.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1365396.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/578667.ta.xml
-  1%|          | 9/946 [08:54<25:37:20, 98.44s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/578667.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1149629.ta.xml
-  1%|          | 10/946 [11:54<31:57:44, 122.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1149629.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/371949.ta.xml
-  1%|          | 11/946 [14:54<36:22:50, 140.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/371949.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1032750.ta.xml
-  1%|▏         | 12/946 [17:54<39:27:19, 152.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1032750.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/411413.ta.xml
+  7%|▋         | 65/946 [2:52:54<37:12:39, 152.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1163842.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/727719.ta.xml
+  7%|▋         | 66/946 [2:55:54<39:13:25, 160.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/727719.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/650568.ta.xml
+  7%|▋         | 67/946 [2:58:54<40:36:57, 166.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/650568.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1820442.ta.xml
+  7%|▋         | 68/946 [3:01:54<41:34:29, 170.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1820442.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1017691.ta.xml
 Calling service from http://localhost:6010/annotate
-  1%|▏         | 13/946 [18:16<29:19:45, 113.17s/it]Processing /shared/corpora-tmp/annotated_nyt/156/1779229.ta.xml
+  7%|▋         | 69/946 [3:04:51<41:59:23, 172.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/583972.ta.xml
 Calling service from http://localhost:6010/annotate
-  1%|▏         | 14/946 [18:19<20:40:52, 79.88s/it] Processing /shared/corpora-tmp/annotated_nyt/156/153663.ta.xml
+  7%|▋         | 70/946 [3:07:02<38:58:51, 160.20s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1806918.ta.xml
 Calling service from http://localhost:6010/annotate
-  2%|▏         | 15/946 [19:25<19:34:18, 75.68s/it]Processing /shared/corpora-tmp/annotated_nyt/156/621647.ta.xml
-  2%|▏         | 16/946 [22:25<27:38:28, 107.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/621647.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1621145.ta.xml
-  2%|▏         | 17/946 [25:25<33:16:08, 128.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1621145.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml
-  2%|▏         | 18/946 [28:25<37:11:21, 144.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1833321.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1221278.ta.xml
+  8%|▊         | 71/946 [3:09:30<38:00:00, 156.34s/it]Processing /shared/corpora-tmp/annotated_nyt/426/324453.ta.xml
+  8%|▊         | 72/946 [3:12:30<39:41:07, 163.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/324453.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/420076.ta.xml
+  8%|▊         | 73/946 [3:15:30<40:50:55, 168.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/420076.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/460654.ta.xml
 Calling service from http://localhost:6010/annotate
-  2%|▏         | 19/946 [30:49<37:07:48, 144.19s/it]Processing /shared/corpora-tmp/annotated_nyt/156/891318.ta.xml
+  8%|▊         | 74/946 [3:15:32<28:44:41, 118.67s/it]Processing /shared/corpora-tmp/annotated_nyt/426/59238.ta.xml
+  8%|▊         | 75/946 [3:18:33<33:10:08, 137.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/59238.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1443589.ta.xml
 Calling service from http://localhost:6010/annotate
-  2%|▏         | 20/946 [32:52<35:28:33, 137.92s/it]Processing /shared/corpora-tmp/annotated_nyt/156/1278997.ta.xml
+  8%|▊         | 76/946 [3:18:38<23:35:35, 97.63s/it] Processing /shared/corpora-tmp/annotated_nyt/426/130681.ta.xml
 Calling service from http://localhost:6010/annotate
-  2%|▏         | 21/946 [32:56<25:04:13, 97.57s/it] Processing /shared/corpora-tmp/annotated_nyt/156/956879.ta.xml
+  8%|▊         | 77/946 [3:20:25<24:14:29, 100.42s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1646113.ta.xml
 Calling service from http://localhost:6010/annotate
-  2%|▏         | 22/946 [34:25<24:27:12, 95.27s/it]Processing /shared/corpora-tmp/annotated_nyt/156/282199.ta.xml
-  2%|▏         | 23/946 [37:25<30:56:57, 120.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/282199.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/11686.ta.xml
-  3%|▎         | 24/946 [40:26<35:28:35, 138.52s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/11686.ta.xml TIMEOUT!
-Processing /shared/corpora-tmp/annotated_nyt/156/1749101.ta.xml
+temporal_response: 500
+  8%|▊         | 78/946 [3:20:26<17:01:51, 70.64s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1646113.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/309709.ta.xml
+Calling service from http://localhost:6010/annotate
+  8%|▊         | 79/946 [3:21:51<18:03:22, 74.97s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1317904.ta.xml
+  8%|▊         | 80/946 [3:24:51<25:37:13, 106.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1317904.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1559066.ta.xml
+  9%|▊         | 81/946 [3:27:51<30:53:40, 128.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1559066.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1536742.ta.xml
+Calling service from http://localhost:6010/annotate
+  9%|▊         | 82/946 [3:28:31<24:27:35, 101.92s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1725271.ta.xml
+  9%|▉         | 83/946 [3:31:31<30:03:27, 125.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1725271.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/443627.ta.xml
+  9%|▉         | 84/946 [3:34:31<33:57:06, 141.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/443627.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1526586.ta.xml
+Calling service from http://localhost:6010/annotate
+  9%|▉         | 85/946 [3:37:28<36:23:15, 152.14s/it]Processing /shared/corpora-tmp/annotated_nyt/426/437420.ta.xml
+  9%|▉         | 86/946 [3:40:28<38:20:50, 160.52s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/437420.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/667560.ta.xml
+  9%|▉         | 87/946 [3:43:28<39:42:09, 166.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/667560.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1051305.ta.xml
+  9%|▉         | 88/946 [3:46:28<40:38:05, 170.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1051305.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1647108.ta.xml
+  9%|▉         | 89/946 [3:49:28<41:16:19, 173.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1647108.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1030091.ta.xml
+ 10%|▉         | 90/946 [3:52:28<41:42:08, 175.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1030091.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1050677.ta.xml
+ 10%|▉         | 91/946 [3:55:28<41:59:17, 176.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1050677.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1652125.ta.xml
+ 10%|▉         | 92/946 [3:58:28<42:10:22, 177.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1652125.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/149129.ta.xml
+Calling service from http://localhost:6010/annotate
+ 10%|▉         | 93/946 [4:00:23<37:37:22, 158.78s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1314570.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 10%|▉         | 94/946 [4:03:10<38:12:35, 161.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1314570.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/510888.ta.xml
+ 10%|█         | 95/946 [4:06:10<39:29:14, 167.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/510888.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1432442.ta.xml
+Calling service from http://localhost:6010/annotate
+ 10%|█         | 96/946 [4:06:46<30:08:16, 127.64s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1090638.ta.xml
+ 10%|█         | 97/946 [4:09:46<33:48:49, 143.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1090638.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1192698.ta.xml
+ 10%|█         | 98/946 [4:12:46<36:22:02, 154.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1192698.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/837478.ta.xml
+ 10%|█         | 99/946 [4:15:46<38:08:15, 162.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/837478.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1295850.ta.xml
+ 11%|█         | 100/946 [4:18:46<39:21:36, 167.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1295850.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1751509.ta.xml
+ 11%|█         | 101/946 [4:21:47<40:12:00, 171.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1751509.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1548678.ta.xml
+ 11%|█         | 102/946 [4:24:47<40:46:19, 173.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1548678.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1184642.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 11%|█         | 103/946 [4:27:32<40:07:25, 171.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1184642.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/995164.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 11%|█         | 104/946 [4:29:53<37:59:00, 162.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/995164.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1759371.ta.xml
+ 11%|█         | 105/946 [4:32:54<39:10:41, 167.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1759371.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/156786.ta.xml
+ 11%|█         | 106/946 [4:35:54<39:59:56, 171.42s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/156786.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/569991.ta.xml
+ 11%|█▏        | 107/946 [4:38:54<40:33:31, 174.03s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/569991.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1753354.ta.xml
+ 11%|█▏        | 108/946 [4:41:54<40:56:02, 175.85s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1753354.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/849941.ta.xml
+ 12%|█▏        | 109/946 [4:44:54<41:10:53, 177.13s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/849941.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/441251.ta.xml
+ 12%|█▏        | 110/946 [4:47:54<41:20:23, 178.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/441251.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1487987.ta.xml
+Calling service from http://localhost:6010/annotate
+ 12%|█▏        | 111/946 [4:49:03<33:42:59, 145.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/454815.ta.xml
+ 12%|█▏        | 112/946 [4:52:03<36:05:18, 155.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/454815.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1357325.ta.xml
+ 12%|█▏        | 113/946 [4:55:03<37:43:50, 163.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1357325.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/788282.ta.xml
+ 12%|█▏        | 114/946 [4:58:03<38:51:51, 168.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/788282.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1807242.ta.xml
+ 12%|█▏        | 115/946 [5:01:04<39:38:33, 171.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1807242.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/409437.ta.xml
+ 12%|█▏        | 116/946 [5:04:04<40:10:19, 174.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/409437.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/207739.ta.xml
+ 12%|█▏        | 117/946 [5:07:04<40:31:36, 175.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/207739.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1082853.ta.xml
+Calling service from http://localhost:6010/annotate
+ 12%|█▏        | 118/946 [5:09:53<40:00:28, 173.95s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1396174.ta.xml
+Calling service from http://localhost:6010/annotate
+ 13%|█▎        | 119/946 [5:10:02<28:34:03, 124.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/456969.ta.xml
+ 13%|█▎        | 120/946 [5:13:02<32:22:08, 141.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/456969.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1315061.ta.xml
+ 13%|█▎        | 121/946 [5:16:02<35:00:44, 152.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1315061.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/65388.ta.xml
+Calling service from http://localhost:6010/annotate
+ 13%|█▎        | 122/946 [5:18:29<34:35:44, 151.15s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1561515.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 13%|█▎        | 123/946 [5:18:30<24:15:53, 106.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1561515.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1444584.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 13%|█▎        | 124/946 [5:18:31<17:02:05, 74.61s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1444584.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1233853.ta.xml
+ 13%|█▎        | 125/946 [5:21:31<24:13:49, 106.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1233853.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/838869.ta.xml
+ 13%|█▎        | 126/946 [5:24:31<29:14:39, 128.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/838869.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/752397.ta.xml
+ 13%|█▎        | 127/946 [5:27:31<32:44:11, 143.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/752397.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1207190.ta.xml
+ 14%|█▎        | 128/946 [5:30:31<35:09:46, 154.75s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1207190.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/352558.ta.xml
+ 14%|█▎        | 129/946 [5:33:32<36:50:39, 162.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/352558.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1516182.ta.xml
+ 14%|█▎        | 130/946 [5:36:32<38:00:17, 167.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1516182.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1277667.ta.xml
+ 14%|█▍        | 131/946 [5:39:32<38:48:04, 171.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1277667.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/716278.ta.xml
+Calling service from http://localhost:6010/annotate
+ 14%|█▍        | 132/946 [5:40:15<30:02:42, 132.88s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1595758.ta.xml
+ 14%|█▍        | 133/946 [5:43:15<33:12:28, 147.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1595758.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1556475.ta.xml
+ 14%|█▍        | 134/946 [5:46:15<35:24:08, 156.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1556475.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1021539.ta.xml
+ 14%|█▍        | 135/946 [5:49:15<36:55:17, 163.89s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1021539.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/132870.ta.xml
+ 14%|█▍        | 136/946 [5:52:15<37:58:06, 168.75s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/132870.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1457604.ta.xml
+ 14%|█▍        | 137/946 [5:55:15<38:41:07, 172.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1457604.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/12385.ta.xml
+ 15%|█▍        | 138/946 [5:58:15<39:10:17, 174.53s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/12385.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/792742.ta.xml
+ 15%|█▍        | 139/946 [6:01:15<39:29:47, 176.19s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/792742.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/448539.ta.xml
+Calling service from http://localhost:6010/annotate
+ 15%|█▍        | 140/946 [6:03:27<36:26:19, 162.75s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1775449.ta.xml
+ 15%|█▍        | 141/946 [6:06:27<37:33:21, 167.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1775449.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1311336.ta.xml
+ 15%|█▌        | 142/946 [6:09:27<38:19:17, 171.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1311336.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1496548.ta.xml
+ 15%|█▌        | 143/946 [6:12:27<38:50:31, 174.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1496548.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/167818.ta.xml
+ 15%|█▌        | 144/946 [6:15:27<39:11:27, 175.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/167818.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1257935.ta.xml
+ 15%|█▌        | 145/946 [6:18:27<39:25:11, 177.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1257935.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/879038.ta.xml
+ 15%|█▌        | 146/946 [6:21:27<39:33:53, 178.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/879038.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1193538.ta.xml
+ 16%|█▌        | 147/946 [6:24:27<39:39:04, 178.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1193538.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1481108.ta.xml
+ 16%|█▌        | 148/946 [6:27:27<39:41:46, 179.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1481108.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1666936.ta.xml
+ 16%|█▌        | 149/946 [6:30:27<39:42:46, 179.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1666936.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/726075.ta.xml
+Calling service from http://localhost:6010/annotate
+ 16%|█▌        | 150/946 [6:31:14<30:51:22, 139.55s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1798679.ta.xml
+Calling service from http://localhost:6010/annotate
+ 16%|█▌        | 151/946 [6:33:54<32:08:59, 145.58s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1629370.ta.xml
+Calling service from http://localhost:6010/annotate
+ 16%|█▌        | 152/946 [6:35:12<27:37:46, 125.27s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1165133.ta.xml
+ 16%|█▌        | 153/946 [6:38:12<31:12:59, 141.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1165133.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1392561.ta.xml
+Calling service from http://localhost:6010/annotate
+ 16%|█▋        | 154/946 [6:38:22<22:31:12, 102.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1231158.ta.xml
+ 16%|█▋        | 155/946 [6:41:22<27:36:51, 125.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1231158.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/500849.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 16%|█▋        | 156/946 [6:41:24<19:23:10, 88.34s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/500849.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1711353.ta.xml
+Calling service from http://localhost:6010/annotate
+ 17%|█▋        | 157/946 [6:42:39<18:30:10, 84.42s/it]Processing /shared/corpora-tmp/annotated_nyt/426/635021.ta.xml
+Calling service from http://localhost:6010/annotate
+ 17%|█▋        | 158/946 [6:42:41<13:05:42, 59.83s/it]Processing /shared/corpora-tmp/annotated_nyt/426/350260.ta.xml
+ 17%|█▋        | 159/946 [6:45:41<20:57:55, 95.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/350260.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/635149.ta.xml
+Calling service from http://localhost:6010/annotate
+ 17%|█▋        | 160/946 [6:46:07<16:20:21, 74.84s/it]Processing /shared/corpora-tmp/annotated_nyt/426/600787.ta.xml
+ 17%|█▋        | 161/946 [6:49:07<23:12:11, 106.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/600787.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1489117.ta.xml
+ 17%|█▋        | 162/946 [6:52:07<27:59:12, 128.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1489117.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/270757.ta.xml
+ 17%|█▋        | 163/946 [6:55:07<31:18:58, 143.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/270757.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1826015.ta.xml
+ 17%|█▋        | 164/946 [6:58:07<33:37:42, 154.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1826015.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/72753.ta.xml
+ 17%|█▋        | 165/946 [7:01:07<35:13:48, 162.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/72753.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1302421.ta.xml
+ 18%|█▊        | 166/946 [7:04:07<36:20:05, 167.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1302421.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/235092.ta.xml
+ 18%|█▊        | 167/946 [7:07:08<37:05:30, 171.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/235092.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1850095.ta.xml
+ 18%|█▊        | 168/946 [7:10:08<37:36:23, 174.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1850095.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/748053.ta.xml
+ 18%|█▊        | 169/946 [7:13:08<37:57:03, 175.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/748053.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/896796.ta.xml
+ 18%|█▊        | 170/946 [7:16:08<38:10:36, 177.11s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/896796.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1232221.ta.xml
+ 18%|█▊        | 171/946 [7:19:08<38:19:10, 178.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1232221.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/607941.ta.xml
+ 18%|█▊        | 172/946 [7:22:08<38:24:14, 178.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/607941.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/693342.ta.xml
+ 18%|█▊        | 173/946 [7:25:08<38:26:53, 179.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/693342.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1770805.ta.xml
+ 18%|█▊        | 174/946 [7:28:08<38:27:50, 179.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1770805.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/508625.ta.xml
+ 18%|█▊        | 175/946 [7:31:08<38:27:35, 179.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/508625.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/119327.ta.xml
+ 19%|█▊        | 176/946 [7:34:08<38:26:32, 179.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/119327.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/842755.ta.xml
+ 19%|█▊        | 177/946 [7:37:08<38:24:53, 179.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/842755.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/817540.ta.xml
+ 19%|█▉        | 178/946 [7:40:08<38:22:49, 179.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/817540.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/782095.ta.xml
+ 19%|█▉        | 179/946 [7:43:09<38:20:28, 179.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/782095.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/266035.ta.xml
+ 19%|█▉        | 180/946 [7:46:09<38:17:56, 180.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/266035.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1671765.ta.xml
+ 19%|█▉        | 181/946 [7:49:09<38:15:15, 180.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1671765.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/645248.ta.xml
+ 19%|█▉        | 182/946 [7:52:09<38:12:30, 180.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/645248.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1714203.ta.xml
+ 19%|█▉        | 183/946 [7:55:09<38:09:39, 180.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1714203.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/402450.ta.xml
+ 19%|█▉        | 184/946 [7:58:09<38:06:45, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/402450.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1639657.ta.xml
+ 20%|█▉        | 185/946 [8:01:09<38:03:49, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1639657.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/721650.ta.xml
+ 20%|█▉        | 186/946 [8:04:09<38:00:57, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/721650.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1051092.ta.xml
+ 20%|█▉        | 187/946 [8:07:09<37:58:05, 180.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1051092.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1480666.ta.xml
+ 20%|█▉        | 188/946 [8:10:09<37:55:03, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1480666.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/969144.ta.xml
+Calling service from http://localhost:6010/annotate
+ 20%|█▉        | 189/946 [8:10:55<29:24:14, 139.83s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1618685.ta.xml
+Calling service from http://localhost:6010/annotate
+ 20%|██        | 190/946 [8:13:36<30:40:37, 146.08s/it]Processing /shared/corpora-tmp/annotated_nyt/426/787354.ta.xml
+ 20%|██        | 191/946 [8:16:36<32:46:31, 156.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/787354.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/607091.ta.xml
+Calling service from http://localhost:6010/annotate
+ 20%|██        | 192/946 [8:16:39<23:04:40, 110.19s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1587861.ta.xml
+Calling service from http://localhost:6010/annotate
+ 20%|██        | 193/946 [8:18:05<21:34:48, 103.17s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1378237.ta.xml
+ 21%|██        | 194/946 [8:21:05<26:22:21, 126.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1378237.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1231406.ta.xml
+ 21%|██        | 195/946 [8:24:06<29:42:25, 142.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1231406.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/55267.ta.xml
+ 21%|██        | 196/946 [8:27:06<32:01:27, 153.72s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/55267.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1671543.ta.xml
+ 21%|██        | 197/946 [8:30:06<33:37:40, 161.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1671543.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1818479.ta.xml
+ 21%|██        | 198/946 [8:33:06<34:43:59, 167.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1818479.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1212648.ta.xml
+ 21%|██        | 199/946 [8:36:06<35:29:26, 171.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1212648.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/507750.ta.xml
+ 21%|██        | 200/946 [8:39:06<36:00:42, 173.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/507750.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/139437.ta.xml
+ 21%|██        | 201/946 [8:42:06<36:21:20, 175.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/139437.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/405983.ta.xml
+ 21%|██▏       | 202/946 [8:45:06<36:34:50, 177.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/405983.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/963935.ta.xml
+ 21%|██▏       | 203/946 [8:48:06<36:43:23, 177.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/963935.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/10123.ta.xml
+ 22%|██▏       | 204/946 [8:51:07<36:48:31, 178.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/10123.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/938388.ta.xml
+ 22%|██▏       | 205/946 [8:54:07<36:51:07, 179.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/938388.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1817786.ta.xml
+ 22%|██▏       | 206/946 [8:57:07<36:52:04, 179.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1817786.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/760032.ta.xml
+ 22%|██▏       | 207/946 [9:00:07<36:51:50, 179.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/760032.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1002094.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 22%|██▏       | 208/946 [9:01:13<29:51:45, 145.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1002094.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/708878.ta.xml
+ 22%|██▏       | 209/946 [9:04:13<31:56:12, 156.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/708878.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/311688.ta.xml
+ 22%|██▏       | 210/946 [9:07:14<33:22:17, 163.23s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/311688.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1841794.ta.xml
+ 22%|██▏       | 211/946 [9:10:14<34:21:29, 168.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1841794.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/527417.ta.xml
+Calling service from http://localhost:6010/annotate
+ 22%|██▏       | 212/946 [9:13:05<34:28:12, 169.06s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1788809.ta.xml
+ 23%|██▎       | 213/946 [9:16:05<35:05:45, 172.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1788809.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/927459.ta.xml
+ 23%|██▎       | 214/946 [9:19:05<35:31:05, 174.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/927459.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/596650.ta.xml
+ 23%|██▎       | 215/946 [9:22:05<35:47:55, 176.30s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/596650.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/338111.ta.xml
+ 23%|██▎       | 216/946 [9:25:05<35:58:46, 177.43s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/338111.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/349743.ta.xml
+ 23%|██▎       | 217/946 [9:28:05<36:05:27, 178.23s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/349743.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/603791.ta.xml
+ 23%|██▎       | 218/946 [9:31:05<36:09:14, 178.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/603791.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1596271.ta.xml
+ 23%|██▎       | 219/946 [9:34:05<36:10:58, 179.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1596271.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/729464.ta.xml
+ 23%|██▎       | 220/946 [9:37:05<36:11:17, 179.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/729464.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/512299.ta.xml
+ 23%|██▎       | 221/946 [9:40:05<36:10:35, 179.64s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/512299.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/523880.ta.xml
+Calling service from http://localhost:6010/annotate
+ 23%|██▎       | 222/946 [9:40:18<26:04:35, 129.66s/it]Processing /shared/corpora-tmp/annotated_nyt/426/210604.ta.xml
+ 24%|██▎       | 223/946 [9:43:18<29:04:40, 144.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/210604.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1511033.ta.xml
+ 24%|██▎       | 224/946 [9:46:18<31:09:40, 155.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1511033.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1006799.ta.xml
+ 24%|██▍       | 225/946 [9:49:19<32:36:08, 162.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1006799.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1694205.ta.xml
+ 24%|██▍       | 226/946 [9:52:19<33:35:41, 167.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1694205.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1096682.ta.xml
+ 24%|██▍       | 227/946 [9:55:19<34:16:24, 171.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1096682.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1294451.ta.xml
+ 24%|██▍       | 228/946 [9:58:19<34:44:00, 174.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1294451.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1475518.ta.xml
+ 24%|██▍       | 229/946 [10:01:19<35:02:21, 175.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1475518.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/224960.ta.xml
+ 24%|██▍       | 230/946 [10:04:19<35:14:17, 177.18s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/224960.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1606297.ta.xml
+ 24%|██▍       | 231/946 [10:07:19<35:21:46, 178.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1606297.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1630608.ta.xml
+ 25%|██▍       | 232/946 [10:10:19<35:26:03, 178.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1630608.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1705888.ta.xml
+ 25%|██▍       | 233/946 [10:13:19<35:28:08, 179.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1705888.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/692874.ta.xml
+ 25%|██▍       | 234/946 [10:16:19<35:28:40, 179.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/692874.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/528768.ta.xml
+ 25%|██▍       | 235/946 [10:19:19<35:28:10, 179.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/528768.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/227158.ta.xml
+ 25%|██▍       | 236/946 [10:22:19<35:26:54, 179.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/227158.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/796984.ta.xml
+ 25%|██▌       | 237/946 [10:25:20<35:25:07, 179.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/796984.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/325744.ta.xml
+ 25%|██▌       | 238/946 [10:28:20<35:22:57, 179.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/325744.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/457147.ta.xml
+ 25%|██▌       | 239/946 [10:31:20<35:20:33, 179.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/457147.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1599981.ta.xml
+ 25%|██▌       | 240/946 [10:34:20<35:17:58, 180.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1599981.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1021027.ta.xml
+ 25%|██▌       | 241/946 [10:37:20<35:15:15, 180.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1021027.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1616674.ta.xml
+Calling service from http://localhost:6010/annotate
+ 26%|██▌       | 242/946 [10:40:17<35:03:21, 179.26s/it]Processing /shared/corpora-tmp/annotated_nyt/426/926932.ta.xml
+ 26%|██▌       | 243/946 [10:43:17<35:03:14, 179.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/926932.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/155000.ta.xml
+ 26%|██▌       | 244/946 [10:46:18<35:02:16, 179.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/155000.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1159554.ta.xml
+ 26%|██▌       | 245/946 [10:49:18<35:00:40, 179.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1159554.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1066617.ta.xml
+ 26%|██▌       | 246/946 [10:52:18<34:58:39, 179.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1066617.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/768636.ta.xml
+ 26%|██▌       | 247/946 [10:55:18<34:56:20, 179.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/768636.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/608538.ta.xml
+ 26%|██▌       | 248/946 [10:58:18<34:53:48, 179.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/608538.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/833679.ta.xml
+ 26%|██▋       | 249/946 [11:01:18<34:51:09, 180.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/833679.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1175698.ta.xml
+Calling service from http://localhost:6010/annotate
+ 26%|██▋       | 250/946 [11:04:10<34:20:33, 177.63s/it]Processing /shared/corpora-tmp/annotated_nyt/426/263539.ta.xml
+ 27%|██▋       | 251/946 [11:07:10<34:26:06, 178.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/263539.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1027462.ta.xml
+Calling service from http://localhost:6010/annotate
+ 27%|██▋       | 252/946 [11:07:19<24:36:15, 127.63s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1614929.ta.xml
+ 27%|██▋       | 253/946 [11:10:19<27:35:56, 143.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1614929.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1025570.ta.xml
+Calling service from http://localhost:6010/annotate
+ 27%|██▋       | 254/946 [11:10:23<19:30:01, 101.45s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1632428.ta.xml
+ 27%|██▋       | 255/946 [11:13:23<24:00:05, 125.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1632428.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/653310.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 27%|██▋       | 256/946 [11:13:26<16:56:21, 88.38s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/653310.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/530280.ta.xml
+ 27%|██▋       | 257/946 [11:16:26<22:10:52, 115.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/530280.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1266870.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 27%|██▋       | 258/946 [11:16:39<16:15:29, 85.07s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1266870.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/875038.ta.xml
+ 27%|██▋       | 259/946 [11:19:39<21:40:24, 113.57s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/875038.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/985844.ta.xml
+ 27%|██▋       | 260/946 [11:22:39<25:26:38, 133.53s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/985844.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1767569.ta.xml
+ 28%|██▊       | 261/946 [11:25:39<28:03:51, 147.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1767569.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1543413.ta.xml
+ 28%|██▊       | 262/946 [11:28:40<29:52:51, 157.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1543413.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/604718.ta.xml
+ 28%|██▊       | 263/946 [11:31:40<31:08:08, 164.11s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/604718.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1334063.ta.xml
+ 28%|██▊       | 264/946 [11:34:40<31:59:51, 168.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1334063.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/54681.ta.xml
+ 28%|██▊       | 265/946 [11:37:40<32:35:05, 172.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/54681.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/775904.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 28%|██▊       | 266/946 [11:39:23<28:36:54, 151.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/775904.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/654542.ta.xml
+ 28%|██▊       | 267/946 [11:42:23<30:11:28, 160.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/654542.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1164804.ta.xml
+ 28%|██▊       | 268/946 [11:45:23<31:16:38, 166.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1164804.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/555215.ta.xml
+ 28%|██▊       | 269/946 [11:48:23<32:01:17, 170.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/555215.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/533538.ta.xml
+ 29%|██▊       | 270/946 [11:51:23<32:31:34, 173.22s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/533538.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1566856.ta.xml
+Calling service from http://localhost:6010/annotate
+ 29%|██▊       | 271/946 [11:52:06<25:10:15, 134.24s/it]Processing /shared/corpora-tmp/annotated_nyt/426/137947.ta.xml
+Calling service from http://localhost:6010/annotate
+ 29%|██▉       | 272/946 [11:54:00<23:58:39, 128.07s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1332754.ta.xml
+ 29%|██▉       | 273/946 [11:57:00<26:51:31, 143.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1332754.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1012578.ta.xml
+ 29%|██▉       | 274/946 [12:00:00<28:51:27, 154.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1012578.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1099140.ta.xml
+ 29%|██▉       | 275/946 [12:03:00<30:14:23, 162.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1099140.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/425450.ta.xml
+ 29%|██▉       | 276/946 [12:06:00<31:11:26, 167.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/425450.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1112411.ta.xml
+ 29%|██▉       | 277/946 [12:09:01<31:50:22, 171.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1112411.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/389866.ta.xml
+ 29%|██▉       | 278/946 [12:12:01<32:16:43, 173.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/389866.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/720353.ta.xml
+ 29%|██▉       | 279/946 [12:15:01<32:34:15, 175.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/720353.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/449481.ta.xml
+ 30%|██▉       | 280/946 [12:18:01<32:45:36, 177.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/449481.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1129275.ta.xml
+ 30%|██▉       | 281/946 [12:21:01<32:52:38, 177.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1129275.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/433260.ta.xml
+ 30%|██▉       | 282/946 [12:24:01<32:56:41, 178.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/433260.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/369590.ta.xml
+ 30%|██▉       | 283/946 [12:27:01<32:58:34, 179.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/369590.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1761992.ta.xml
+ 30%|███       | 284/946 [12:30:01<32:58:59, 179.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1761992.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1561109.ta.xml
+ 30%|███       | 285/946 [12:33:01<32:58:22, 179.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1561109.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/777973.ta.xml
+ 30%|███       | 286/946 [12:36:01<32:57:01, 179.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/777973.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/114390.ta.xml
+ 30%|███       | 287/946 [12:39:01<32:55:11, 179.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/114390.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1193129.ta.xml
+ 30%|███       | 288/946 [12:42:01<32:52:59, 179.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1193129.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/934027.ta.xml
+ 31%|███       | 289/946 [12:45:02<32:50:35, 179.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/934027.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/526543.ta.xml
+ 31%|███       | 290/946 [12:48:02<32:47:59, 180.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/526543.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1528762.ta.xml
+ 31%|███       | 291/946 [12:51:02<32:45:14, 180.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1528762.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1675014.ta.xml
+ 31%|███       | 292/946 [12:54:02<32:42:24, 180.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1675014.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1768114.ta.xml
+ 31%|███       | 293/946 [12:57:02<32:39:32, 180.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1768114.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1624682.ta.xml
+ 31%|███       | 294/946 [13:00:02<32:36:37, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1624682.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/405098.ta.xml
+ 31%|███       | 295/946 [13:03:02<32:33:42, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/405098.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/926830.ta.xml
+ 31%|███▏      | 296/946 [13:06:02<32:30:45, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/926830.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1420954.ta.xml
+ 31%|███▏      | 297/946 [13:09:02<32:27:47, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1420954.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/437623.ta.xml
+ 32%|███▏      | 298/946 [13:12:02<32:24:49, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/437623.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/147055.ta.xml
+ 32%|███▏      | 299/946 [13:15:02<32:21:51, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/147055.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/494869.ta.xml
+ 32%|███▏      | 300/946 [13:18:02<32:18:52, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/494869.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/40163.ta.xml
+ 32%|███▏      | 301/946 [13:21:02<32:15:51, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/40163.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/455197.ta.xml
+ 32%|███▏      | 302/946 [13:24:03<32:12:51, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/455197.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1374697.ta.xml
+ 32%|███▏      | 303/946 [13:27:03<32:09:53, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1374697.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1245926.ta.xml
+ 32%|███▏      | 304/946 [13:30:03<32:06:52, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1245926.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/741011.ta.xml
+ 32%|███▏      | 305/946 [13:33:03<32:03:51, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/741011.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1781116.ta.xml
+ 32%|███▏      | 306/946 [13:36:03<32:00:52, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1781116.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/176942.ta.xml
+ 32%|███▏      | 307/946 [13:39:03<31:57:52, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/176942.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/972533.ta.xml
+ 33%|███▎      | 308/946 [13:42:03<31:54:50, 180.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/972533.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1011853.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 33%|███▎      | 309/946 [13:43:56<28:19:37, 160.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1011853.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/828721.ta.xml
+ 33%|███▎      | 310/946 [13:46:57<29:20:31, 166.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/828721.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/354205.ta.xml
+Calling service from http://localhost:6010/annotate
+ 33%|███▎      | 311/946 [13:47:34<22:28:34, 127.42s/it]Processing /shared/corpora-tmp/annotated_nyt/426/552980.ta.xml
+ 33%|███▎      | 312/946 [13:50:34<25:13:21, 143.22s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/552980.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1424789.ta.xml
+ 33%|███▎      | 313/946 [13:53:34<27:07:39, 154.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1424789.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/779351.ta.xml
+ 33%|███▎      | 314/946 [13:56:34<28:26:38, 162.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/779351.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1122758.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 33%|███▎      | 315/946 [13:59:13<28:14:16, 161.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1122758.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1057593.ta.xml
+ 33%|███▎      | 316/946 [14:02:13<29:11:21, 166.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1057593.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/991011.ta.xml
+ 34%|███▎      | 317/946 [14:05:13<29:50:21, 170.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/991011.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1406684.ta.xml
+ 34%|███▎      | 318/946 [14:08:13<30:16:42, 173.57s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1406684.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1320463.ta.xml
+ 34%|███▎      | 319/946 [14:11:13<30:34:13, 175.52s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1320463.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/694962.ta.xml
+ 34%|███▍      | 320/946 [14:14:13<30:45:31, 176.89s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/694962.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1596122.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 34%|███▍      | 321/946 [14:16:53<29:49:21, 171.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1596122.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1721312.ta.xml
+Calling service from http://localhost:6010/annotate
+ 34%|███▍      | 322/946 [14:17:22<22:19:06, 128.76s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1328872.ta.xml
+ 34%|███▍      | 323/946 [14:20:22<24:56:49, 144.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1328872.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1384208.ta.xml
+ 34%|███▍      | 324/946 [14:23:22<26:46:11, 154.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1384208.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/758971.ta.xml
+ 34%|███▍      | 325/946 [14:26:22<28:01:40, 162.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/758971.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1839553.ta.xml
+ 34%|███▍      | 326/946 [14:29:22<28:53:31, 167.76s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1839553.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/444426.ta.xml
+ 35%|███▍      | 327/946 [14:32:22<29:28:50, 171.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/444426.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/785559.ta.xml
+ 35%|███▍      | 328/946 [14:35:22<29:52:38, 174.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/785559.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1313073.ta.xml
+ 35%|███▍      | 329/946 [14:38:22<30:08:21, 175.85s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1313073.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/504285.ta.xml
+ 35%|███▍      | 330/946 [14:41:22<30:18:25, 177.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/504285.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/248534.ta.xml
+Calling service from http://localhost:6010/annotate
+ 35%|███▍      | 331/946 [14:42:42<25:16:10, 147.92s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1790732.ta.xml
+Calling service from http://localhost:6010/annotate
+ 35%|███▌      | 332/946 [14:43:03<18:42:44, 109.71s/it]Processing /shared/corpora-tmp/annotated_nyt/426/329539.ta.xml
+ 35%|███▌      | 333/946 [14:46:03<22:16:35, 130.82s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/329539.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1439605.ta.xml
+ 35%|███▌      | 334/946 [14:49:03<24:45:07, 145.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1439605.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/910794.ta.xml
+ 35%|███▌      | 335/946 [14:52:03<26:28:01, 155.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/910794.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/199831.ta.xml
+ 36%|███▌      | 336/946 [14:55:03<27:39:02, 163.18s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/199831.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/59715.ta.xml
+ 36%|███▌      | 337/946 [14:58:03<28:27:45, 168.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/59715.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/169898.ta.xml
+ 36%|███▌      | 338/946 [15:01:03<29:00:54, 171.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/169898.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/889607.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 36%|███▌      | 339/946 [15:01:46<22:28:05, 133.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/889607.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/172849.ta.xml
+ 36%|███▌      | 340/946 [15:04:46<24:47:43, 147.30s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/172849.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/315769.ta.xml
+Calling service from http://localhost:6010/annotate
+ 36%|███▌      | 341/946 [15:04:55<17:45:13, 105.64s/it]Processing /shared/corpora-tmp/annotated_nyt/426/182252.ta.xml
+ 36%|███▌      | 342/946 [15:07:55<21:28:15, 127.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/182252.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1315393.ta.xml
+ 36%|███▋      | 343/946 [15:10:55<24:03:09, 143.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1315393.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/850923.ta.xml
+Calling service from http://localhost:6010/annotate
+ 36%|███▋      | 344/946 [15:11:09<17:30:14, 104.67s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1819654.ta.xml
+Calling service from http://localhost:6010/annotate
+ 36%|███▋      | 345/946 [15:11:18<12:39:55, 75.87s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1441639.ta.xml
+Calling service from http://localhost:6010/annotate
+ 37%|███▋      | 346/946 [15:13:58<16:52:24, 101.24s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1280461.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 37%|███▋      | 347/946 [15:13:58<11:47:51, 70.90s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1280461.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1280589.ta.xml
+Calling service from http://localhost:6010/annotate
+ 37%|███▋      | 348/946 [15:14:44<10:32:35, 63.47s/it]Processing /shared/corpora-tmp/annotated_nyt/426/674964.ta.xml
+ 37%|███▋      | 349/946 [15:17:44<16:19:36, 98.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/674964.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1520013.ta.xml
+ 37%|███▋      | 350/946 [15:20:44<20:21:12, 122.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1520013.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1086758.ta.xml
+ 37%|███▋      | 351/946 [15:23:44<23:09:10, 140.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1086758.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/168132.ta.xml
+ 37%|███▋      | 352/946 [15:26:45<25:05:37, 152.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/168132.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1542654.ta.xml
+ 37%|███▋      | 353/946 [15:29:45<26:26:05, 160.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1542654.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1832938.ta.xml
+ 37%|███▋      | 354/946 [15:32:45<27:21:25, 166.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1832938.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/353569.ta.xml
+ 38%|███▊      | 355/946 [15:35:45<27:59:11, 170.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/353569.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1485093.ta.xml
+ 38%|███▊      | 356/946 [15:38:45<28:24:39, 173.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1485093.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/684257.ta.xml
+Calling service from http://localhost:6010/annotate
+ 38%|███▊      | 357/946 [15:40:45<25:44:14, 157.31s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1222840.ta.xml
+Calling service from http://localhost:6010/annotate
+ 38%|███▊      | 358/946 [15:40:57<18:35:43, 113.85s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1317728.ta.xml
+Calling service from http://localhost:6010/annotate
+ 38%|███▊      | 359/946 [15:41:19<14:04:09, 86.29s/it] Processing /shared/corpora-tmp/annotated_nyt/426/482086.ta.xml
+Calling service from http://localhost:6010/annotate
+ 38%|███▊      | 360/946 [15:42:01<11:51:49, 72.88s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1251714.ta.xml
+ 38%|███▊      | 361/946 [15:45:01<17:04:10, 105.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1251714.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/503967.ta.xml
+ 38%|███▊      | 362/946 [15:48:01<20:41:32, 127.56s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/503967.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1112833.ta.xml
+Calling service from http://localhost:6010/annotate
+ 38%|███▊      | 363/946 [15:48:56<17:08:36, 105.86s/it]Processing /shared/corpora-tmp/annotated_nyt/426/873184.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 38%|███▊      | 364/946 [15:48:57<12:01:28, 74.38s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/873184.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1531067.ta.xml
+ 39%|███▊      | 365/946 [15:51:57<17:07:17, 106.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1531067.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1165656.ta.xml
+Calling service from http://localhost:6010/annotate
+ 39%|███▊      | 366/946 [15:52:35<13:48:04, 85.66s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1454180.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 39%|███▉      | 367/946 [15:52:36<9:42:12, 60.33s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1454180.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1844663.ta.xml
+ 39%|███▉      | 368/946 [15:55:36<15:27:16, 96.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1844663.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1379855.ta.xml
+ 39%|███▉      | 369/946 [15:58:37<19:27:30, 121.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1379855.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/575355.ta.xml
+ 39%|███▉      | 370/946 [16:01:37<22:14:28, 139.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/575355.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/107199.ta.xml
+ 39%|███▉      | 371/946 [16:04:37<24:10:14, 151.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/107199.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/706989.ta.xml
+ 39%|███▉      | 372/946 [16:07:37<25:30:14, 159.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/706989.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/142494.ta.xml
+ 39%|███▉      | 373/946 [16:10:37<26:25:13, 165.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/142494.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1072049.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|███▉      | 374/946 [16:11:14<20:12:24, 127.18s/it]Processing /shared/corpora-tmp/annotated_nyt/426/449800.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|███▉      | 375/946 [16:12:19<17:13:30, 108.60s/it]Processing /shared/corpora-tmp/annotated_nyt/426/42619.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|███▉      | 376/946 [16:12:21<12:09:41, 76.81s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1091652.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|███▉      | 377/946 [16:12:31<8:56:46, 56.60s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1516511.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|███▉      | 378/946 [16:15:13<13:56:45, 88.39s/it]Processing /shared/corpora-tmp/annotated_nyt/426/407290.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|████      | 379/946 [16:15:46<11:17:22, 71.68s/it]Processing /shared/corpora-tmp/annotated_nyt/426/190224.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 40%|████      | 380/946 [16:15:47<7:56:13, 50.48s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/190224.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/473525.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|████      | 381/946 [16:17:38<10:45:38, 68.56s/it]Processing /shared/corpora-tmp/annotated_nyt/426/515212.ta.xml
+ 40%|████      | 382/946 [16:20:38<15:58:58, 102.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/515212.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/262391.ta.xml
+Calling service from http://localhost:6010/annotate
+ 40%|████      | 383/946 [16:21:46<14:20:50, 91.74s/it] Processing /shared/corpora-tmp/annotated_nyt/426/427995.ta.xml
+ 41%|████      | 384/946 [16:24:46<18:27:32, 118.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/427995.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1017221.ta.xml
+Calling service from http://localhost:6010/annotate
+ 41%|████      | 385/946 [16:24:48<13:00:25, 83.47s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1074543.ta.xml
+ 41%|████      | 386/946 [16:27:48<17:29:33, 112.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1074543.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/19616.ta.xml
+ 41%|████      | 387/946 [16:30:48<20:36:42, 132.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/19616.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1241565.ta.xml
+ 41%|████      | 388/946 [16:33:48<22:46:34, 146.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1241565.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/761394.ta.xml
+ 41%|████      | 389/946 [16:36:48<24:16:19, 156.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/761394.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/343718.ta.xml
+ 41%|████      | 390/946 [16:39:48<25:18:13, 163.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/343718.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1318737.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 41%|████▏     | 391/946 [16:42:45<25:50:04, 167.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1318737.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/512267.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 41%|████▏     | 392/946 [16:45:42<26:14:29, 170.52s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/512267.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/425013.ta.xml
+ 42%|████▏     | 393/946 [16:48:42<26:38:03, 173.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/425013.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/557637.ta.xml
+ 42%|████▏     | 394/946 [16:51:42<26:53:29, 175.38s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/557637.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1019509.ta.xml
+ 42%|████▏     | 395/946 [16:54:42<27:03:22, 176.77s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1019509.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/853135.ta.xml
+ 42%|████▏     | 396/946 [16:57:42<27:09:26, 177.76s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/853135.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1720473.ta.xml
+Calling service from http://localhost:6010/annotate
+ 42%|████▏     | 397/946 [16:59:46<24:38:04, 161.54s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1342946.ta.xml
+Calling service from http://localhost:6010/annotate
+ 42%|████▏     | 398/946 [17:02:05<23:33:56, 154.81s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1551275.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 42%|████▏     | 399/946 [17:02:06<16:30:46, 108.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1551275.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1535844.ta.xml
+ 42%|████▏     | 400/946 [17:05:06<19:43:57, 130.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1535844.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1168668.ta.xml
+ 42%|████▏     | 401/946 [17:08:06<21:57:57, 145.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1168668.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/862651.ta.xml
+ 42%|████▏     | 402/946 [17:11:06<23:30:33, 155.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/862651.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1617060.ta.xml
+ 43%|████▎     | 403/946 [17:14:06<24:34:28, 162.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1617060.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/245909.ta.xml
+ 43%|████▎     | 404/946 [17:17:07<25:18:03, 168.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/245909.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/179882.ta.xml
+ 43%|████▎     | 405/946 [17:20:07<25:47:44, 171.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/179882.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1645957.ta.xml
+ 43%|████▎     | 406/946 [17:23:07<26:07:34, 174.18s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1645957.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1770018.ta.xml
+ 43%|████▎     | 407/946 [17:26:07<26:20:33, 175.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1770018.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1459173.ta.xml
+ 43%|████▎     | 408/946 [17:29:07<26:28:45, 177.19s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1459173.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/112202.ta.xml
+Calling service from http://localhost:6010/annotate
+ 43%|████▎     | 409/946 [17:30:59<23:32:34, 157.83s/it]Processing /shared/corpora-tmp/annotated_nyt/426/937408.ta.xml
+Calling service from http://localhost:6010/annotate
+ 43%|████▎     | 410/946 [17:32:16<19:51:19, 133.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/464398.ta.xml
+ 43%|████▎     | 411/946 [17:35:16<21:54:02, 147.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/464398.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1665693.ta.xml
+ 44%|████▎     | 412/946 [17:38:16<23:18:47, 157.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1665693.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/382003.ta.xml
+ 44%|████▎     | 413/946 [17:41:16<24:17:11, 164.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/382003.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/152986.ta.xml
+ 44%|████▍     | 414/946 [17:44:16<24:57:00, 168.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/152986.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1094823.ta.xml
+ 44%|████▍     | 415/946 [17:47:16<25:24:02, 172.21s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1094823.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/145822.ta.xml
+ 44%|████▍     | 416/946 [17:50:16<25:41:54, 174.55s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/145822.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/517664.ta.xml
+ 44%|████▍     | 417/946 [17:53:16<25:53:25, 176.19s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/517664.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/739693.ta.xml
+ 44%|████▍     | 418/946 [17:56:16<26:00:38, 177.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/739693.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1512950.ta.xml
+Calling service from http://localhost:6010/annotate
+ 44%|████▍     | 419/946 [17:56:18<18:16:31, 124.84s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1082338.ta.xml
+ 44%|████▍     | 420/946 [17:59:18<20:39:43, 141.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1082338.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/808044.ta.xml
+ 45%|████▍     | 421/946 [18:02:19<22:18:55, 153.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/808044.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/134083.ta.xml
+ 45%|████▍     | 422/946 [18:05:19<23:27:15, 161.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/134083.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1368931.ta.xml
+ 45%|████▍     | 423/946 [18:08:19<24:14:09, 166.82s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1368931.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1199514.ta.xml
+ 45%|████▍     | 424/946 [18:11:19<24:45:58, 170.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1199514.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/768979.ta.xml
+ 45%|████▍     | 425/946 [18:14:19<25:07:11, 173.57s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/768979.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1087590.ta.xml
+ 45%|████▌     | 426/946 [18:17:19<25:21:07, 175.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1087590.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/344292.ta.xml
+ 45%|████▌     | 427/946 [18:20:19<25:29:57, 176.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/344292.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/215750.ta.xml
+ 45%|████▌     | 428/946 [18:23:19<25:35:14, 177.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/215750.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1293702.ta.xml
+ 45%|████▌     | 429/946 [18:26:19<25:38:05, 178.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1293702.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/99544.ta.xml
+ 45%|████▌     | 430/946 [18:29:19<25:39:11, 178.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/99544.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/685432.ta.xml
+Calling service from http://localhost:6010/annotate
+ 46%|████▌     | 431/946 [18:29:28<18:17:41, 127.89s/it]Processing /shared/corpora-tmp/annotated_nyt/426/366514.ta.xml
+Calling service from http://localhost:6010/annotate
+ 46%|████▌     | 432/946 [18:30:37<15:44:39, 110.27s/it]Processing /shared/corpora-tmp/annotated_nyt/426/586344.ta.xml
+ 46%|████▌     | 433/946 [18:33:37<18:41:52, 131.21s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/586344.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/748862.ta.xml
+ 46%|████▌     | 434/946 [18:36:37<20:44:46, 145.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/748862.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1330816.ta.xml
+Calling service from http://localhost:6010/annotate
+ 46%|████▌     | 435/946 [18:37:05<15:41:38, 110.56s/it]Processing /shared/corpora-tmp/annotated_nyt/426/103555.ta.xml
+ 46%|████▌     | 436/946 [18:40:05<18:37:03, 131.42s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/103555.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/741918.ta.xml
+ 46%|████▌     | 437/946 [18:43:05<20:38:42, 146.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/741918.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1654827.ta.xml
+ 46%|████▋     | 438/946 [18:46:06<22:02:47, 156.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1654827.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1094315.ta.xml
+Calling service from http://localhost:6010/annotate
+ 46%|████▋     | 439/946 [18:47:47<19:40:31, 139.71s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1423518.ta.xml
+ 47%|████▋     | 440/946 [18:50:47<21:20:19, 151.82s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1423518.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/203726.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 47%|████▋     | 441/946 [18:53:15<21:09:00, 150.77s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/203726.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/622409.ta.xml
+Calling service from http://localhost:6010/annotate
+ 47%|████▋     | 442/946 [18:54:02<16:45:16, 119.68s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1166387.ta.xml
+Calling service from http://localhost:6010/annotate
+ 47%|████▋     | 443/946 [18:54:10<12:02:46, 86.21s/it] Processing /shared/corpora-tmp/annotated_nyt/426/629335.ta.xml
+ 47%|████▋     | 444/946 [18:57:10<15:56:56, 114.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/629335.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1016764.ta.xml
+ 47%|████▋     | 445/946 [19:00:11<18:39:37, 134.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1016764.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/447089.ta.xml
+Calling service from http://localhost:6010/annotate
+ 47%|████▋     | 446/946 [19:01:44<16:55:28, 121.86s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1172580.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 47%|████▋     | 447/946 [19:01:44<11:49:42, 85.34s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1172580.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/107243.ta.xml
+ 47%|████▋     | 448/946 [19:04:44<15:44:11, 113.76s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/107243.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/582275.ta.xml
+ 47%|████▋     | 449/946 [19:07:44<18:27:06, 133.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/582275.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/628691.ta.xml
+ 48%|████▊     | 450/946 [19:10:44<20:20:00, 147.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/628691.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/452698.ta.xml
+Calling service from http://localhost:6010/annotate
+ 48%|████▊     | 451/946 [19:11:09<15:13:36, 110.74s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1368686.ta.xml
+ 48%|████▊     | 452/946 [19:14:09<18:03:01, 131.54s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1368686.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/157418.ta.xml
+Calling service from http://localhost:6010/annotate
+ 48%|████▊     | 453/946 [19:14:42<13:57:25, 101.92s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1703375.ta.xml
+Calling service from http://localhost:6010/annotate
+ 48%|████▊     | 454/946 [19:14:50<10:05:47, 73.88s/it] Processing /shared/corpora-tmp/annotated_nyt/426/514265.ta.xml
+Calling service from http://localhost:6010/annotate
+ 48%|████▊     | 455/946 [19:14:55<7:14:19, 53.07s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1029828.ta.xml
+ 48%|████▊     | 456/946 [19:17:55<12:24:35, 91.18s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1029828.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1344110.ta.xml
+Calling service from http://localhost:6010/annotate
+ 48%|████▊     | 457/946 [19:19:01<11:21:27, 83.61s/it]Processing /shared/corpora-tmp/annotated_nyt/426/72463.ta.xml
+ 48%|████▊     | 458/946 [19:22:01<15:15:26, 112.55s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/72463.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1347415.ta.xml
+ 49%|████▊     | 459/946 [19:25:01<17:57:59, 132.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1347415.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/55306.ta.xml
+ 49%|████▊     | 460/946 [19:28:01<19:50:37, 146.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/55306.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/366115.ta.xml
+ 49%|████▊     | 461/946 [19:31:01<21:08:25, 156.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/366115.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1480807.ta.xml
+ 49%|████▉     | 462/946 [19:34:01<22:01:51, 163.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1480807.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/48823.ta.xml
+ 49%|████▉     | 463/946 [19:37:01<22:38:17, 168.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/48823.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1838684.ta.xml
+ 49%|████▉     | 464/946 [19:40:01<23:02:49, 172.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1838684.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/929951.ta.xml
+Calling service from http://localhost:6010/annotate
+ 49%|████▉     | 465/946 [19:41:25<19:27:02, 145.58s/it]Processing /shared/corpora-tmp/annotated_nyt/426/376706.ta.xml
+ 49%|████▉     | 466/946 [19:44:25<20:47:25, 155.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/376706.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1630732.ta.xml
+ 49%|████▉     | 467/946 [19:47:25<21:42:39, 163.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1630732.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/193403.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 49%|████▉     | 468/946 [19:49:57<21:13:20, 159.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/193403.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1123126.ta.xml
+ 50%|████▉     | 469/946 [19:52:57<21:58:57, 165.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1123126.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1577817.ta.xml
+Calling service from http://localhost:6010/annotate
+ 50%|████▉     | 470/946 [19:53:05<15:39:17, 118.40s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1838190.ta.xml
+Calling service from http://localhost:6010/annotate
+ 50%|████▉     | 471/946 [19:53:09<11:05:13, 84.03s/it] Processing /shared/corpora-tmp/annotated_nyt/426/675164.ta.xml
+ 50%|████▉     | 472/946 [19:56:09<14:51:27, 112.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/675164.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1781889.ta.xml
+ 50%|█████     | 473/946 [19:59:09<17:28:35, 133.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1781889.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/845864.ta.xml
+ 50%|█████     | 474/946 [20:02:09<19:17:27, 147.13s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/845864.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1736084.ta.xml
+ 50%|█████     | 475/946 [20:05:09<20:32:32, 157.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1736084.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/242291.ta.xml
+ 50%|█████     | 476/946 [20:08:09<21:24:07, 163.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/242291.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1211813.ta.xml
+ 50%|█████     | 477/946 [20:11:09<21:59:15, 168.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1211813.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1217658.ta.xml
+ 51%|█████     | 478/946 [20:14:09<22:22:54, 172.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1217658.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1510545.ta.xml
+ 51%|█████     | 479/946 [20:17:09<22:38:30, 174.54s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1510545.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1248615.ta.xml
+ 51%|█████     | 480/946 [20:20:09<22:48:30, 176.20s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1248615.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1853162.ta.xml
+ 51%|█████     | 481/946 [20:23:09<22:54:34, 177.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1853162.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1249958.ta.xml
+ 51%|█████     | 482/946 [20:26:10<22:57:55, 178.18s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1249958.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/619937.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 51%|█████     | 483/946 [20:26:14<16:12:43, 126.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/619937.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/519679.ta.xml
+ 51%|█████     | 484/946 [20:29:14<18:15:25, 142.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/519679.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1565080.ta.xml
+ 51%|█████▏    | 485/946 [20:32:14<19:40:13, 153.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1565080.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/376520.ta.xml
+ 51%|█████▏    | 486/946 [20:35:14<20:38:32, 161.55s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/376520.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/542538.ta.xml
+ 51%|█████▏    | 487/946 [20:38:14<21:18:18, 167.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/542538.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/139956.ta.xml
+ 52%|█████▏    | 488/946 [20:41:14<21:45:13, 170.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/139956.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/866572.ta.xml
+Calling service from http://localhost:6010/annotate
+ 52%|█████▏    | 489/946 [20:43:21<20:02:03, 157.82s/it]Processing /shared/corpora-tmp/annotated_nyt/426/952370.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 52%|█████▏    | 490/946 [20:45:53<19:44:19, 155.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/952370.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/58819.ta.xml
+Calling service from http://localhost:6010/annotate
+ 52%|█████▏    | 491/946 [20:46:37<15:28:00, 122.38s/it]Processing /shared/corpora-tmp/annotated_nyt/426/468826.ta.xml
+ 52%|█████▏    | 492/946 [20:49:37<17:36:56, 139.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/468826.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/207283.ta.xml
+ 52%|█████▏    | 493/946 [20:52:37<19:06:05, 151.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/207283.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/195605.ta.xml
+ 52%|█████▏    | 494/946 [20:55:37<20:07:19, 160.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/195605.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1798821.ta.xml
+ 52%|█████▏    | 495/946 [20:58:37<20:49:18, 166.21s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1798821.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1013598.ta.xml
+ 52%|█████▏    | 496/946 [21:01:37<21:17:45, 170.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1013598.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/329753.ta.xml
+ 53%|█████▎    | 497/946 [21:04:37<21:36:43, 173.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/329753.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/875972.ta.xml
+ 53%|█████▎    | 498/946 [21:07:37<21:48:56, 175.30s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/875972.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/139297.ta.xml
+ 53%|█████▎    | 499/946 [21:10:37<21:56:41, 176.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/139297.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/485029.ta.xml
+ 53%|█████▎    | 500/946 [21:13:38<22:01:11, 177.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/485029.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/947053.ta.xml
+Calling service from http://localhost:6010/annotate
+ 53%|█████▎    | 501/946 [21:16:16<21:15:19, 171.95s/it]Processing /shared/corpora-tmp/annotated_nyt/426/36917.ta.xml
+ 53%|█████▎    | 502/946 [21:19:16<21:30:29, 174.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/36917.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1457176.ta.xml
+ 53%|█████▎    | 503/946 [21:22:16<21:40:11, 176.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1457176.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1825975.ta.xml
+ 53%|█████▎    | 504/946 [21:25:16<21:46:03, 177.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1825975.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1237190.ta.xml
+ 53%|█████▎    | 505/946 [21:28:16<21:49:14, 178.13s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1237190.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1047840.ta.xml
+ 53%|█████▎    | 506/946 [21:31:16<21:50:34, 178.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1047840.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1043358.ta.xml
+ 54%|█████▎    | 507/946 [21:34:16<21:50:35, 179.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1043358.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/773250.ta.xml
+ 54%|█████▎    | 508/946 [21:37:17<21:49:41, 179.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/773250.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/352097.ta.xml
+ 54%|█████▍    | 509/946 [21:40:17<21:48:10, 179.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/352097.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1157738.ta.xml
+ 54%|█████▍    | 510/946 [21:43:17<21:46:11, 179.75s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1157738.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/56102.ta.xml
+ 54%|█████▍    | 511/946 [21:46:17<21:43:54, 179.85s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/56102.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/44866.ta.xml
+ 54%|█████▍    | 512/946 [21:49:17<21:41:24, 179.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/44866.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1470209.ta.xml
+ 54%|█████▍    | 513/946 [21:52:17<21:38:45, 179.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1470209.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/778136.ta.xml
+ 54%|█████▍    | 514/946 [21:55:17<21:36:00, 180.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/778136.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/710168.ta.xml
+ 54%|█████▍    | 515/946 [21:58:17<21:33:09, 180.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/710168.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1485234.ta.xml
+ 55%|█████▍    | 516/946 [22:01:17<21:30:17, 180.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1485234.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1065696.ta.xml
+ 55%|█████▍    | 517/946 [22:04:17<21:27:22, 180.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1065696.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/59168.ta.xml
+ 55%|█████▍    | 518/946 [22:07:17<21:24:25, 180.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/59168.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1360158.ta.xml
+ 55%|█████▍    | 519/946 [22:10:17<21:21:28, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1360158.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1272580.ta.xml
+ 55%|█████▍    | 520/946 [22:13:17<21:18:29, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1272580.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/955086.ta.xml
+ 55%|█████▌    | 521/946 [22:16:18<21:15:29, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/955086.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1575950.ta.xml
+ 55%|█████▌    | 522/946 [22:19:18<21:12:29, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1575950.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1682116.ta.xml
+ 55%|█████▌    | 523/946 [22:22:18<21:09:29, 180.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1682116.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/599227.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 55%|█████▌    | 524/946 [22:22:18<14:46:47, 126.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/599227.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/528834.ta.xml
+ 55%|█████▌    | 525/946 [22:25:18<16:38:19, 142.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/528834.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1000473.ta.xml
+ 56%|█████▌    | 526/946 [22:28:18<17:55:19, 153.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1000473.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/998019.ta.xml
+Calling service from http://localhost:6010/annotate
+ 56%|█████▌    | 527/946 [22:28:37<13:10:39, 113.22s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1023129.ta.xml
+Calling service from http://localhost:6010/annotate
+ 56%|█████▌    | 528/946 [22:28:58<9:55:58, 85.55s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/381401.ta.xml
+ 56%|█████▌    | 529/946 [22:31:58<13:11:38, 113.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/381401.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/710882.ta.xml
+Calling service from http://localhost:6010/annotate
+ 56%|█████▌    | 530/946 [22:33:45<12:55:14, 111.81s/it]Processing /shared/corpora-tmp/annotated_nyt/426/199214.ta.xml
+ 56%|█████▌    | 531/946 [22:36:45<15:15:00, 132.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/199214.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1815685.ta.xml
+Calling service from http://localhost:6010/annotate
+ 56%|█████▌    | 532/946 [22:38:23<14:01:38, 121.98s/it]Processing /shared/corpora-tmp/annotated_nyt/426/784940.ta.xml
+ 56%|█████▋    | 533/946 [22:41:23<15:59:34, 139.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/784940.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/486346.ta.xml
+ 56%|█████▋    | 534/946 [22:44:23<17:21:02, 151.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/486346.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/599440.ta.xml
+ 57%|█████▋    | 535/946 [22:47:23<18:17:01, 160.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/599440.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/141173.ta.xml
+ 57%|█████▋    | 536/946 [22:50:23<18:55:12, 166.13s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/141173.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/317010.ta.xml
+ 57%|█████▋    | 537/946 [22:53:23<19:20:57, 170.31s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/317010.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/993071.ta.xml
+ 57%|█████▋    | 538/946 [22:56:23<19:38:02, 173.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/993071.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/539633.ta.xml
+ 57%|█████▋    | 539/946 [22:59:23<19:49:03, 175.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/539633.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1222225.ta.xml
+ 57%|█████▋    | 540/946 [23:02:23<19:55:50, 176.72s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1222225.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/754162.ta.xml
+ 57%|█████▋    | 541/946 [23:05:24<19:59:40, 177.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/754162.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1279798.ta.xml
+ 57%|█████▋    | 542/946 [23:08:24<20:01:27, 178.43s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1279798.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1182419.ta.xml
+ 57%|█████▋    | 543/946 [23:11:24<20:01:47, 178.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1182419.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1475036.ta.xml
+ 58%|█████▊    | 544/946 [23:14:24<20:01:07, 179.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1475036.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1130972.ta.xml
+ 58%|█████▊    | 545/946 [23:17:24<19:59:45, 179.51s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1130972.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1556678.ta.xml
+ 58%|█████▊    | 546/946 [23:20:24<19:57:52, 179.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1556678.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/50445.ta.xml
+Calling service from http://localhost:6010/annotate
+ 58%|█████▊    | 547/946 [23:21:13<15:34:28, 140.52s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1622697.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 58%|█████▊    | 548/946 [23:21:13<10:52:43, 98.40s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1622697.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/774233.ta.xml
+ 58%|█████▊    | 549/946 [23:24:13<13:33:13, 122.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/774233.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1427349.ta.xml
+Calling service from http://localhost:6010/annotate
+ 58%|█████▊    | 550/946 [23:25:15<11:29:04, 104.41s/it]Processing /shared/corpora-tmp/annotated_nyt/426/454694.ta.xml
+ 58%|█████▊    | 551/946 [23:28:15<13:56:47, 127.11s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/454694.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1609183.ta.xml
+ 58%|█████▊    | 552/946 [23:31:15<15:39:01, 143.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1609183.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/989169.ta.xml
+ 58%|█████▊    | 553/946 [23:34:15<16:49:29, 154.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/989169.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1439171.ta.xml
+Calling service from http://localhost:6010/annotate
+ 59%|█████▊    | 554/946 [23:34:20<11:54:54, 109.43s/it]Processing /shared/corpora-tmp/annotated_nyt/426/675507.ta.xml
+ 59%|█████▊    | 555/946 [23:37:20<14:11:13, 130.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/675507.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1635637.ta.xml
+Calling service from http://localhost:6010/annotate
+ 59%|█████▉    | 556/946 [23:38:51<12:52:03, 118.78s/it]Processing /shared/corpora-tmp/annotated_nyt/426/342633.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 59%|█████▉    | 557/946 [23:38:51<8:59:17, 83.18s/it]  $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/342633.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1221717.ta.xml
+ 59%|█████▉    | 558/946 [23:41:51<12:05:52, 112.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1221717.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1429874.ta.xml
+ 59%|█████▉    | 559/946 [23:44:51<14:15:14, 132.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1429874.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/981622.ta.xml
+ 59%|█████▉    | 560/946 [23:47:51<15:44:38, 146.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/981622.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/76272.ta.xml
+ 59%|█████▉    | 561/946 [23:50:52<16:46:11, 156.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/76272.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1305576.ta.xml
+ 59%|█████▉    | 562/946 [23:53:52<17:28:14, 163.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1305576.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/527981.ta.xml
+ 60%|█████▉    | 563/946 [23:56:52<17:56:42, 168.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/527981.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1666667.ta.xml
+ 60%|█████▉    | 564/946 [23:59:52<18:15:40, 172.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1666667.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/971104.ta.xml
+ 60%|█████▉    | 565/946 [24:02:52<18:27:59, 174.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/971104.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/866835.ta.xml
+ 60%|█████▉    | 566/946 [24:05:52<18:35:42, 176.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/866835.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/97935.ta.xml
+ 60%|█████▉    | 567/946 [24:08:52<18:40:11, 177.34s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/97935.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/777969.ta.xml
+Calling service from http://localhost:6010/annotate
+ 60%|██████    | 568/946 [24:08:54<13:06:05, 124.78s/it]Processing /shared/corpora-tmp/annotated_nyt/426/79602.ta.xml
+ 60%|██████    | 569/946 [24:11:54<14:48:15, 141.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/79602.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/254167.ta.xml
+ 60%|██████    | 570/946 [24:14:54<15:58:40, 152.98s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/254167.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/146570.ta.xml
+Calling service from http://localhost:6010/annotate
+ 60%|██████    | 571/946 [24:16:30<14:09:28, 135.92s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1113277.ta.xml
+ 60%|██████    | 572/946 [24:19:30<15:29:47, 149.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1113277.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1413777.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 61%|██████    | 573/946 [24:19:31<10:51:02, 104.72s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1413777.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1146988.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 61%|██████    | 574/946 [24:19:32<7:34:44, 73.34s/it]  $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1146988.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1821900.ta.xml
+Calling service from http://localhost:6010/annotate
+ 61%|██████    | 575/946 [24:19:40<5:33:18, 53.90s/it]Processing /shared/corpora-tmp/annotated_nyt/426/908937.ta.xml
+Calling service from http://localhost:6010/annotate
+ 61%|██████    | 576/946 [24:19:42<3:55:52, 38.25s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1074615.ta.xml
+ 61%|██████    | 577/946 [24:22:42<8:16:54, 80.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1074615.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/767109.ta.xml
+ 61%|██████    | 578/946 [24:25:42<11:18:13, 110.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/767109.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1040859.ta.xml
+Calling service from http://localhost:6010/annotate
+ 61%|██████    | 579/946 [24:25:44<7:57:00, 77.98s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/806477.ta.xml
+ 61%|██████▏   | 580/946 [24:28:44<11:02:32, 108.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/806477.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/469707.ta.xml
+ 61%|██████▏   | 581/946 [24:31:44<13:11:08, 130.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/469707.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/293604.ta.xml
+ 62%|██████▏   | 582/946 [24:34:44<14:40:00, 145.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/293604.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1837832.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 583/946 [24:35:59<12:30:35, 124.07s/it]Processing /shared/corpora-tmp/annotated_nyt/426/603422.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 584/946 [24:37:50<12:05:11, 120.20s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1800612.ta.xml
+ 62%|██████▏   | 585/946 [24:40:50<13:51:15, 138.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1800612.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1453582.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 586/946 [24:41:33<10:56:27, 109.41s/it]Processing /shared/corpora-tmp/annotated_nyt/426/496276.ta.xml
+ 62%|██████▏   | 587/946 [24:44:33<13:01:29, 130.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/496276.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/238891.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 588/946 [24:46:35<12:44:01, 128.05s/it]Processing /shared/corpora-tmp/annotated_nyt/426/41304.ta.xml
+ 62%|██████▏   | 589/946 [24:49:35<14:14:45, 143.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/41304.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1326334.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 590/946 [24:49:59<10:38:58, 107.69s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1572422.ta.xml
+Calling service from http://localhost:6010/annotate
+ 62%|██████▏   | 591/946 [24:52:14<11:26:11, 115.98s/it]Processing /shared/corpora-tmp/annotated_nyt/426/425704.ta.xml
+Calling service from http://localhost:6010/annotate
+ 63%|██████▎   | 592/946 [24:53:04<9:27:10, 96.13s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/621348.ta.xml
+Calling service from http://localhost:6010/annotate
+ 63%|██████▎   | 593/946 [24:54:56<9:53:40, 100.91s/it]Processing /shared/corpora-tmp/annotated_nyt/426/277217.ta.xml
+ 63%|██████▎   | 594/946 [24:57:56<12:11:19, 124.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/277217.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/991996.ta.xml
+ 63%|██████▎   | 595/946 [25:00:56<13:46:30, 141.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/991996.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1850092.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 63%|██████▎   | 596/946 [25:03:37<14:19:06, 147.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1850092.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/660701.ta.xml
+ 63%|██████▎   | 597/946 [25:06:37<15:13:52, 157.11s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/660701.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/106676.ta.xml
+ 63%|██████▎   | 598/946 [25:09:38<15:51:12, 164.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/106676.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/428173.ta.xml
+Calling service from http://localhost:6010/annotate
+ 63%|██████▎   | 599/946 [25:09:53<11:30:23, 119.38s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1074367.ta.xml
+ 63%|██████▎   | 600/946 [25:12:53<13:13:25, 137.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1074367.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1530134.ta.xml
+ 64%|██████▎   | 601/946 [25:15:53<14:24:25, 150.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1530134.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/279096.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▎   | 602/946 [25:16:41<11:25:15, 119.52s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1606685.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▎   | 603/946 [25:16:57<8:26:21, 88.58s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/229663.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▍   | 604/946 [25:19:13<9:45:58, 102.80s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1377999.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▍   | 605/946 [25:21:50<11:17:26, 119.20s/it]Processing /shared/corpora-tmp/annotated_nyt/426/677379.ta.xml
+ 64%|██████▍   | 606/946 [25:24:50<12:58:56, 137.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/677379.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/127363.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▍   | 607/946 [25:24:52<9:07:05, 96.83s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/520559.ta.xml
+ 64%|██████▍   | 608/946 [25:27:53<11:26:09, 121.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/520559.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1464899.ta.xml
+Calling service from http://localhost:6010/annotate
+ 64%|██████▍   | 609/946 [25:28:55<9:43:56, 103.97s/it] Processing /shared/corpora-tmp/annotated_nyt/426/749763.ta.xml
+ 64%|██████▍   | 610/946 [25:31:55<11:50:04, 126.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/749763.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/726788.ta.xml
+Calling service from http://localhost:6010/annotate
+ 65%|██████▍   | 611/946 [25:34:45<13:01:06, 139.90s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1436844.ta.xml
+ 65%|██████▍   | 612/946 [25:37:46<14:05:51, 151.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1436844.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/543175.ta.xml
+ 65%|██████▍   | 613/946 [25:40:46<14:50:08, 160.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/543175.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/103824.ta.xml
+ 65%|██████▍   | 614/946 [25:43:46<15:20:09, 166.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/103824.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/387690.ta.xml
+ 65%|██████▌   | 615/946 [25:46:46<15:40:10, 170.43s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/387690.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1732708.ta.xml
+ 65%|██████▌   | 616/946 [25:49:46<15:53:14, 173.32s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1732708.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1011049.ta.xml
+ 65%|██████▌   | 617/946 [25:52:46<16:01:28, 175.34s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1011049.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/321966.ta.xml
+Calling service from http://localhost:6010/annotate
+ 65%|██████▌   | 618/946 [25:53:18<12:04:17, 132.49s/it]Processing /shared/corpora-tmp/annotated_nyt/426/293819.ta.xml
+ 65%|██████▌   | 619/946 [25:56:18<13:19:53, 146.77s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/293819.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1137361.ta.xml
+Calling service from http://localhost:6010/annotate
+ 66%|██████▌   | 620/946 [25:59:12<14:01:17, 154.84s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1474993.ta.xml
+ 66%|██████▌   | 621/946 [26:02:12<14:39:43, 162.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1474993.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1361425.ta.xml
+ 66%|██████▌   | 622/946 [26:05:12<15:05:35, 167.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1361425.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1682182.ta.xml
+ 66%|██████▌   | 623/946 [26:08:12<15:22:45, 171.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1682182.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/541555.ta.xml
+ 66%|██████▌   | 624/946 [26:11:12<15:33:51, 174.01s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/541555.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/528252.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 66%|██████▌   | 625/946 [26:11:14<10:53:28, 122.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/528252.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/310616.ta.xml
+ 66%|██████▌   | 626/946 [26:14:14<12:24:07, 139.52s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/310616.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/978852.ta.xml
+ 66%|██████▋   | 627/946 [26:17:14<13:26:29, 151.69s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/978852.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1629970.ta.xml
+Calling service from http://localhost:6010/annotate
+ 66%|██████▋   | 628/946 [26:19:26<12:53:26, 145.93s/it]Processing /shared/corpora-tmp/annotated_nyt/426/265848.ta.xml
+ 66%|██████▋   | 629/946 [26:22:26<13:45:07, 156.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/265848.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1275922.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 67%|██████▋   | 630/946 [26:22:26<9:35:57, 109.36s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1275922.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/286020.ta.xml
+Calling service from http://localhost:6010/annotate
+ 67%|██████▋   | 631/946 [26:25:12<11:02:20, 126.16s/it]Processing /shared/corpora-tmp/annotated_nyt/426/725103.ta.xml
+ 67%|██████▋   | 632/946 [26:28:12<12:24:53, 142.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/725103.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1797749.ta.xml
+ 67%|██████▋   | 633/946 [26:31:12<13:21:34, 153.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1797749.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/852198.ta.xml
+ 67%|██████▋   | 634/946 [26:34:12<14:00:11, 161.57s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/852198.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1181437.ta.xml
+ 67%|██████▋   | 635/946 [26:37:12<14:26:14, 167.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1181437.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1517632.ta.xml
+Calling service from http://localhost:6010/annotate
+ 67%|██████▋   | 636/946 [26:39:13<13:12:13, 153.34s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1438513.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 67%|██████▋   | 637/946 [26:39:14<9:14:40, 107.70s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1438513.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1268513.ta.xml
+ 67%|██████▋   | 638/946 [26:42:14<11:04:17, 129.41s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1268513.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/984830.ta.xml
+Calling service from http://localhost:6010/annotate
+ 68%|██████▊   | 639/946 [26:42:31<8:09:22, 95.64s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/1239050.ta.xml
+ 68%|██████▊   | 640/946 [26:45:31<10:16:57, 120.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1239050.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/489687.ta.xml
+ 68%|██████▊   | 641/946 [26:48:31<11:45:04, 138.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/489687.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/787161.ta.xml
+ 68%|██████▊   | 642/946 [26:51:32<12:45:39, 151.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/787161.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/523745.ta.xml
+ 68%|██████▊   | 643/946 [26:54:32<13:27:00, 159.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/523745.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1776842.ta.xml
+ 68%|██████▊   | 644/946 [26:57:32<13:54:57, 165.89s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1776842.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/38624.ta.xml
+ 68%|██████▊   | 645/946 [27:00:32<14:13:33, 170.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/38624.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1748456.ta.xml
+ 68%|██████▊   | 646/946 [27:03:32<14:25:37, 173.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1748456.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1460498.ta.xml
+ 68%|██████▊   | 647/946 [27:06:32<14:33:08, 175.21s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1460498.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/987093.ta.xml
+ 68%|██████▊   | 648/946 [27:09:32<14:37:27, 176.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/987093.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1769444.ta.xml
+ 69%|██████▊   | 649/946 [27:12:32<14:39:33, 177.69s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1769444.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/15798.ta.xml
+ 69%|██████▊   | 650/946 [27:15:32<14:40:07, 178.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/15798.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1597678.ta.xml
+ 69%|██████▉   | 651/946 [27:18:32<14:39:36, 178.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1597678.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1251972.ta.xml
+ 69%|██████▉   | 652/946 [27:21:32<14:38:21, 179.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1251972.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1213583.ta.xml
+ 69%|██████▉   | 653/946 [27:24:32<14:36:34, 179.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1213583.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/803855.ta.xml
+ 69%|██████▉   | 654/946 [27:27:32<14:34:24, 179.67s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/803855.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1049027.ta.xml
+Calling service from http://localhost:6010/annotate
+ 69%|██████▉   | 655/946 [27:30:22<14:16:35, 176.62s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1674338.ta.xml
+ 69%|██████▉   | 656/946 [27:33:22<14:18:39, 177.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1674338.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1015308.ta.xml
+Calling service from http://localhost:6010/annotate
+ 69%|██████▉   | 657/946 [27:35:49<13:31:25, 168.46s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1136648.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 70%|██████▉   | 658/946 [27:35:49<9:26:13, 117.96s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1136648.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1125835.ta.xml
+Calling service from http://localhost:6010/annotate
+ 70%|██████▉   | 659/946 [27:37:39<9:12:45, 115.56s/it]Processing /shared/corpora-tmp/annotated_nyt/426/791008.ta.xml
+Calling service from http://localhost:6010/annotate
+ 70%|██████▉   | 660/946 [27:38:46<8:01:12, 100.95s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1140459.ta.xml
+Calling service from http://localhost:6010/annotate
+ 70%|██████▉   | 661/946 [27:39:10<6:10:32, 78.01s/it] Processing /shared/corpora-tmp/annotated_nyt/426/706685.ta.xml
+ 70%|██████▉   | 662/946 [27:42:11<8:34:10, 108.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/706685.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/982697.ta.xml
+ 70%|███████   | 663/946 [27:45:11<10:13:27, 130.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/982697.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/484708.ta.xml
+ 70%|███████   | 664/946 [27:48:11<11:21:48, 145.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/484708.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/72232.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 70%|███████   | 665/946 [27:50:18<10:54:15, 139.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/72232.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/235666.ta.xml
+ 70%|███████   | 666/946 [27:53:18<11:48:27, 151.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/235666.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/651324.ta.xml
+Calling service from http://localhost:6010/annotate
+ 71%|███████   | 667/946 [27:53:48<8:56:32, 115.38s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1253459.ta.xml
+ 71%|███████   | 668/946 [27:56:48<10:24:32, 134.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1253459.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1566097.ta.xml
+Calling service from http://localhost:6010/annotate
+ 71%|███████   | 669/946 [27:58:37<9:46:05, 126.95s/it] Processing /shared/corpora-tmp/annotated_nyt/426/941561.ta.xml
+Calling service from http://localhost:6010/annotate
+ 71%|███████   | 670/946 [27:59:30<8:01:58, 104.78s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1437680.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 71%|███████   | 671/946 [27:59:31<5:37:59, 73.74s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1437680.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/317156.ta.xml
+ 71%|███████   | 672/946 [28:02:31<8:02:26, 105.64s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/317156.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/976532.ta.xml
+ 71%|███████   | 673/946 [28:05:32<9:42:16, 127.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/976532.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1777585.ta.xml
+ 71%|███████   | 674/946 [28:08:32<10:51:00, 143.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1777585.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1087644.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 71%|███████▏  | 675/946 [28:08:33<7:35:47, 100.91s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1087644.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1720116.ta.xml
+ 71%|███████▏  | 676/946 [28:11:33<9:20:58, 124.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1720116.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1386592.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 72%|███████▏  | 677/946 [28:11:34<6:32:44, 87.60s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1386592.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1272885.ta.xml
+Calling service from http://localhost:6010/annotate
+ 72%|███████▏  | 678/946 [28:11:44<4:47:05, 64.27s/it]Processing /shared/corpora-tmp/annotated_nyt/426/616081.ta.xml
+ 72%|███████▏  | 679/946 [28:14:44<7:20:37, 99.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/616081.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1306470.ta.xml
+ 72%|███████▏  | 680/946 [28:17:44<9:06:46, 123.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1306470.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/113068.ta.xml
+ 72%|███████▏  | 681/946 [28:20:44<10:19:54, 140.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/113068.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1453202.ta.xml
+ 72%|███████▏  | 682/946 [28:23:44<11:09:59, 152.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1453202.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1658396.ta.xml
+ 72%|███████▏  | 683/946 [28:26:44<11:44:01, 160.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1658396.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1230909.ta.xml
+Calling service from http://localhost:6010/annotate
+ 72%|███████▏  | 684/946 [28:27:50<9:37:12, 132.19s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1477836.ta.xml
+Calling service from http://localhost:6010/annotate
+ 72%|███████▏  | 685/946 [28:27:53<6:45:32, 93.23s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1101010.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 73%|███████▎  | 686/946 [28:27:54<4:44:08, 65.57s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1101010.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/140023.ta.xml
+ 73%|███████▎  | 687/946 [28:30:54<7:11:19, 99.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/140023.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1476546.ta.xml
+ 73%|███████▎  | 688/946 [28:33:54<8:53:03, 123.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1476546.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1619411.ta.xml
+ 73%|███████▎  | 689/946 [28:36:54<10:03:05, 140.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1619411.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/434070.ta.xml
+ 73%|███████▎  | 690/946 [28:39:54<10:51:01, 152.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/434070.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1083152.ta.xml
+ 73%|███████▎  | 691/946 [28:42:54<11:23:31, 160.83s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1083152.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1726921.ta.xml
+ 73%|███████▎  | 692/946 [28:45:54<11:45:17, 166.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1726921.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1012485.ta.xml
+ 73%|███████▎  | 693/946 [28:48:54<11:59:33, 170.64s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1012485.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1027020.ta.xml
+ 73%|███████▎  | 694/946 [28:51:54<12:08:35, 173.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1027020.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1853281.ta.xml
+ 73%|███████▎  | 695/946 [28:54:54<12:13:59, 175.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1853281.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1460684.ta.xml
+ 74%|███████▎  | 696/946 [28:57:54<12:16:50, 176.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1460684.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1043336.ta.xml
+ 74%|███████▎  | 697/946 [29:00:54<12:17:54, 177.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1043336.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/984962.ta.xml
+ 74%|███████▍  | 698/946 [29:03:54<12:17:45, 178.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/984962.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1447488.ta.xml
+ 74%|███████▍  | 699/946 [29:06:55<12:16:43, 178.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1447488.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/512854.ta.xml
+ 74%|███████▍  | 700/946 [29:09:55<12:15:06, 179.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/512854.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1557916.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 74%|███████▍  | 701/946 [29:09:56<8:33:44, 125.81s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1557916.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1417992.ta.xml
+ 74%|███████▍  | 702/946 [29:12:56<9:37:50, 142.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1417992.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/127926.ta.xml
+ 74%|███████▍  | 703/946 [29:15:56<10:21:37, 153.49s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/127926.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/415074.ta.xml
+Calling service from http://localhost:6010/annotate
+ 74%|███████▍  | 704/946 [29:16:08<7:27:33, 110.97s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1141170.ta.xml
+ 75%|███████▍  | 705/946 [29:19:08<8:48:59, 131.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1141170.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1009442.ta.xml
+ 75%|███████▍  | 706/946 [29:22:08<9:44:51, 146.21s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1009442.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/451727.ta.xml
+Calling service from http://localhost:6010/annotate
+ 75%|███████▍  | 707/946 [29:23:22<8:16:34, 124.66s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1056841.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 75%|███████▍  | 708/946 [29:23:23<5:47:00, 87.48s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1056841.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1426662.ta.xml
+Calling service from http://localhost:6010/annotate
+ 75%|███████▍  | 709/946 [29:24:02<4:48:06, 72.94s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1290584.ta.xml
+ 75%|███████▌  | 710/946 [29:27:02<6:53:18, 105.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1290584.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1284742.ta.xml
+ 75%|███████▌  | 711/946 [29:30:02<8:19:40, 127.58s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1284742.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1131020.ta.xml
+ 75%|███████▌  | 712/946 [29:33:02<9:18:58, 143.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1131020.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/170409.ta.xml
+ 75%|███████▌  | 713/946 [29:36:02<9:59:23, 154.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/170409.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/148470.ta.xml
+ 75%|███████▌  | 714/946 [29:39:02<10:26:40, 162.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/148470.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/788816.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 76%|███████▌  | 715/946 [29:39:02<7:17:02, 113.52s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/788816.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/35726.ta.xml
+ 76%|███████▌  | 716/946 [29:42:02<8:31:41, 133.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/35726.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1419448.ta.xml
+ 76%|███████▌  | 717/946 [29:45:03<9:22:48, 147.46s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1419448.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/763513.ta.xml
+ 76%|███████▌  | 718/946 [29:48:03<9:57:31, 157.24s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/763513.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/42117.ta.xml
+ 76%|███████▌  | 719/946 [29:51:03<10:20:49, 164.09s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/42117.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1540066.ta.xml
+ 76%|███████▌  | 720/946 [29:54:03<10:36:09, 168.89s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1540066.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/767336.ta.xml
+ 76%|███████▌  | 721/946 [29:57:03<10:45:55, 172.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/767336.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/469705.ta.xml
+ 76%|███████▋  | 722/946 [30:00:03<10:51:49, 174.60s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/469705.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/896753.ta.xml
+Calling service from http://localhost:6010/annotate
+ 76%|███████▋  | 723/946 [30:01:02<8:40:38, 140.08s/it] Processing /shared/corpora-tmp/annotated_nyt/426/200602.ta.xml
+ 77%|███████▋  | 724/946 [30:04:03<9:22:41, 152.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/200602.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/755730.ta.xml
+ 77%|███████▋  | 725/946 [30:07:03<9:51:05, 160.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/755730.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1594488.ta.xml
+Calling service from http://localhost:6010/annotate
+ 77%|███████▋  | 726/946 [30:07:47<7:40:57, 125.72s/it]Processing /shared/corpora-tmp/annotated_nyt/426/426625.ta.xml
+ 77%|███████▋  | 727/946 [30:10:47<8:38:23, 142.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/426625.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/638053.ta.xml
+ 77%|███████▋  | 728/946 [30:13:47<9:17:30, 153.44s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/638053.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1290450.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 77%|███████▋  | 729/946 [30:16:21<9:15:09, 153.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1290450.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1832124.ta.xml
+ 77%|███████▋  | 730/946 [30:19:21<9:41:18, 161.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1832124.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1591553.ta.xml
+ 77%|███████▋  | 731/946 [30:22:21<9:58:36, 167.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1591553.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1592742.ta.xml
+ 77%|███████▋  | 732/946 [30:25:21<10:09:45, 170.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1592742.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1580268.ta.xml
+ 77%|███████▋  | 733/946 [30:28:21<10:16:37, 173.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1580268.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/889954.ta.xml
+ 78%|███████▊  | 734/946 [30:31:21<10:20:29, 175.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/889954.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/751129.ta.xml
+ 78%|███████▊  | 735/946 [30:34:22<10:22:16, 176.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/751129.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/615446.ta.xml
+ 78%|███████▊  | 736/946 [30:37:22<10:22:38, 177.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/615446.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/646803.ta.xml
+Calling service from http://localhost:6010/annotate
+ 78%|███████▊  | 737/946 [30:37:26<7:18:17, 125.83s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1666581.ta.xml
+Calling service from http://localhost:6010/annotate
+ 78%|███████▊  | 738/946 [30:38:00<5:40:35, 98.25s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1140428.ta.xml
+ 78%|███████▊  | 739/946 [30:41:00<7:03:39, 122.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1140428.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/945206.ta.xml
+Calling service from http://localhost:6010/annotate
+ 78%|███████▊  | 740/946 [30:41:03<4:58:02, 86.81s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1139170.ta.xml
+Calling service from http://localhost:6010/annotate
+ 78%|███████▊  | 741/946 [30:41:08<3:33:17, 62.43s/it]Processing /shared/corpora-tmp/annotated_nyt/426/805603.ta.xml
+Calling service from http://localhost:6010/annotate
+ 78%|███████▊  | 742/946 [30:41:13<2:33:12, 45.06s/it]Processing /shared/corpora-tmp/annotated_nyt/426/798134.ta.xml
+ 79%|███████▊  | 743/946 [30:44:13<4:49:29, 85.56s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/798134.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/798888.ta.xml
+ 79%|███████▊  | 744/946 [30:47:13<6:23:31, 113.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/798888.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1121258.ta.xml
+Calling service from http://localhost:6010/annotate
+ 79%|███████▉  | 745/946 [30:47:35<4:49:13, 86.33s/it] Processing /shared/corpora-tmp/annotated_nyt/426/766675.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 79%|███████▉  | 746/946 [30:47:36<3:22:52, 60.86s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/766675.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1687609.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 79%|███████▉  | 747/946 [30:47:38<2:22:43, 43.03s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1687609.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/627927.ta.xml
+ 79%|███████▉  | 748/946 [30:50:38<4:37:41, 84.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/627927.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1482293.ta.xml
+ 79%|███████▉  | 749/946 [30:53:38<6:10:46, 112.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1482293.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1221431.ta.xml
+ 79%|███████▉  | 750/946 [30:56:38<7:14:41, 133.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1221431.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/891567.ta.xml
+ 79%|███████▉  | 751/946 [30:59:38<7:58:18, 147.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/891567.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/557651.ta.xml
+ 79%|███████▉  | 752/946 [31:02:38<8:27:46, 157.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/557651.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1281464.ta.xml
+ 80%|███████▉  | 753/946 [31:05:38<8:47:22, 163.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1281464.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1335538.ta.xml
+Calling service from http://localhost:6010/annotate
+ 80%|███████▉  | 754/946 [31:07:35<7:58:59, 149.68s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1798159.ta.xml
+ 80%|███████▉  | 755/946 [31:10:35<8:25:30, 158.80s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1798159.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/56689.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 80%|███████▉  | 756/946 [31:10:36<5:53:04, 111.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/56689.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/417371.ta.xml
+ 80%|████████  | 757/946 [31:13:36<6:56:00, 132.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/417371.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/632512.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 80%|████████  | 758/946 [31:13:37<4:50:32, 92.73s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/632512.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/323514.ta.xml
+Calling service from http://localhost:6010/annotate
+ 80%|████████  | 759/946 [31:13:41<3:26:26, 66.24s/it]Processing /shared/corpora-tmp/annotated_nyt/426/228668.ta.xml
+ 80%|████████  | 760/946 [31:16:41<5:11:12, 100.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/228668.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/540251.ta.xml
+Calling service from http://localhost:6010/annotate
+ 80%|████████  | 761/946 [31:18:15<5:03:23, 98.40s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1185698.ta.xml
+ 81%|████████  | 762/946 [31:21:15<6:16:54, 122.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1185698.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1268765.ta.xml
+ 81%|████████  | 763/946 [31:24:15<7:07:09, 140.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1268765.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/966263.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 81%|████████  | 764/946 [31:27:12<7:37:47, 150.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/966263.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/931898.ta.xml
+Calling service from http://localhost:6010/annotate
+ 81%|████████  | 765/946 [31:27:16<5:22:42, 106.98s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1543193.ta.xml
+ 81%|████████  | 766/946 [31:30:16<6:26:42, 128.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1543193.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1117477.ta.xml
+Calling service from http://localhost:6010/annotate
+ 81%|████████  | 767/946 [31:31:10<5:17:11, 106.32s/it]Processing /shared/corpora-tmp/annotated_nyt/426/338379.ta.xml
+ 81%|████████  | 768/946 [31:34:10<6:21:03, 128.45s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/338379.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/767012.ta.xml
+Calling service from http://localhost:6010/annotate
+ 81%|████████▏ | 769/946 [31:34:24<4:38:18, 94.34s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1519590.ta.xml
+ 81%|████████▏ | 770/946 [31:37:25<5:52:10, 120.06s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1519590.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/420037.ta.xml
+Calling service from http://localhost:6010/annotate
+ 82%|████████▏ | 771/946 [31:38:42<5:12:44, 107.23s/it]Processing /shared/corpora-tmp/annotated_nyt/426/826440.ta.xml
+ 82%|████████▏ | 772/946 [31:41:42<6:14:20, 129.08s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/826440.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/753991.ta.xml
+Calling service from http://localhost:6010/annotate
+ 82%|████████▏ | 773/946 [31:43:01<5:28:56, 114.08s/it]Processing /shared/corpora-tmp/annotated_nyt/426/570277.ta.xml
+Calling service from http://localhost:6010/annotate
+ 82%|████████▏ | 774/946 [31:43:03<3:50:45, 80.50s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1801010.ta.xml
+ 82%|████████▏ | 775/946 [31:46:03<5:14:33, 110.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1801010.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/534457.ta.xml
+ 82%|████████▏ | 776/946 [31:49:03<6:11:58, 131.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/534457.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/736205.ta.xml
+Calling service from http://localhost:6010/annotate
+ 82%|████████▏ | 777/946 [31:50:42<5:42:31, 121.61s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1218012.ta.xml
+ 82%|████████▏ | 778/946 [31:53:42<6:29:36, 139.15s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1218012.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/249624.ta.xml
+ 82%|████████▏ | 779/946 [31:56:42<7:01:28, 151.43s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/249624.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/544146.ta.xml
+ 82%|████████▏ | 780/946 [31:59:43<7:22:43, 160.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/544146.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1638959.ta.xml
+ 83%|████████▎ | 781/946 [32:02:43<7:36:35, 166.03s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1638959.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1251473.ta.xml
+ 83%|████████▎ | 782/946 [32:05:43<7:45:20, 170.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1251473.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1794814.ta.xml
+ 83%|████████▎ | 783/946 [32:08:43<7:50:30, 173.19s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1794814.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1683125.ta.xml
+ 83%|████████▎ | 784/946 [32:11:43<7:53:11, 175.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1683125.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1771445.ta.xml
+ 83%|████████▎ | 785/946 [32:14:43<7:54:08, 176.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1771445.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/878991.ta.xml
+ 83%|████████▎ | 786/946 [32:17:43<7:53:54, 177.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/878991.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/126563.ta.xml
+ 83%|████████▎ | 787/946 [32:20:43<7:52:48, 178.42s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/126563.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/177607.ta.xml
+ 83%|████████▎ | 788/946 [32:23:43<7:51:08, 178.92s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/177607.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1845188.ta.xml
+ 83%|████████▎ | 789/946 [32:26:43<7:49:04, 179.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1845188.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1508374.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 84%|████████▎ | 790/946 [32:28:46<7:02:20, 162.44s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1508374.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/598695.ta.xml
+ 84%|████████▎ | 791/946 [32:31:46<7:13:17, 167.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/598695.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1709904.ta.xml
+ 84%|████████▎ | 792/946 [32:34:47<7:20:00, 171.43s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1709904.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1025392.ta.xml
+ 84%|████████▍ | 793/946 [32:37:47<7:23:45, 174.02s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1025392.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/839025.ta.xml
+ 84%|████████▍ | 794/946 [32:40:47<7:25:27, 175.84s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/839025.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1164494.ta.xml
+ 84%|████████▍ | 795/946 [32:43:47<7:25:42, 177.10s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1164494.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/670867.ta.xml
+ 84%|████████▍ | 796/946 [32:46:47<7:24:58, 177.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/670867.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/101589.ta.xml
+ 84%|████████▍ | 797/946 [32:49:47<7:23:34, 178.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/101589.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/624899.ta.xml
+ 84%|████████▍ | 798/946 [32:52:47<7:21:37, 179.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/624899.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1575448.ta.xml
+ 84%|████████▍ | 799/946 [32:55:47<7:19:22, 179.34s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1575448.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/291046.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 85%|████████▍ | 800/946 [32:58:25<7:00:42, 172.89s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/291046.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/152471.ta.xml
+Calling service from http://localhost:6010/annotate
+ 85%|████████▍ | 801/946 [33:00:57<6:42:37, 166.60s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1319327.ta.xml
+ 85%|████████▍ | 802/946 [33:03:57<6:49:32, 170.64s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1319327.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/127406.ta.xml
+ 85%|████████▍ | 803/946 [33:06:57<6:53:26, 173.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/127406.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/997931.ta.xml
+Calling service from http://localhost:6010/annotate
+ 85%|████████▍ | 804/946 [33:07:07<4:54:30, 124.44s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1370553.ta.xml
+ 85%|████████▌ | 805/946 [33:10:07<5:31:38, 141.12s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1370553.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1257578.ta.xml
+ 85%|████████▌ | 806/946 [33:13:07<5:56:33, 152.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1257578.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1638121.ta.xml
+ 85%|████████▌ | 807/946 [33:16:07<6:12:57, 160.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1638121.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/336600.ta.xml
+ 85%|████████▌ | 808/946 [33:19:07<6:23:26, 166.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/336600.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1042215.ta.xml
+Calling service from http://localhost:6010/annotate
+ 86%|████████▌ | 809/946 [33:19:45<4:52:35, 128.14s/it]Processing /shared/corpora-tmp/annotated_nyt/426/61122.ta.xml
+ 86%|████████▌ | 810/946 [33:22:45<5:25:45, 143.72s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/61122.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1595042.ta.xml
+ 86%|████████▌ | 811/946 [33:25:45<5:47:54, 154.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1595042.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1076966.ta.xml
+ 86%|████████▌ | 812/946 [33:28:46<6:02:22, 162.26s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1076966.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/214932.ta.xml
+ 86%|████████▌ | 813/946 [33:31:46<6:11:31, 167.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/214932.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/399567.ta.xml
+ 86%|████████▌ | 814/946 [33:34:46<6:16:58, 171.35s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/399567.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/380116.ta.xml
+Calling service from http://localhost:6010/annotate
+ 86%|████████▌ | 815/946 [33:37:04<5:52:35, 161.49s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1844188.ta.xml
+ 86%|████████▋ | 816/946 [33:40:04<6:01:58, 167.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1844188.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/433757.ta.xml
+ 86%|████████▋ | 817/946 [33:43:04<6:07:35, 170.97s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/433757.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1439849.ta.xml
+ 86%|████████▋ | 818/946 [33:46:04<6:10:33, 173.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1439849.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1092409.ta.xml
+ 87%|████████▋ | 819/946 [33:49:04<6:11:42, 175.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1092409.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/591739.ta.xml
+ 87%|████████▋ | 820/946 [33:52:05<6:11:35, 176.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/591739.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/376653.ta.xml
+ 87%|████████▋ | 821/946 [33:55:05<6:10:35, 177.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/376653.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/461922.ta.xml
+ 87%|████████▋ | 822/946 [33:58:05<6:08:59, 178.54s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/461922.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1033451.ta.xml
+ 87%|████████▋ | 823/946 [34:01:05<6:06:57, 179.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1033451.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/503730.ta.xml
+ 87%|████████▋ | 824/946 [34:04:05<6:04:37, 179.33s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/503730.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/947879.ta.xml
+Calling service from http://localhost:6010/annotate
+ 87%|████████▋ | 825/946 [34:04:24<4:24:33, 131.19s/it]Processing /shared/corpora-tmp/annotated_nyt/426/964639.ta.xml
+Calling service from http://localhost:6010/annotate
+ 87%|████████▋ | 826/946 [34:06:18<4:12:27, 126.23s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1184412.ta.xml
+Calling service from http://localhost:6010/annotate
+ 87%|████████▋ | 827/946 [34:06:23<2:57:53, 89.69s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1619056.ta.xml
+ 88%|████████▊ | 828/946 [34:09:23<3:49:43, 116.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1619056.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/636797.ta.xml
+ 88%|████████▊ | 829/946 [34:12:23<4:24:46, 135.79s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/636797.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/532014.ta.xml
+ 88%|████████▊ | 830/946 [34:15:23<4:48:12, 149.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/532014.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/512884.ta.xml
+ 88%|████████▊ | 831/946 [34:18:23<5:03:32, 158.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/512884.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1376800.ta.xml
+ 88%|████████▊ | 832/946 [34:21:23<5:13:16, 164.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1376800.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/700309.ta.xml
+ 88%|████████▊ | 833/946 [34:24:23<5:19:06, 169.44s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/700309.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1589118.ta.xml
+ 88%|████████▊ | 834/946 [34:27:23<5:22:14, 172.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1589118.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/142177.ta.xml
+ 88%|████████▊ | 835/946 [34:30:23<5:23:29, 174.86s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/142177.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1008005.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 88%|████████▊ | 836/946 [34:30:24<3:44:41, 122.56s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1008005.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1354119.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 88%|████████▊ | 837/946 [34:33:18<4:10:40, 137.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1354119.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/55285.ta.xml
+ 89%|████████▊ | 838/946 [34:36:18<4:31:05, 150.61s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/55285.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/337027.ta.xml
+Calling service from http://localhost:6010/annotate
+ 89%|████████▊ | 839/946 [34:38:10<4:08:04, 139.10s/it]Processing /shared/corpora-tmp/annotated_nyt/426/533099.ta.xml
+Calling service from http://localhost:6010/annotate
+ 89%|████████▉ | 840/946 [34:38:12<2:53:09, 98.01s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1816769.ta.xml
+Calling service from http://localhost:6010/annotate
+ 89%|████████▉ | 841/946 [34:38:17<2:02:20, 69.91s/it]Processing /shared/corpora-tmp/annotated_nyt/426/972543.ta.xml
+ 89%|████████▉ | 842/946 [34:41:17<2:58:27, 102.96s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/972543.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/146028.ta.xml
+Calling service from http://localhost:6010/annotate
+ 89%|████████▉ | 843/946 [34:41:36<2:13:35, 77.82s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1776453.ta.xml
+ 89%|████████▉ | 844/946 [34:44:36<3:04:26, 108.50s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1776453.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/546441.ta.xml
+Calling service from http://localhost:6010/annotate
+ 89%|████████▉ | 845/946 [34:44:39<2:09:10, 76.74s/it] Processing /shared/corpora-tmp/annotated_nyt/426/771312.ta.xml
+ 89%|████████▉ | 846/946 [34:47:39<2:59:33, 107.74s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/771312.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/356639.ta.xml
+Calling service from http://localhost:6010/annotate
+ 90%|████████▉ | 847/946 [34:48:26<2:27:45, 89.55s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1127810.ta.xml
+ 90%|████████▉ | 848/946 [34:51:26<3:10:36, 116.70s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1127810.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/696245.ta.xml
+ 90%|████████▉ | 849/946 [34:54:26<3:39:24, 135.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/696245.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/612070.ta.xml
+Calling service from http://localhost:6010/annotate
+ 90%|████████▉ | 850/946 [34:54:53<2:44:54, 103.06s/it]Processing /shared/corpora-tmp/annotated_nyt/426/582383.ta.xml
+ 90%|████████▉ | 851/946 [34:57:53<3:19:46, 126.17s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/582383.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1855149.ta.xml
+Calling service from http://localhost:6010/annotate
+ 90%|█████████ | 852/946 [34:59:50<3:13:37, 123.59s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1231562.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 90%|█████████ | 853/946 [34:59:52<2:14:37, 86.85s/it] $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1231562.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/659749.ta.xml
+Calling service from http://localhost:6010/annotate
+ 90%|█████████ | 854/946 [35:00:10<1:41:45, 66.36s/it]Processing /shared/corpora-tmp/annotated_nyt/426/697587.ta.xml
+ 90%|█████████ | 855/946 [35:03:10<2:32:23, 100.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/697587.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1659732.ta.xml
+Calling service from http://localhost:6010/annotate
+ 90%|█████████ | 856/946 [35:04:45<2:28:20, 98.90s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1470943.ta.xml
+ 91%|█████████ | 857/946 [35:07:46<3:02:49, 123.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1470943.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/682459.ta.xml
+ 91%|█████████ | 858/946 [35:10:46<3:25:46, 140.30s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/682459.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/396450.ta.xml
+Calling service from http://localhost:6010/annotate
+ 91%|█████████ | 859/946 [35:10:48<2:23:19, 98.85s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1052072.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 91%|█████████ | 860/946 [35:10:49<1:39:39, 69.53s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1052072.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/301718.ta.xml
+ 91%|█████████ | 861/946 [35:13:49<2:25:29, 102.69s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/301718.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/459052.ta.xml
+ 91%|█████████ | 862/946 [35:16:49<2:56:16, 125.91s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/459052.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1782022.ta.xml
+ 91%|█████████ | 863/946 [35:19:49<3:16:39, 142.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1782022.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1780924.ta.xml
+ 91%|█████████▏| 864/946 [35:22:49<3:29:49, 153.53s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1780924.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/440463.ta.xml
+Calling service from http://localhost:6010/annotate
+ 91%|█████████▏| 865/946 [35:25:19<3:25:38, 152.33s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1745857.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 92%|█████████▏| 866/946 [35:25:20<2:22:35, 106.94s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1745857.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1629484.ta.xml
+ 92%|█████████▏| 867/946 [35:28:20<2:49:41, 128.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1629484.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1552266.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 868/946 [35:30:26<2:46:22, 127.98s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1207881.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 869/946 [35:30:27<1:55:37, 90.10s/it] Processing /shared/corpora-tmp/annotated_nyt/426/777259.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 870/946 [35:32:18<2:02:00, 96.33s/it]Processing /shared/corpora-tmp/annotated_nyt/426/587127.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 871/946 [35:33:00<1:40:02, 80.03s/it]Processing /shared/corpora-tmp/annotated_nyt/426/724204.ta.xml
+ 92%|█████████▏| 872/946 [35:36:00<2:15:43, 110.04s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/724204.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/156620.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 873/946 [35:37:16<2:01:24, 99.79s/it] Processing /shared/corpora-tmp/annotated_nyt/426/388530.ta.xml
+ 92%|█████████▏| 874/946 [35:40:16<2:28:39, 123.88s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/388530.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/953721.ta.xml
+Calling service from http://localhost:6010/annotate
+ 92%|█████████▏| 875/946 [35:40:28<1:46:38, 90.12s/it] Processing /shared/corpora-tmp/annotated_nyt/426/674963.ta.xml
+ 93%|█████████▎| 876/946 [35:43:28<2:16:37, 117.11s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/674963.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1241982.ta.xml
+ 93%|█████████▎| 877/946 [35:46:28<2:36:23, 136.00s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1241982.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/242367.ta.xml
+ 93%|█████████▎| 878/946 [35:49:28<2:49:06, 149.22s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/242367.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1112552.ta.xml
+ 93%|█████████▎| 879/946 [35:52:28<2:56:57, 158.48s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1112552.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/513517.ta.xml
+Calling service from http://localhost:6010/annotate
+ 93%|█████████▎| 880/946 [35:54:05<2:34:04, 140.07s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1593928.ta.xml
+ 93%|█████████▎| 881/946 [35:57:05<2:44:44, 152.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1593928.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1849674.ta.xml
+Calling service from http://localhost:6010/annotate
+ 93%|█████████▎| 882/946 [35:57:13<1:55:57, 108.71s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1030790.ta.xml
+Calling service from http://localhost:6010/annotate
+ 93%|█████████▎| 883/946 [35:57:16<1:21:02, 77.19s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1778285.ta.xml
+ 93%|█████████▎| 884/946 [36:00:16<1:51:39, 108.05s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1778285.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1164552.ta.xml
+ 94%|█████████▎| 885/946 [36:03:16<2:11:49, 129.66s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1164552.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1500844.ta.xml
+ 94%|█████████▎| 886/946 [36:06:17<2:24:47, 144.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1500844.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1317148.ta.xml
+ 94%|█████████▍| 887/946 [36:09:17<2:32:46, 155.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1317148.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/414011.ta.xml
+ 94%|█████████▍| 888/946 [36:12:17<2:37:21, 162.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/414011.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/540507.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 94%|█████████▍| 889/946 [36:14:59<2:34:33, 162.69s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/540507.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/973518.ta.xml
+ 94%|█████████▍| 890/946 [36:17:59<2:36:42, 167.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/973518.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1726376.ta.xml
+Calling service from http://localhost:6010/annotate
+ 94%|█████████▍| 891/946 [36:20:07<2:22:59, 155.99s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1640266.ta.xml
+ 94%|█████████▍| 892/946 [36:23:07<2:26:53, 163.22s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1640266.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/29258.ta.xml
+ 94%|█████████▍| 893/946 [36:26:08<2:28:38, 168.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/29258.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1043050.ta.xml
+ 95%|█████████▍| 894/946 [36:29:08<2:28:54, 171.81s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1043050.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1464746.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 95%|█████████▍| 895/946 [36:31:56<2:25:14, 170.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1464746.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1090976.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 95%|█████████▍| 896/946 [36:31:56<1:39:42, 119.65s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1090976.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1582589.ta.xml
+ 95%|█████████▍| 897/946 [36:34:57<1:52:31, 137.78s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1582589.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1159247.ta.xml
+ 95%|█████████▍| 898/946 [36:37:57<2:00:22, 150.47s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1159247.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1267949.ta.xml
+Calling service from http://localhost:6010/annotate
+ 95%|█████████▌| 899/946 [36:38:43<1:33:17, 119.11s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1019831.ta.xml
+Calling service from http://localhost:6010/annotate
+ 95%|█████████▌| 900/946 [36:38:52<1:06:04, 86.18s/it] Processing /shared/corpora-tmp/annotated_nyt/426/1111552.ta.xml
+Calling service from http://localhost:6010/annotate
+ 95%|█████████▌| 901/946 [36:41:21<1:18:49, 105.09s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1372264.ta.xml
+Calling service from http://localhost:6010/annotate
+ 95%|█████████▌| 902/946 [36:41:31<56:10, 76.61s/it]   Processing /shared/corpora-tmp/annotated_nyt/426/1128341.ta.xml
+Calling service from http://localhost:6010/annotate
+ 95%|█████████▌| 903/946 [36:42:02<45:00, 62.81s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1392009.ta.xml
+ 96%|█████████▌| 904/946 [36:45:02<1:08:35, 97.99s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1392009.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1330514.ta.xml
+Calling service from http://localhost:6010/annotate
+ 96%|█████████▌| 905/946 [36:45:22<51:03, 74.73s/it]  Processing /shared/corpora-tmp/annotated_nyt/426/1853245.ta.xml
+Calling service from http://localhost:6010/annotate
+ 96%|█████████▌| 906/946 [36:45:27<35:51, 53.80s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1652993.ta.xml
+ 96%|█████████▌| 907/946 [36:48:27<59:35, 91.68s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1652993.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1761643.ta.xml
+Calling service from http://localhost:6010/annotate
+ 96%|█████████▌| 908/946 [36:50:17<1:01:27, 97.04s/it]Processing /shared/corpora-tmp/annotated_nyt/426/213648.ta.xml
+ 96%|█████████▌| 909/946 [36:53:17<1:15:12, 121.95s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/213648.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/429744.ta.xml
+ 96%|█████████▌| 910/946 [36:56:17<1:23:38, 139.39s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/429744.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/332833.ta.xml
+ 96%|█████████▋| 911/946 [36:59:17<1:28:25, 151.59s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/332833.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1476427.ta.xml
+ 96%|█████████▋| 912/946 [37:02:17<1:30:44, 160.14s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1476427.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1646800.ta.xml
+Calling service from http://localhost:6010/annotate
+ 97%|█████████▋| 913/946 [37:04:52<1:27:13, 158.58s/it]Processing /shared/corpora-tmp/annotated_nyt/426/555506.ta.xml
+Calling service from http://localhost:6010/annotate
+ 97%|█████████▋| 914/946 [37:07:29<1:24:19, 158.12s/it]Processing /shared/corpora-tmp/annotated_nyt/426/780498.ta.xml
+ 97%|█████████▋| 915/946 [37:10:29<1:25:05, 164.71s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/780498.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1676254.ta.xml
+ 97%|█████████▋| 916/946 [37:13:29<1:24:39, 169.32s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1676254.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/273609.ta.xml
+ 97%|█████████▋| 917/946 [37:16:29<1:23:23, 172.55s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/273609.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/381369.ta.xml
+Calling service from http://localhost:6010/annotate
+ 97%|█████████▋| 918/946 [37:17:54<1:08:09, 146.04s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1366111.ta.xml
+ 97%|█████████▋| 919/946 [37:20:54<1:10:18, 156.25s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1366111.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1377417.ta.xml
+ 97%|█████████▋| 920/946 [37:23:54<1:10:48, 163.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1377417.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/72393.ta.xml
+ 97%|█████████▋| 921/946 [37:26:54<1:10:10, 168.40s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/72393.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1618933.ta.xml
+ 97%|█████████▋| 922/946 [37:29:54<1:08:45, 171.90s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1618933.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/654211.ta.xml
+ 98%|█████████▊| 923/946 [37:32:54<1:06:50, 174.36s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/654211.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/310229.ta.xml
+ 98%|█████████▊| 924/946 [37:35:54<1:04:33, 176.07s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/310229.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1488196.ta.xml
+ 98%|█████████▊| 925/946 [37:38:54<1:02:02, 177.27s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1488196.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1718265.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 98%|█████████▊| 926/946 [37:41:52<59:10, 177.52s/it]  $$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1718265.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1183425.ta.xml
+ 98%|█████████▊| 927/946 [37:44:52<56:27, 178.28s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1183425.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/262970.ta.xml
+Calling service from http://localhost:6010/annotate
+ 98%|█████████▊| 928/946 [37:47:13<50:04, 166.92s/it]Processing /shared/corpora-tmp/annotated_nyt/426/565239.ta.xml
+ 98%|█████████▊| 929/946 [37:50:13<48:24, 170.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/565239.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/16008.ta.xml
+ 98%|█████████▊| 930/946 [37:53:13<46:18, 173.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/16008.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1210912.ta.xml
+ 98%|█████████▊| 931/946 [37:56:13<43:53, 175.56s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1210912.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1529980.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 99%|█████████▊| 932/946 [37:56:14<28:45, 123.23s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1529980.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/353981.ta.xml
+ 99%|█████████▊| 933/946 [37:59:14<30:23, 140.29s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/353981.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/256068.ta.xml
+Calling service from http://localhost:6010/annotate
+ 99%|█████████▊| 934/946 [38:00:22<23:41, 118.44s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1209136.ta.xml
+ 99%|█████████▉| 935/946 [38:03:22<25:06, 136.93s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1209136.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/338054.ta.xml
+ 99%|█████████▉| 936/946 [38:06:22<24:58, 149.87s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/338054.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1290998.ta.xml
+Calling service from http://localhost:6010/annotate
+temporal_response: 500
+ 99%|█████████▉| 937/946 [38:06:23<15:46, 105.16s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1290998.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/101147.ta.xml
+ 99%|█████████▉| 938/946 [38:09:23<17:01, 127.63s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/101147.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/1728330.ta.xml
+ 99%|█████████▉| 939/946 [38:12:23<16:43, 143.37s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1728330.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/277775.ta.xml
+Calling service from http://localhost:6010/annotate
+ 99%|█████████▉| 940/946 [38:13:22<11:48, 118.13s/it]Processing /shared/corpora-tmp/annotated_nyt/426/164735.ta.xml
+Calling service from http://localhost:6010/annotate
+ 99%|█████████▉| 941/946 [38:15:25<09:57, 119.59s/it]Processing /shared/corpora-tmp/annotated_nyt/426/1618530.ta.xml
+100%|█████████▉| 942/946 [38:18:25<09:10, 137.73s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/1618530.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/199442.ta.xml
+Calling service from http://localhost:6010/annotate
+100%|█████████▉| 943/946 [38:19:37<05:54, 118.00s/it]Processing /shared/corpora-tmp/annotated_nyt/426/795204.ta.xml
+100%|█████████▉| 944/946 [38:22:37<04:33, 136.62s/it]$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/795204.ta.xml TIMEOUT!
+Processing /shared/corpora-tmp/annotated_nyt/426/129475.ta.xml
+Calling service from http://localhost:6010/annotate
+100%|█████████▉| 945/946 [38:22:52<01:40, 100.21s/it]Processing /shared/corpora-tmp/annotated_nyt/426/732925.ta.xml
+100%|██████████| 946/946 [38:25:52<00:00, 124.17s/it]100%|██████████| 946/946 [38:25:52<00:00, 146.25s/it]
+$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/426/732925.ta.xml TIMEOUT!
+��█████| 946/946 [37:17:07<00:00, 141.89s/it]
+$$$$$$$$$$$$$$$$ /shared/corpora-tmp/annotated_nyt/156/1383867.ta.xml TIMEOUT!

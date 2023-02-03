@@ -25,8 +25,8 @@ import pickle
 from timeline_construct import *
 from ts import func, ModelWithTemperature
 import nltk
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+#nltk.download('punkt')
+#nltk.download('averaged_perceptron_tagger')
 # datetime object containing current date and time
 now = datetime.datetime.now()
 # dd/mm/YY H:M:S
@@ -118,7 +118,7 @@ params = {'transformers_model': 'google/bigbird-roberta-large',
           'epochs': 40,
           'learning_rate': 5e-6,    # subject to change
           'seed': 0,
-          'gpu_id': '11453',    # subject to change
+          'gpu_id': '1',    # subject to change
           'debug': 0,
           'rst_file_name': '0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.rst',    # subject to change
           'mask_in_input_ids': mask_in_input_ids,
@@ -229,7 +229,7 @@ elif params['dataset'] == 'MATRES':
 else:
     print("Dataset unknown...")
 """
-best_PATH = sys.argv[1] + '/' + '0511.pt' 
+best_PATH = '.' + '/' + '0511.pt' 
 model_name = rst_file_name.replace(".rst", "")
 with open("config/" + rst_file_name.replace("rst", "json"), 'w') as config_file:
     json.dump(params, config_file)
@@ -526,7 +526,7 @@ for file_name in tqdm.tqdm(onlyfiles):
 #### HiEve/IC PROCESSING ENDS HERE ####
 """
 
-
+"""
 ###################
 ### TDDiscourse ###
 ###################
@@ -605,13 +605,6 @@ def TDD_processor(split):
 
                     labels_full[instance_id]["event_pairs"].append([i, j])
 
-                    """
-                    if (context_end_sent_id - context_start_sent_id) > 5:
-                        labels_full[art_id].append(None)
-                        continue
-                    else:
-                        labels_full[art_id].append(xy)
-                    """
                     if params['td'] == 1:
                         x_sent, offset_x, new_start_x, new_end_x = add_tense_info(x_sent, my_dict["event_dict"][x]['tense'], my_dict['event_dict'][x]['_subword_id'], my_dict["event_dict"][x]['mention'], 2589, 1736)
                     else:
@@ -672,221 +665,232 @@ def TDD_processor(split):
     return features, labels, labels_full
     
 #### TDDiscourse PROCESSING ENDS HERE ####
+"""
+
+OnePassModel = transformers_mlp_cons(params)
+OnePassModel.to(cuda)
+OnePassModel.zero_grad()
+print("# of parameters:", count_parameters(OnePassModel))
 
 ######################
 ### FOR PREDICTION ###
 ######################
 remove_list = ["being", "doing", "having", "'ve", "'re", "did", "'s", "are", "is", "am", "was", "were", "been", "had", "said", "be", "have", "can", "could", "may", "might", "must", "ought", "shall", "will", "would", "say", "nee", "need", "do", "happen", "occur"]
 
-if params['testdata'] == "PRED":
-    folder = sys.argv[2]
-    #from os import listdir
-    #from os.path import isfile, join
-    #onlyfiles = [f for f in listdir(folder) if isfile(join(folder, f))]
-    art_split = {}
-    features_test = []
-    #for this_file in onlyfiles:
-    #    f = open(folder + '/' + this_file)
-    #with open(folder+'/'+onlyfiles[0]) as f:
-    with open(folder, 'r') as f:
-        data = json.load(f)
-        #f.close()
-        view_map = {}
-        count = 0
-        for view in data['views']:
-            view_map[view['viewName']] = count
-            count += 1
-        print(view_map)   
-        event_pos = []
-        event_pos_end = []
-        char_ = tokenized_to_origin_span(data['text'], data['tokens'])
-        #if 'SRL_VERB' not in view_map.keys() and 'SRL_NOM' not in view_map.keys() and 'SRL_NOM_ALL' not in view_map.keys():
-        #    raise Exception("SRL result empty")
-        if 'SRL_VERB' in view_map.keys():
-            for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
-                if constituent['label'] == 'Predicate' and constituent['properties']['predicate'] not in remove_list:
-                    event_pos.append(char_[constituent['start']][0])
-                    event_pos_end.append(char_[constituent['start']][1]+1)
-                
-        if 'SRL_NOM' in view_map.keys():
-            for constituent in data['views'][view_map['SRL_NOM']]['viewData'][0]['constituents']:
-                if constituent['label'] == 'Predicate' and constituent['properties']['predicate'] not in remove_list:
-                    event_pos.append(char_[constituent['start']][0])
-                    event_pos_end.append(char_[constituent['start']][1]+1)
-        
-        if 'SRL_NOM_ALL' in view_map.keys():
-            for constituent in data['views'][view_map['SRL_NOM_ALL']]['viewData'][0]['constituents']:
-                if constituent['label'] == 'Predicate' and constituent['properties']['predicate'] not in remove_list:
-                    event_pos.append(char_[constituent['start']][0])
-                    event_pos_end.append(char_[constituent['start']][1]+1)
+class MyWebService(object):
 
-        art_dict = {'id': folder, #+ "/" + this_file, 
-                    'text': data['text'],
-                    'event_pos': event_pos,
-                    'event_pos_end': event_pos_end
-                   }
-            
-        #input_list = [doc_dict]
-        pair_num = 0
-        #art_split = {}
-        #features_test = []
-        #for art_dict in input_list:
-        text, ep, epe = art_dict['text'], art_dict['event_pos'], art_dict['event_pos_end']
-        try:
-            my_dict = tdd_reader(text, ep, epe, tokenizer)
-        except TypeError:
-            print('document id:' + folder+ "/" + this_file)
-            #continue 
-        pairs = []
-        for i in range(0, len(ep)):
-            for j in range(i+1, len(ep)):
-                pair_num += 1
-                event_pos = []
-                event_pos_end = []
-                relations = []
-                TokenIDs = [65]
-                x, y = i, j
-                x_sent_id = my_dict["event_dict"][i]["sent_id"]
-                y_sent_id = my_dict["event_dict"][j]["sent_id"]
-                if x_sent_id > y_sent_id:
-                    x, y = j, i
-                    x_sent_id = my_dict["event_dict"][x]["sent_id"]
-                    y_sent_id = my_dict["event_dict"][y]["sent_id"]
-                elif x_sent_id == y_sent_id:
-                    x_position = my_dict["event_dict"][x]["_subword_id"]
-                    y_position = my_dict["event_dict"][y]["_subword_id"]
-                    if x_position > y_position:
-                        x, y = j, i
-                else:
-                    x, y = i, j
-                    
-                pairs.append([x, y])
-                x_sent = my_dict["sentences"][x_sent_id]["_subword_to_ID"]
-                y_sent = my_dict["sentences"][y_sent_id]["_subword_to_ID"]
-                # This guarantees that trigger x is always before trigger y in narrative order
+    @cherrypy.expose
+    def index(self):
+        return open('html/index.html', encoding='utf-8')
 
-                context_start_sent_id = max(x_sent_id-1, 0)
-                context_end_sent_id = min(y_sent_id+2, len(my_dict["sentences"]))
-                #sent_num += context_end_sent_id - context_start_sent_id
-                    
-                relations.append(0)
-
-                if params['td'] == 1:
-                    x_sent, offset_x, new_start_x, new_end_x = add_tense_info(x_sent, my_dict["event_dict"][x]['tense'], my_dict['event_dict'][x]['_subword_id'], my_dict["event_dict"][x]['mention'], 2589, 1736)
-                else:
-                    x_sent, offset_x, new_start_x, new_end_x = x_sent, 0, my_dict['event_dict'][x]['_subword_id'], my_dict['event_dict'][x]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][x]['mention'])) - 2
-
-                if x_sent_id != y_sent_id:
-                    if params['td'] == 1:
-                        y_sent, offset_y, new_start_y, new_end_y = add_tense_info(y_sent, my_dict["event_dict"][y]['tense'], my_dict['event_dict'][y]['_subword_id'], my_dict["event_dict"][y]['mention'], 1404, 5400)
-                    else:
-                        y_sent, offset_y, new_start_y, new_end_y = y_sent, 0, my_dict['event_dict'][y]['_subword_id'], my_dict['event_dict'][y]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][y]['mention'])) - 2
-                    for sid in range(context_start_sent_id, context_end_sent_id):
-                        if sid == x_sent_id:
-                            event_pos.append(new_start_x + len(TokenIDs) - 1)
-                            event_pos_end.append(new_end_x + len(TokenIDs) - 1)
-                            TokenIDs += x_sent[1:]
-                        elif sid == y_sent_id:
-                            event_pos.append(new_start_y + len(TokenIDs) - 1)
-                            event_pos_end.append(new_end_y + len(TokenIDs) - 1)
-                            TokenIDs += y_sent[1:]
-                        else:
-                            TokenIDs += my_dict["sentences"][sid]["_subword_to_ID"][1:]
-                else:
-                    if params['td'] == 1:
-                        y_sent, offset_y, new_start_y, new_end_y = add_tense_info(x_sent, my_dict["event_dict"][y]['tense'], my_dict['event_dict'][y]['_subword_id'] + offset_x, my_dict["event_dict"][y]['mention'], 1404, 5400)
-                    else:
-                        y_sent, offset_y, new_start_y, new_end_y = y_sent, 0, my_dict['event_dict'][y]['_subword_id'], my_dict['event_dict'][y]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][y]['mention'])) - 2
-                    for sid in range(context_start_sent_id, context_end_sent_id):
-                        if sid == y_sent_id:
-                            event_pos.append(new_start_x + len(TokenIDs) - 1)
-                            event_pos_end.append(new_end_x + len(TokenIDs) - 1)
-                            event_pos.append(new_start_y + len(TokenIDs) - 1)
-                            event_pos_end.append(new_end_y + len(TokenIDs) - 1)
-                            TokenIDs += y_sent[1:]
-                        else:
-                            TokenIDs += my_dict["sentences"][sid]["_subword_to_ID"][1:]
-
-                if pair_num < 5:
-                    print("first event:", tokenizer.decode(TokenIDs[event_pos[0]:event_pos_end[0]]))
-                    print("second event:", tokenizer.decode(TokenIDs[event_pos[1]:event_pos_end[1]]))
-                    print("TokenIDs:", tokenizer.decode(TokenIDs))
-                feature = {'input_ids': TokenIDs,
-                           'event_pos': event_pos,
-                           'event_pos_end': event_pos_end,
-                           'event_pair': [[1, 2]],
-                           'labels': relations,
-                          }
-                features_test.append(feature)
-        #art_split.append(pairs) 
-        art_split[art_dict['id']] = pairs
-
-if debug:
-    train_dataloader = DataLoader(features_train, batch_size=params['batch_size'], shuffle=True, collate_fn=collate_fn, drop_last=True)
-    valid_dataloader = test_dataloader = train_dataloader
-    for step, batch in enumerate(train_dataloader):
-        print(batch)
-elif params['testdata'] == 'TDD':
-    features_valid, labels_valid, labels_full_valid = TDD_processor('man-dev')
-    features_test, labels_test, labels_full_test = TDD_processor('man-test')
-    #print(len(labels_test)) # man_test, 846
-    #print(abnormal_articles) # CNN19980213.2130.0155
-    #with open("tdd_labels.json", 'w') as f:
-    #    json.dump(labels_full_test, f)
-    #with open("tdd_labels.txt", 'w') as f:
-    #    for label in labels_test:
-    #        print(label, file = f)
-    valid_dataloader = DataLoader(features_valid, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False) 
-    test_dataloader = DataLoader(features_test, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False)
-elif params['testdata'] == 'PRED':
-    test_dataloader = DataLoader(features_test, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False)
-else:
-    train_dataloader = DataLoader(features_train, batch_size=params['batch_size'], shuffle=True, collate_fn=collate_fn, drop_last=True)
-    valid_dataloader = DataLoader(features_valid, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False)
-    test_dataloader = DataLoader(features_test, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False)
-print("  Data processing took: {:}".format(format_time(time.time() - t0)))
-
-OnePassModel = transformers_mlp_cons(params)
-OnePassModel.to(cuda)
-OnePassModel.zero_grad()
-print("# of parameters:", count_parameters(OnePassModel))
+    @cherrypy.expose
+    @cherrypy.tools.json_out()
+    @cherrypy.tools.json_in()
     
+    def annotate(self):
+        hasJSON = True
+        result = {"status": "false"}
+        try:
+            # get input JSON
+            data = cherrypy.request.json
+        except:
+            hasJSON = False
+            result = {"error": "invalid input"}
 
-# PREDICTING MODE
-best_F1 = 0.0
-best_1 = -0.4
-best_2 = 0.6
-mem_exp_test = exp(cuda, OnePassModel, params['epochs'], params['learning_rate'], None, None, test_dataloader, params['dataset'], best_PATH, None, params['dpn'], model_name, None, [best_1, best_2])
-json_file = '/shared/cache/' + params['testdata'] + model_name + '.json'
-flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
-with open(json_file, 'r') as f:
-    pred = json.load(f)
-    logits = []
-    for i in pred['array'][1:]:
-        logits.append(func(i))
-logits = np.array(logits)
-temperature = 0.444
-scaled_model = ModelWithTemperature(temperature)
-scaled_logits = scaled_model(logits)
-logits = scaled_logits.cpu().detach().numpy() 
-logits = softmax(logits)
+        if hasJSON:
+            t0 = time.time()
+            art_split = {}
+            #folder = data['folder']
+            #print("$$$$$$$$$$$$$$$$$$ processing " + folder + " $$$$$$$$$$$$$$$$$$")
+            view_map = {}
+            count = 0
+            for view in data['views']:
+                view_map[view['viewName']] = count
+                count += 1
+                
+            event_pos = []
+            event_pos_end = []
+            char_ = tokenized_to_origin_span(data['text'], data['tokens'])
 
-predict_with_abstention = []
-for i in logits:
-    if entropy(i) < 0.402 and max(i) > 0.892:
-        predict_with_abstention.append(1)
-    else:
-        predict_with_abstention.append(0)
+            for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+                if constituent['label'] == 'Predicate':
+                    event_pos.append(char_[constituent['start']][0])
+                    event_pos_end.append(char_[constituent['start']][1]+1)
 
-#with open('prediction/' + params['testdata'] + model_name + 'lambda_1' + str(best_1) + 'lambda_2' + str(best_2) + 'temperature' + str(temperature) + '.npy', 'wb') as f:
-#    np.save(f, logits)
+            doc_dict = {#'id': folder, 
+                        'id': data['id'],    
+                        'text': data['text'],
+                        'event_pos': event_pos,
+                        'event_pos_end': event_pos_end
+                       }
+            
+            input_list = [doc_dict]
+            pair_num = 0
+            features_test = []
+            for art_dict in input_list:
+                text, ep, epe = art_dict['text'], art_dict['event_pos'], art_dict['event_pos_end']
+                my_dict = tdd_reader(text, ep, epe, tokenizer)
+                pairs = []
+                for i in range(0, len(ep)):
+                    for j in range(i+1, len(ep)):
+                        pair_num += 1
+                        event_pos = []
+                        event_pos_end = []
+                        relations = []
+                        TokenIDs = [65]
+                        x, y = i, j
+                        x_sent_id = my_dict["event_dict"][i]["sent_id"]
+                        y_sent_id = my_dict["event_dict"][j]["sent_id"]
+                        if x_sent_id > y_sent_id:
+                            x, y = j, i
+                            x_sent_id = my_dict["event_dict"][x]["sent_id"]
+                            y_sent_id = my_dict["event_dict"][y]["sent_id"]
+                        elif x_sent_id == y_sent_id:
+                            x_position = my_dict["event_dict"][x]["_subword_id"]
+                            y_position = my_dict["event_dict"][y]["_subword_id"]
+                            if x_position > y_position:
+                                x, y = j, i
+                        else:
+                            x, y = i, j
 
-output_timeline = tl_construction(logits, art_split, long = True, softmax = False, predict_with_abstention = predict_with_abstention)
+                        pairs.append([x, y])
+                        x_sent = my_dict["sentences"][x_sent_id]["_subword_to_ID"]
+                        y_sent = my_dict["sentences"][y_sent_id]["_subword_to_ID"]
+                        # This guarantees that trigger x is always before trigger y in narrative order
 
-directory = '/shared/corpora-tmp/nyt_event_temporal_graph/' + folder.split('/')[-2]
-if not os.path.exists(directory):
-    os.makedirs(directory)
+                        context_start_sent_id = max(x_sent_id-1, 0)
+                        context_end_sent_id = min(y_sent_id+2, len(my_dict["sentences"]))
+                        #sent_num += context_end_sent_id - context_start_sent_id
 
-with open(directory + '/' + folder.split('/')[-1] + '.etg', 'w') as f:
-    json.dump(output_timeline, f)
+                        relations.append(0)
 
+                        if params['td'] == 1:
+                            x_sent, offset_x, new_start_x, new_end_x = add_tense_info(x_sent, my_dict["event_dict"][x]['tense'], my_dict['event_dict'][x]['_subword_id'], my_dict["event_dict"][x]['mention'], 2589, 1736)
+                        else:
+                            x_sent, offset_x, new_start_x, new_end_x = x_sent, 0, my_dict['event_dict'][x]['_subword_id'], my_dict['event_dict'][x]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][x]['mention'])) - 2
+
+                        if x_sent_id != y_sent_id:
+                            if params['td'] == 1:
+                                y_sent, offset_y, new_start_y, new_end_y = add_tense_info(y_sent, my_dict["event_dict"][y]['tense'], my_dict['event_dict'][y]['_subword_id'], my_dict["event_dict"][y]['mention'], 1404, 5400)
+                            else:
+                                y_sent, offset_y, new_start_y, new_end_y = y_sent, 0, my_dict['event_dict'][y]['_subword_id'], my_dict['event_dict'][y]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][y]['mention'])) - 2
+                            for sid in range(context_start_sent_id, context_end_sent_id):
+                                if sid == x_sent_id:
+                                    event_pos.append(new_start_x + len(TokenIDs) - 1)
+                                    event_pos_end.append(new_end_x + len(TokenIDs) - 1)
+                                    TokenIDs += x_sent[1:]
+                                elif sid == y_sent_id:
+                                    event_pos.append(new_start_y + len(TokenIDs) - 1)
+                                    event_pos_end.append(new_end_y + len(TokenIDs) - 1)
+                                    TokenIDs += y_sent[1:]
+                                else:
+                                    TokenIDs += my_dict["sentences"][sid]["_subword_to_ID"][1:]
+                        else:
+                            if params['td'] == 1:
+                                y_sent, offset_y, new_start_y, new_end_y = add_tense_info(x_sent, my_dict["event_dict"][y]['tense'], my_dict['event_dict'][y]['_subword_id'] + offset_x, my_dict["event_dict"][y]['mention'], 1404, 5400)
+                            else:
+                                y_sent, offset_y, new_start_y, new_end_y = y_sent, 0, my_dict['event_dict'][y]['_subword_id'], my_dict['event_dict'][y]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][y]['mention'])) - 2
+                            for sid in range(context_start_sent_id, context_end_sent_id):
+                                if sid == y_sent_id:
+                                    event_pos.append(new_start_x + len(TokenIDs) - 1)
+                                    event_pos_end.append(new_end_x + len(TokenIDs) - 1)
+                                    event_pos.append(new_start_y + len(TokenIDs) - 1)
+                                    event_pos_end.append(new_end_y + len(TokenIDs) - 1)
+                                    TokenIDs += y_sent[1:]
+                                else:
+                                    TokenIDs += my_dict["sentences"][sid]["_subword_to_ID"][1:]
+
+                        if pair_num < 5:
+                            print("first event:", tokenizer.decode(TokenIDs[event_pos[0]:event_pos_end[0]]))
+                            print("second event:", tokenizer.decode(TokenIDs[event_pos[1]:event_pos_end[1]]))
+                            print("TokenIDs:", tokenizer.decode(TokenIDs))
+                        feature = {'input_ids': TokenIDs,
+                                   'event_pos': event_pos,
+                                   'event_pos_end': event_pos_end,
+                                   'event_pair': [[1, 2]],
+                                   'labels': relations,
+                                  }
+                        features_test.append(feature)
+            art_split[art_dict['id']] = pairs
+                
+            ######################
+            ### FOR PREDICTION ###
+            ######################
+            
+            if params['testdata'] == 'PRED':
+                test_dataloader = DataLoader(features_test, batch_size=params['batch_size'], shuffle=False, collate_fn=collate_fn, drop_last=False)
+            print("  Data processing took: {:}".format(format_time(time.time() - t0)))
+
+            # PREDICTING MODE
+            best_F1 = 0.0
+            best_1 = -0.4
+            best_2 = 0.6
+            mem_exp_test = exp(cuda, OnePassModel, params['epochs'], params['learning_rate'], None, None, test_dataloader, params['dataset'], best_PATH, None, params['dpn'], model_name, None, [best_1, best_2])
+            json_file = '/shared/cache/' + params['testdata'] + model_name + '.json'
+            flag, F1 = mem_exp_test.evaluate(eval_data = params['dataset'], test = True, predict = json_file, f1_metric = f1_metric)
+            with open(json_file, 'r') as f:
+                pred = json.load(f)
+                logits = []
+                for i in pred['array'][1:]:
+                    logits.append(func(i))
+            logits = np.array(logits)
+            temperature = 0.444
+            scaled_model = ModelWithTemperature(temperature)
+            scaled_logits = scaled_model(logits)
+            logits = scaled_logits.cpu().detach().numpy() 
+            logits = softmax(logits)
+
+            predict_with_abstention = []
+            for i in logits:
+                if entropy(i) < 0.402 and max(i) > 0.892:
+                    predict_with_abstention.append(1)
+                else:
+                    predict_with_abstention.append(0)
+
+            output_timeline = tl_construction(logits, art_split, long = True, softmax = False, predict_with_abstention = predict_with_abstention)
+            
+            #directory = '/shared/corpora-tmp/nyt_event_temporal_graph/' + folder.split('/')[-2]
+            #if not os.path.exists(directory):
+            #    os.makedirs(directory)
+
+            #with open(directory + '/' + folder.split('/')[-1] + '.etg', 'w') as f:
+            #    json.dump(output_timeline, f)
+            #elapsed = format_time(time.time() - t0)
+            #return {"status": "Success", "elasped_time": elapsed}
+            return output_timeline
+    
+if __name__ == '__main__':
+    print("")
+    # INITIALIZE YOUR MODEL HERE
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", default=6011, type=int, required=False,
+                        help="port number to use")
+    args = parser.parse_args()
+    # IN ORDER TO KEEP IT IN MEMORY
+    print("Starting rest service...")
+    cherrypy_cors.install()
+    config = {
+        'global': {
+            'server.socket_host': '127.0.0.1',
+            'server.socket_port': args.port,
+            'cors.expose.on': True
+        },
+        '/': {
+            'tools.sessions.on': True,
+            'cors.expose.on': True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd())
+        },
+        '/static': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './html'
+        },
+        '/html': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './html',
+            'tools.staticdir.index': 'index.html',
+            'tools.gzip.on': True
+        }
+    }
+    cherrypy.config.update(config)
+    cherrypy.quickstart(MyWebService(), '/', config)
+    

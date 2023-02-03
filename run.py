@@ -37,7 +37,8 @@ def timeout(func, args = (), kwds = {}, timeout = 1, default = None):
         pool.join()
         return val
     
-with open('/shared/why16gzl/Repositories/EventCausalityData/files.txt') as f:
+topic = 'Earthquake'
+with open('/shared/why16gzl/Repositories/EventCausalityData/' + topic + '_files.txt') as f:
     lines = f.readlines()
     for line in tqdm(lines):
         line = line[:-1]
@@ -60,12 +61,3 @@ with open('/shared/why16gzl/Repositories/EventCausalityData/files.txt') as f:
         #elif context_manager.state == context_manager.TIMED_OUT:
         #    print("DID NOT FINISH... " + line)
         #    continue
-        
-        
-
-
-
- 
-            
-
-            
