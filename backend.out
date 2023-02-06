@@ -1,12 +1,12 @@
 nohup: ignoring input
 normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
-Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight']
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.bias', 'cls.predictions.decoder.weight']
 - This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-[31/Jan/2023:12:49:32] ENGINE Listening for SIGTERM.
-[31/Jan/2023:12:49:32] ENGINE Listening for SIGHUP.
-[31/Jan/2023:12:49:32] ENGINE Listening for SIGUSR1.
-[31/Jan/2023:12:49:32] ENGINE Bus STARTING
+[03/Feb/2023:18:17:21] ENGINE Listening for SIGTERM.
+[03/Feb/2023:18:17:21] ENGINE Listening for SIGHUP.
+[03/Feb/2023:18:17:21] ENGINE Listening for SIGUSR1.
+[03/Feb/2023:18:17:21] ENGINE Bus STARTING
 CherryPy Checker:
 '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
 section: [/static]
@@ -19,10 +19,10 @@ section: [/html]
 root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
 dir: './html'
 
-[31/Jan/2023:12:49:32] ENGINE Started monitor thread 'Autoreloader'.
-[31/Jan/2023:12:49:32] ENGINE Serving on http://127.0.0.1:6011
-[31/Jan/2023:12:49:32] ENGINE Bus STARTED
-date and time = 01/31/2023 12:49:24
+[03/Feb/2023:18:17:21] ENGINE Started monitor thread 'Autoreloader'.
+[03/Feb/2023:18:17:21] ENGINE Serving on http://127.0.0.1:6011
+[03/Feb/2023:18:17:21] ENGINE Bus STARTED
+date and time = 02/03/2023 18:17:14
 Processing MATRES dataset...
 # of parameters: 364568582
 
@@ -33,40 +33,6 @@ CP done
 head word extraction done
 event extraction done
 ------- The 0-th piece of generated text processing complete! -------
-$$$$$$$$$$$$$$$$$$ processing test $$$$$$$$$$$$$$$$$$
-first event: rejected
-second event: appeals
-TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier # ~ None ~ appeals # for a case review from five of the convicts.[SEP]
-first event: rejected
-second event: review
-TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier appeals for a case # ~ None ~ review # from five of the convicts.[SEP]
-first event: appeals
-second event: review
-TokenIDs: [CLS] The Supreme Court rejected earlier @ * None * appeals @ for a case # ~ None ~ review # from five of the convicts.[SEP]
-[{'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 1404, 5400, 6146, 5400, 15293, 1404, 430, 358, 1440, 2524, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 16], 'event_pos_end': [10, 17], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 15293, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 20], 'event_pos_end': [10, 21], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 8707, 3062, 2589, 1736, 6146, 1736, 15293, 2589, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [10, 19], 'event_pos_end': [11, 20], 'event_pair': [[1, 2]], 'labels': [0]}]
-  Data processing took: 0:00:02
-
-loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
-(from epoch 0 )
-Running Evaluation on MATRES Test Set...
-Eval took: 0:00:02
-  macro F1: 0.400
-  micro F1: 0.667
-[[2 1]
- [0 0]]
-  macro F1: 0.400
-  micro F1: 0.667
-Event: 'reject' (0_0_3)	ARG0: 'The Supreme Court' (NA, 0_0_0)	ARG1: 'earlier appeals for a case review from five of the convicts' (NA, 0_0_4)	
-Event: 'appeal' (0_0_5)	ARG2: 'The Supreme Court' (NA, 0_0_0)	Support: 'rejected' (NA, 0_0_3)	ARGM-TMP: 'earlier' (NA, 0_0_4)	ARG1: 'for a case review from five of the convicts' (NA, 0_0_6)	
-Event: 'review' (0_0_9)	ARG1: 'case' (NA, 0_0_8)	ARG0: 'from five of the convicts' (NA, 0_0_10)	
-127.0.0.1 - - [01/Feb/2023:07:23:38] "POST /annotate HTTP/1.1" 200 770 "" "curl/7.79.1"
-SRL done
-NER done
-CP done
-head word extraction done
-event extraction done
-------- The 0-th piece of generated text processing complete! -------
-$$$$$$$$$$$$$$$$$$ processing test $$$$$$$$$$$$$$$$$$
 first event: rejected
 second event: appeals
 TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier # ~ None ~ appeals # for a case review from five of the convicts.[SEP]
@@ -82,76 +48,6 @@ TokenIDs: [CLS] The Supreme Court rejected earlier @ * None * appeals @ for a ca
 loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
 (from epoch 0 )
 Running Evaluation on MATRES Test Set...
-Eval took: 0:00:01
-  macro F1: 0.400
-  micro F1: 0.667
-[[2 1]
- [0 0]]
-  macro F1: 0.400
-  micro F1: 0.667
-Event: 'reject' (0_0_3)	ARG0: 'The Supreme Court' (NA, 0_0_0)	ARG1: 'earlier appeals for a case review from five of the convicts' (NA, 0_0_4)	
-Event: 'appeal' (0_0_5)	ARG2: 'The Supreme Court' (NA, 0_0_0)	Support: 'rejected' (NA, 0_0_3)	ARGM-TMP: 'earlier' (NA, 0_0_4)	ARG1: 'for a case review from five of the convicts' (NA, 0_0_6)	
-Event: 'review' (0_0_9)	ARG1: 'case' (NA, 0_0_8)	ARG0: 'from five of the convicts' (NA, 0_0_10)	
-127.0.0.1 - - [03/Feb/2023:16:15:43] "POST /annotate HTTP/1.1" 200 770 "" "curl/7.79.1"
-[03/Feb/2023:16:31:20] ENGINE Restarting because /mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/backend.py changed.
-[03/Feb/2023:16:31:20] ENGINE Stopped thread 'Autoreloader'.
-[03/Feb/2023:16:31:20] ENGINE Bus STOPPING
-[03/Feb/2023:16:31:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
-[03/Feb/2023:16:31:20] ENGINE Bus STOPPED
-[03/Feb/2023:16:31:20] ENGINE Bus EXITING
-[03/Feb/2023:16:31:20] ENGINE Bus EXITED
-[03/Feb/2023:16:31:20] ENGINE Waiting for child threads to terminate...
-[03/Feb/2023:16:31:20] ENGINE Re-spawning python backend.py
-normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
-Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight']
-- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-[03/Feb/2023:16:31:42] ENGINE Listening for SIGTERM.
-[03/Feb/2023:16:31:42] ENGINE Listening for SIGHUP.
-[03/Feb/2023:16:31:42] ENGINE Listening for SIGUSR1.
-[03/Feb/2023:16:31:42] ENGINE Bus STARTING
-CherryPy Checker:
-'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
-section: [/static]
-root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
-dir: './html'
-
-CherryPy Checker:
-'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
-section: [/html]
-root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
-dir: './html'
-
-[03/Feb/2023:16:31:42] ENGINE Started monitor thread 'Autoreloader'.
-[03/Feb/2023:16:31:42] ENGINE Serving on http://127.0.0.1:6011
-[03/Feb/2023:16:31:42] ENGINE Bus STARTED
-date and time = 02/03/2023 16:31:35
-Processing MATRES dataset...
-# of parameters: 364568582
-
-Starting rest service...
-SRL done
-NER done
-CP done
-head word extraction done
-event extraction done
-------- The 0-th piece of generated text processing complete! -------
-$$$$$$$$$$$$$$$$$$ processing test $$$$$$$$$$$$$$$$$$
-first event: rejected
-second event: appeals
-TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier # ~ None ~ appeals # for a case review from five of the convicts.[SEP]
-first event: rejected
-second event: review
-TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier appeals for a case # ~ None ~ review # from five of the convicts.[SEP]
-first event: appeals
-second event: review
-TokenIDs: [CLS] The Supreme Court rejected earlier @ * None * appeals @ for a case # ~ None ~ review # from five of the convicts.[SEP]
-[{'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 1404, 5400, 6146, 5400, 15293, 1404, 430, 358, 1440, 2524, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 16], 'event_pos_end': [10, 17], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 15293, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 20], 'event_pos_end': [10, 21], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 8707, 3062, 2589, 1736, 6146, 1736, 15293, 2589, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [10, 19], 'event_pos_end': [11, 20], 'event_pair': [[1, 2]], 'labels': [0]}]
-  Data processing took: 0:00:01
-
-loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
-(from epoch 0 )
-Running Evaluation on MATRES Test Set...
 Eval took: 0:00:02
   macro F1: 0.400
   micro F1: 0.667
@@ -162,36 +58,40 @@ Eval took: 0:00:02
 Event: 'reject' (0_0_3)	ARG0: 'The Supreme Court' (NA, 0_0_0)	ARG1: 'earlier appeals for a case review from five of the convicts' (NA, 0_0_4)	
 Event: 'appeal' (0_0_5)	ARG2: 'The Supreme Court' (NA, 0_0_0)	Support: 'rejected' (NA, 0_0_3)	ARGM-TMP: 'earlier' (NA, 0_0_4)	ARG1: 'for a case review from five of the convicts' (NA, 0_0_6)	
 Event: 'review' (0_0_9)	ARG1: 'case' (NA, 0_0_8)	ARG0: 'from five of the convicts' (NA, 0_0_10)	
-127.0.0.1 - - [03/Feb/2023:17:20:12] "POST /annotate HTTP/1.1" 200 770 "" "curl/7.79.1"
-[03/Feb/2023:17:37:20] ENGINE Restarting because /mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/backend.py changed.
-[03/Feb/2023:17:37:20] ENGINE Stopped thread 'Autoreloader'.
-[03/Feb/2023:17:37:20] ENGINE Bus STOPPING
-[03/Feb/2023:17:37:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 6011)) shut down
-[03/Feb/2023:17:37:20] ENGINE Bus STOPPED
-[03/Feb/2023:17:37:20] ENGINE Bus EXITING
-[03/Feb/2023:17:37:20] ENGINE Bus EXITED
-[03/Feb/2023:17:37:20] ENGINE Waiting for child threads to terminate...
-[03/Feb/2023:17:37:20] ENGINE Re-spawning python backend.py
-normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
-Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias']
-- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
-- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-[03/Feb/2023:17:37:34] ENGINE Listening for SIGTERM.
-[03/Feb/2023:17:37:34] ENGINE Listening for SIGHUP.
-[03/Feb/2023:17:37:34] ENGINE Listening for SIGUSR1.
-[03/Feb/2023:17:37:34] ENGINE Bus STARTING
-CherryPy Checker:
-'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
-section: [/static]
-root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
-dir: './html'
+127.0.0.1 - - [06/Feb/2023:09:22:21] "POST /annotate HTTP/1.1" 200 767 "" "curl/7.79.1"
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+SRL done
+NER done
+CP done
+head word extraction done
+event extraction done
+------- The 0-th piece of generated text processing complete! -------
+first event: rejected
+second event: appeals
+TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier # ~ None ~ appeals # for a case review from five of the convicts.[SEP]
+first event: rejected
+second event: review
+TokenIDs: [CLS] The Supreme Court @ * Past Simple * rejected @ earlier appeals for a case # ~ None ~ review # from five of the convicts.[SEP]
+first event: appeals
+second event: review
+TokenIDs: [CLS] The Supreme Court rejected earlier @ * None * appeals @ for a case # ~ None ~ review # from five of the convicts.[SEP]
+[{'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 1404, 5400, 6146, 5400, 15293, 1404, 430, 358, 1440, 2524, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 16], 'event_pos_end': [10, 17], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 2589, 1736, 11404, 17528, 1736, 8707, 2589, 3062, 15293, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [9, 20], 'event_pos_end': [10, 21], 'event_pair': [[1, 2]], 'labels': [0]}, {'input_ids': [65, 484, 5718, 3179, 8707, 3062, 2589, 1736, 6146, 1736, 15293, 2589, 430, 358, 1440, 1404, 5400, 6146, 5400, 2524, 1404, 523, 2037, 387, 363, 3164, 14238, 865, 66], 'event_pos': [10, 19], 'event_pos_end': [11, 20], 'event_pair': [[1, 2]], 'labels': [0]}]
+  Data processing took: 0:00:02
 
-CherryPy Checker:
-'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
-section: [/html]
-root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
-dir: './html'
-
-[03/Feb/2023:17:37:34] ENGINE Started monitor thread 'Autoreloader'.
-[03/Feb/2023:17:37:34] ENGINE Serving on http://127.0.0.1:6011
-[03/Feb/2023:17:37:34] ENGINE Bus STARTED
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:01
+  macro F1: 0.400
+  micro F1: 0.667
+[[2 1]
+ [0 0]]
+  macro F1: 0.400
+  micro F1: 0.667
+Event: 'reject' (0_0_3)	ARG0: 'The Supreme Court' (NA, 0_0_0)	ARG1: 'earlier appeals for a case review from five of the convicts' (NA, 0_0_4)	
+Event: 'appeal' (0_0_5)	ARG2: 'The Supreme Court' (NA, 0_0_0)	Support: 'rejected' (NA, 0_0_3)	ARGM-TMP: 'earlier' (NA, 0_0_4)	ARG1: 'for a case review from five of the convicts' (NA, 0_0_6)	
+Event: 'review' (0_0_9)	ARG1: 'case' (NA, 0_0_8)	ARG0: 'from five of the convicts' (NA, 0_0_10)	
+127.0.0.1 - - [06/Feb/2023:11:45:12] "POST /annotate HTTP/1.1" 200 767 "" "curl/7.79.1"
