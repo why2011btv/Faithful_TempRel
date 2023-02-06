@@ -4,8 +4,8 @@
 ### Method 1: 
 `conda activate EMNLP_env`
 ### Method 2: 
-`source /shared/why16gzl/conda/miniconda38/etc/profile.d/conda.sh` \ 
-`conda activate EMNLP_env`
+`source /shared/why16gzl/conda/miniconda38/etc/profile.d/conda.sh \
+conda activate EMNLP_env`
 #### Note that the environment is at '/shared/why16gzl/conda/miniconda38/envs/EMNLP_env'
 #### You can create a same environment using environment_droplet.yml
 
