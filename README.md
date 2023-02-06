@@ -1,9 +1,6 @@
 # Code for [Extracting or Guessing? Improving Faithfulness of Event Temporal Relation Extraction](https://arxiv.org/pdf/2210.04992.pdf)
 
 ## Environment
-### Method 1: 
-`conda activate EMNLP_env`
-### Method 2: 
 `source /shared/why16gzl/conda/miniconda38/etc/profile.d/conda.sh` <br>
 `conda activate EMNLP_env`
 #### Note that the environment is at '/shared/why16gzl/conda/miniconda38/envs/EMNLP_env'
