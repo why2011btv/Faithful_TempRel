@@ -1,0 +1,2 @@
+/shared/corpora-tmp/annotated_nyt/156/1000135.ta.xml
+/shared/corpora-tmp/annotated_nyt/156/1006947.ta.xml

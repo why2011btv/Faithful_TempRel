@@ -1,0 +1,55 @@
+nohup: ignoring input
+normalizer.cc(50) LOG(INFO) precompiled_charsmap is empty. use identity normalization.
+Some weights of the model checkpoint at google/bigbird-roberta-large were not used when initializing BigBirdModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BigBirdModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BigBirdModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[06/Feb/2023:17:31:54] ENGINE Listening for SIGTERM.
+[06/Feb/2023:17:31:54] ENGINE Listening for SIGHUP.
+[06/Feb/2023:17:31:54] ENGINE Listening for SIGUSR1.
+[06/Feb/2023:17:31:54] ENGINE Bus STARTING
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/static]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+CherryPy Checker:
+'/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main/./html' (root + dir) is not an existing filesystem path.
+section: [/html]
+root: '/mnt/cogcomp-archive/shared/why16gzl/Repositories/SRL_to_TemporalGraph-main'
+dir: './html'
+
+[06/Feb/2023:17:31:54] ENGINE Started monitor thread 'Autoreloader'.
+[06/Feb/2023:17:31:54] ENGINE Serving on http://127.0.0.1:6012
+[06/Feb/2023:17:31:54] ENGINE Bus STARTED
+date and time = 02/06/2023 17:31:46
+Processing MATRES dataset...
+# of parameters: 364568582
+
+Starting rest service...
+$$$$$$$$$$$$$$$$$$ processing /shared/corpora-tmp/annotated_nyt/156/995130.ta.xml $$$$$$$$$$$$$$$$$$
+first event: moving
+second event: signed
+TokenIDs: [CLS] JERRY SEINFELD is @ * Present Continuous * moving @ away from Tom's Restaurant in more ways than one.[SEP] First he # ~ Past Simple ~ signed # a $4.35 million contract for an apartment a couple of blocks south of his old one on Central Park West.[SEP] Then NBC's soon-to-depart sitcom star dropped plans to film one of his final episodes in New York.[SEP]
+first event: moving
+second event: dropped
+TokenIDs: [CLS] JERRY SEINFELD is @ * Present Continuous * moving @ away from Tom's Restaurant in more ways than one.[SEP] First he signed a $4.35 million contract for an apartment a couple of blocks south of his old one on Central Park West.[SEP] Then NBC's soon-to-depart sitcom star # ~ None ~ dropped # plans to film one of his final episodes in New York.[SEP] The show will end its run on a California sound stage.[SEP]
+first event: moving
+second event: end
+TokenIDs: [CLS] JERRY SEINFELD is @ * Present Continuous * moving @ away from Tom's Restaurant in more ways than one.[SEP] First he signed a $4.35 million contract for an apartment a couple of blocks south of his old one on Central Park West.[SEP] Then NBC's soon-to-depart sitcom star dropped plans to film one of his final episodes in New York.[SEP] The show will # ~ Future Simple ~ end # its run on a California sound stage.[SEP] The deal for the apartment (now owned byISAAC STERN) hinges on approval from the co-op board at the Beresford, at 211 Central Park West.[SEP]
+first event: moving
+second event: owned
+TokenIDs: [CLS] JERRY SEINFELD is @ * Present Continuous * moving @ away from Tom's Restaurant in more ways than one.[SEP] First he signed a $4.35 million contract for an apartment a couple of blocks south of his old one on Central Park West.[SEP] Then NBC's soon-to-depart sitcom star dropped plans to film one of his final episodes in New York.[SEP] The show will end its run on a California sound stage.[SEP] The deal for the apartment (now # ~ None ~ owned # byISAAC STERN) hinges on approval from the co-op board at the Beresford, at 211 Central Park West.[SEP] ''No one's particularly worried -- the building already has a celebrity quotient,'' said one person familiar with the deal, noting that his new neighbors would include HELEN GURLEY BROWN, SIDNEY LUMET, TONY RANDALL and BEVERLY SILLS.[SEP]
+  Data processing took: 0:00:00
+
+loaded MATRES best model:0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.pt
+(from epoch 0 )
+Running Evaluation on MATRES Test Set...
+Eval took: 0:00:07
+  macro F1: 0.409
+  micro F1: 0.691
+[[38 17]
+ [ 0  0]]
+  macro F1: 0.409
+  micro F1: 0.691
+127.0.0.1 - - [06/Feb/2023:17:33:58] "POST /annotate HTTP/1.1" 200 3588 "" "curl/7.79.1"

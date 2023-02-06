@@ -1,368 +1,4 @@
 #!python
-
-# Jan 31 2023 Update
-import requests
-import json
-import re
-import string
-import numpy as np
-from scipy.special import softmax
-import networkx as nx
-np.set_printoptions(precision=5)
-
-# Read the list of phrasal verbs
-with open("complete-pv/Complete-PV-list.txt") as f:
-    lines = f.readlines()
-phrasal_verbs = {}
-verbs = set()
-for line in lines:
-    if re.search('.[A-Z].', line.strip()):
-        if not re.search('.[A-Z][A-Z].', line.strip()):
-            end = re.search('.[A-Z].', line.strip()).start()
-            tmp_line = line[0:end]
-            words = tmp_line.strip().split(" ")
-    else:
-        words = line.strip().split(" ")
-    if len(words) > 1 and len(words) < 4:
-        if words[0][0].isupper() and words[-1][-1] not in string.punctuation and words[-1][0] not in string.punctuation:
-            lower_words = []
-            for word in words:
-                lower_words.append(word.lower())
-            if lower_words[0] not in phrasal_verbs.keys():
-                phrasal_verbs[lower_words[0]] = {" ".join(lower_words)}
-            else:
-                phrasal_verbs[lower_words[0]].add(" ".join(lower_words))
-
-def view_map_update(output):
-    count = 0
-    view_map = {}
-    for view in output['views']:
-        view_map[view['viewName']] = count
-        count += 1
-    return view_map
-
-def sent_id_getter(token_id, SRL_output):
-    i = -1
-    for sEP in SRL_output['sentences']['sentenceEndPositions']:
-        i += 1
-        if token_id < sEP:
-            return i
-    #raise ValueError("Cannot find sent_id.")
-    return i + 1    # NER tokenizer may differ from SRL tokenizer
-
-def CP_getter(sentence):
-    headers = {'Content-type':'application/json'}
-    CP_response = requests.post('http://127.0.0.1:6003/annotate', json={"text": sentence}, headers=headers)
-    if CP_response.status_code != 200:
-        print("CP_response:", CP_response.status_code)
-    result = json.loads(CP_response.text)
-    return result
-
-def find(children, query):
-    # return value is a dict or None
-    for child in children:
-        if child['word'] == query or similar(child['word'], query):
-            return child
-        else:
-            if 'children' in child.keys():
-                result = find(child['children'], query)
-                if type(result) == dict:
-                    return result
-    return None
-
-def similar(string1, string2):
-    if string2 in string1 and len(string1) - len(string2) <= 2:
-        #print("similar:", string1, string2)
-        return True
-    else:
-        return False
-    
-def head_word_extractor(CP_result, query):
-    children = CP_result['hierplane_tree']['root']['children']
-    target_child = find(children, query)
-    try:
-        if 'children' in target_child.keys(): # target_child can be None, so it might have no keys
-            return extract_head_noun(target_child['children'])
-        else:
-            return target_child['word']
-    except:
-        #print("Did not find '", query, "' in Constituency Parsing result")
-        return None
-    
-def entity_info_getter(query, sent_id, entities):
-    if sent_id in entities:
-        for entity in entities[sent_id]:
-            if query in entity['mention']:
-                return entity['label'], ' '.join(entity['mention']), entity['start'], entity['end']
-    else:
-        #print("NER module detected no entity in the {i}-th sentence".format(i=sent_id))
-        return None
-    
-def event_extractor(text, text_id='0', NOM=True):
-    headers = {'Content-type':'application/json'}
-    SRL_response = requests.post('http://dickens.seas.upenn.edu:4039/annotate', json={"sentence": text}, headers=headers)
-    if SRL_response.status_code != 200:
-        print("SRL_response:", SRL_response.status_code)
-    try:
-        SRL_output = json.loads(SRL_response.text)
-    except:
-        return {}
-    
-    token_num = len(SRL_output['tokens'])
-    if token_num not in SRL_output['sentences']['sentenceEndPositions']:
-        SRL_output['sentences']['sentenceEndPositions'].append(token_num)
-    print("SRL done")
-    
-    headers = {'Content-type':'application/json'}
-    NER_response = requests.post('http://dickens.seas.upenn.edu:4022/ner/', json={"task": "kairos_ner","text" : text}, headers=headers)
-    if NER_response.status_code != 200:
-        print("NER_response:", NER_response.status_code)
-    NER_output = json.loads(NER_response.text)
-    NER_view_map = view_map_update(NER_output)
-    print("NER done")
-        
-    entities = {}
-    for mention in NER_output['views'][NER_view_map['NER_CONLL']]['viewData'][0]['constituents']:
-        sent_id = sent_id_getter(mention['start'], SRL_output)
-        # TODO: Check whether SRL tokenizer is the same as NER's
-        entity = {'mention': NER_output['tokens'][mention['start']:mention['end']], \
-                  'label': mention['label'], \
-                  'start': mention['start'], \
-                  'end': mention['end'], \
-                  'sentence_id': sent_id, \
-                 }
-        if sent_id in entities.keys():
-            entities[sent_id].append(entity)
-        else:
-            entities[sent_id] = [entity]
-            
-    '''Append NER results to SRL'''
-    SRL_output['views'].append(NER_output['views'][NER_view_map['NER_CONLL']])
-    SRL_view_map = view_map_update(SRL_output)
-    #print(SRL_view_map)
-
-    CP_output = []
-    pEP = 0
-    for sEP in SRL_output['sentences']['sentenceEndPositions']:
-        this_sentence = " ".join(SRL_output['tokens'][pEP:sEP])
-        pEP = sEP
-        CP_output.append(CP_getter(this_sentence))
-    if SRL_output['sentences']['sentenceEndPositions'][-1] < len(SRL_output['tokens']):
-        this_sentence = " ".join(SRL_output['tokens'][SRL_output['sentences']['sentenceEndPositions'][-1]:])
-        CP_output.append(CP_getter(this_sentence))
-    print("CP done")
-        
-    Events = []
-    argument_ids = []
-    
-    if NOM: 
-        source = ['SRL_ONTONOTES', 'SRL_NOM']
-    else:
-        source = ['SRL_ONTONOTES']
-    for viewName in source:
-        for mention in SRL_output['views'][SRL_view_map[viewName]]['viewData'][0]['constituents']:
-            sent_id = sent_id_getter(mention['start'], SRL_output)
-            mention_id_docLevel = str(text_id) + '_' + str(sent_id) + '_' + str(mention['start'])
-            if mention['label'] == 'Predicate':
-                if sent_id == 0:
-                    start = mention['start']
-                    end = mention['end']
-                else:
-                    start = mention['start'] - SRL_output['sentences']['sentenceEndPositions'][sent_id-1] # event start position in the sentence = event start position in the document - offset
-                    end = mention['end'] - SRL_output['sentences']['sentenceEndPositions'][sent_id-1]
-                    
-                event_id = str(text_id) + '_' + str(sent_id) + '_' + str(start)
-                predicate = ''
-                if mention['properties']['predicate'] in phrasal_verbs.keys() and mention['start'] < len(SRL_output['tokens']) - 2:
-                    next_token = SRL_output['tokens'][mention['start'] + 1]
-                    token_after_next = SRL_output['tokens'][mention['start'] + 2]
-                    potential_pv_1 = " ".join([mention['properties']['predicate'], next_token, token_after_next])
-                    #print(potential_pv_1)
-                    potential_pv_2 = " ".join([mention['properties']['predicate'], next_token])
-                    #print(potential_pv_2)
-                    if potential_pv_2 in phrasal_verbs[mention['properties']['predicate']]:
-                        predicate = potential_pv_2
-                        print(predicate)
-                    if potential_pv_1 in phrasal_verbs[mention['properties']['predicate']]:
-                        predicate = potential_pv_1
-                        print(predicate)
-                    if predicate == '':
-                        predicate = mention['properties']['predicate']
-                else:
-                    predicate = mention['properties']['predicate']
-                
-                
-                try:
-                    assert mention['start'] != None
-                    assert mention['end'] != None
-                    Events.append({'event_id': event_id, \
-                                   'event_id_docLevel': mention_id_docLevel, \
-                                   'start': mention['start'], \
-                                   'end': mention['end'], \
-                                   'start_sent_level': start, \
-                                   'end_sent_level': end, \
-                                   'properties': {'predicate': [mention['properties']['predicate']], \
-                                                  'SenseNumber': '01', \
-                                                  'sentence_id': sent_id
-                                                 }, \
-                                   'label': predicate
-                                  })
-                except:
-                    print("mention with None start or end:", mention)
-                    pass
-                 
-            else:
-                start = mention['start'] # document level position
-                end = mention['end']
-                query = ' '.join(SRL_output['tokens'][start:end]).strip()
-                ENTITY_INFO = entity_info_getter(query, sent_id, entities)
-                if mention['label'] in Events[-1]['properties'].keys():
-                    count = 1
-                    for label in Events[-1]['properties'].keys():
-                        if '_' in label and label.split('_')[0] == mention['label']:
-                            count += 1
-                    arg_label = mention['label'] + '_' + str(count)
-                else:
-                    arg_label = mention['label']
-                if ENTITY_INFO:
-                    # the argument found by SRL is directly an entity detected by NER
-                    Events[-1]['properties'][arg_label] = {'entityType': ENTITY_INFO[0], \
-                                                           'mention': ENTITY_INFO[1], \
-                                                           'start': ENTITY_INFO[2], \
-                                                           'end': ENTITY_INFO[3], \
-                                                           'argument_id': str(text_id) + '_' + str(sent_id) + '_' + str(ENTITY_INFO[2]), \
-                                                          }
-                    argument_ids.append(str(text_id) + '_' + str(sent_id) + '_' + str(ENTITY_INFO[2]))
-                else:
-                    # the argument found by SRL might be a phrase / part of clause, hence head word extraction is needed
-                    head_word = head_word_extractor(CP_output[sent_id], query)
-                    if head_word:
-                        ENTITY_INFO = entity_info_getter(head_word, sent_id, entities)
-                        if ENTITY_INFO:
-                            # if the head word is a substring in any entity mention detected by NER
-                            Events[-1]['properties'][arg_label] = {'entityType': ENTITY_INFO[0], \
-                                                                   'mention': ENTITY_INFO[1], \
-                                                                   'start': ENTITY_INFO[2], \
-                                                                   'end': ENTITY_INFO[3], \
-                                                                   'argument_id': str(text_id) + '_' + str(sent_id) + '_' + str(ENTITY_INFO[2]), \
-                                                                  }
-                            argument_ids.append(str(text_id) + '_' + str(sent_id) + '_' + str(ENTITY_INFO[2]))
-                        else:
-                            Events[-1]['properties'][arg_label] = {'mention': head_word, 'entityType': 'NA', 'argument_id': mention_id_docLevel} # actually not exactly describing its position
-                            argument_ids.append(mention_id_docLevel)
-                    else:
-                        Events[-1]['properties'][arg_label] = {'mention': query, 'entityType': 'NA', 'argument_id': mention_id_docLevel}
-                        argument_ids.append(mention_id_docLevel)
-    print("head word extraction done") 
-    """
-    Can directly go to the Events_final if ignoring event typing (line 441, before '''Append Event Typing Results to SRL''')
-    
-    
-    #Events_with_arg = [event for event in Events if len(event['properties']) > 3]
-    #Events_non_nom = [event for event in Events_with_arg if event['event_id_docLevel'] not in argument_ids]
-    #print("Removal of nominal events that serve as arguments of other events")
-    
-    #for event in Events_non_nom:
-    for event in Events:
-        sent_id = int(event['event_id'].split('_')[1]) # 0-th: text_id    1-st: sent_id    2-nd: event_start_position_in_sentence
-        if sent_id < len(SRL_output['sentences']['sentenceEndPositions']):
-            sEP = SRL_output['sentences']['sentenceEndPositions'][sent_id] # sEP: sentence End Position
-            if sent_id == 0:
-                tokens = SRL_output['tokens'][0:sEP]
-            else:
-                pEP = SRL_output['sentences']['sentenceEndPositions'][sent_id-1] # pEP: previous sentence End Position
-                tokens = SRL_output['tokens'][pEP:sEP]
-        else:
-            pEP = SRL_output['sentences']['sentenceEndPositions'][-1]
-            tokens = SRL_output['tokens'][pEP:]
-        
-        event_sent = " ".join(tokens)
-        if event_sent[-1] != '.':
-            event_sent = event_sent + '.'
-        
-        headers = {'Content-type':'application/json'}
-        #ET_response = requests.post('http://dickens.seas.upenn.edu:4036/annotate', json={"tokens": tokens, "target_token_position": [event['start_sent_level'], event['end_sent_level']]}, headers=headers)
-        ET_response = requests.post('http://leguin.seas.upenn.edu:4023/annotate', json={"text": event_sent}, headers=headers)
-        if ET_response.status_code != 200:
-            print("ET_response:", ET_response.status_code)
-        
-        try:
-            ET_output = json.loads(ET_response.text)
-            for view in ET_output['views']:
-                if view['viewName'] == 'Event_extraction':
-                    for constituent in view['viewData'][0]['constituents']:
-                        if constituent['start'] == event['start_sent_level']:
-                            event['label'] = constituent['label']
-        #try:
-        #   event['label'] = ET_output['predicted_type']
-        except:
-            event['label'] = "NA"
-            print("-------------------------------- Event Typing result: NA! --------------------------------")
-            print("the sentence is: " + event_sent)
-            print("the event is: " + event['properties']['predicate'][0])
-    
-    Events_non_reporting = [event for event in Events if event['label'] not in ['NA', 'Reporting', 'Statement'] and event['properties']['predicate'][0] not in ["be", "have", "can", "could", "may", "might", "must", "ought", "shall", "will", "would", "say", "nee", "need", "do", "happen", "occur"]]
-    
-    print("event typing done, removed 'be', Reporting, Statement, NA events")
-    print("event num:", len(Events_non_reporting))
-    #print(Events[0])
-    
-    # remove repeated events
-    event_types = []
-    Events_final = []
-    for event in Events_non_reporting:
-        if event['label'] not in event_types:
-            Events_final.append(event)
-            event_types.append(event['label'])
-    print("num of events with different types:", len(Events_final))
-    """
-    Events_final = [event for event in Events if event['label'] not in ["be", "have", "can", "could", "may", "might", "must", "ought", "shall", "will", "would", "say", "nee", "need", "do", "happen", "occur"]]
-    
-    '''Append Event Typing Results to SRL'''
-    Event_Extraction = {'viewName': 'Event_extraction', \
-                        'viewData': [{'viewType': 'edu.illinois.cs.cogcomp.core.datastructures.textannotation.PredicateArgumentView', \
-                                      'viewName': 'event_extraction', \
-                                      'generator': 'Event_ONTONOTES+NOM_MAVEN_Entity_CONLL02+03', \
-                                      'score': 1.0, \
-                                      'constituents': Events_final, \
-                                      'relations': []
-                                     }]
-                       }
-    #pprint(Events_final)
-    SRL_output['views'].append(Event_Extraction)
-    print("event extraction done")
-    #IE_output.append(SRL_output)
-    print("------- The {i}-th piece of generated text processing complete! -------".format(i=text_id))
-    return SRL_output
-    
-def relation_preparer(SRL_output):
-    new_output = {'corpusId': SRL_output['corpusId'], 
-                  'id': SRL_output['id'], 
-                  'sentences': SRL_output['sentences'],
-                  'text': SRL_output['text'],
-                  'tokens': SRL_output['tokens'],
-                  'views': []
-                 }
-    for view in SRL_output['views']:
-        my_view = {}
-        if view['viewName'] == 'Event_extraction':
-            my_view['viewName'] = view['viewName']
-            my_view['viewData'] = [{'viewType': 'edu.illinois.cs.cogcomp.core.datastructures.textannotation.PredicateArgumentView',
-                                    'viewName': 'event_extraction',
-                                    'generator': 'cogcomp_kairos_event_ie_v1.0',
-                                    'score': 1.0,
-                                    'constituents': view['viewData'][0]['constituents'],
-                                    'relations': view['viewData'][0]['relations'],
-                                   }]
-            
-            new_output['views'].append(my_view)
-    return new_output
-
-
-
-
-
-
 import tqdm
 import cherrypy
 import cherrypy_cors
@@ -482,7 +118,7 @@ params = {'transformers_model': 'google/bigbird-roberta-large',
           'epochs': 40,
           'learning_rate': 5e-6,    # subject to change
           'seed': 0,
-          'gpu_id': '2',    # subject to change
+          'gpu_id': '0',    # subject to change
           'debug': 0,
           'rst_file_name': '0511pm-lr5e-6-b20-gpu9942-loss0-dataMATRES-accum1-marker@**@-pair1-acr0-tmarker1-td1-dpn1-mask0.rst',    # subject to change
           'mask_in_input_ids': mask_in_input_ids,
@@ -681,7 +317,6 @@ def reverse_num(event_position):
 ##############
 ### MATRES ###
 ##############  
-
 doc_id = -1
 features_train = []
 features_valid = []
@@ -691,7 +326,6 @@ relation_stats = {0: 0, 1: 0, 2: 0, 3: 0}
 t_marker = params['t_marker']
 # 2: will [futusimp] begin [/futusimp]
 # 1: will @ * Future Simple * begin @ 
-
 max_len = 0
 sent_num = 0
 pair_num = 0
@@ -737,7 +371,6 @@ for fname in tqdm.tqdm(eiid_pair_to_label.keys()):
         x_sent = my_dict["sentences"][x_sent_id]["_subword_to_ID"]
         y_sent = my_dict["sentences"][y_sent_id]["_subword_to_ID"]
         # This guarantees that trigger x is always before trigger y in narrative order
-
         context_start_sent_id = max(x_sent_id-1, 0)
         context_end_sent_id = min(y_sent_id+2, len(my_dict["sentences"]))
         c_len = context_end_sent_id - context_start_sent_id
@@ -850,7 +483,6 @@ print("MATRES train valid test pair num:", len(features_train), len(features_val
 #output_file.close()
 #if debug:
 #    assert 0 == 1
-
 #### MATRES PROCESSING ENDS HERE ####
 '''
 
@@ -900,7 +532,6 @@ if params['testdata'] == "TDD":
         
 # TO GENERATE EXAMPLE INPUT FOR PREDICTION
 #PRED_FILE = open('example/temporal_example_input.json', 'w')
-
 def TDD_processor(split):
     relation_stats = {0: 0, 1: 0, 2: 0, 3: 0}
     max_len = 0
@@ -955,25 +586,20 @@ def TDD_processor(split):
                     x_sent = my_dict["sentences"][x_sent_id]["_subword_to_ID"]
                     y_sent = my_dict["sentences"][y_sent_id]["_subword_to_ID"]
                     # This guarantees that trigger x is always before trigger y in narrative order
-
                     context_start_sent_id = max(x_sent_id-1, 0)
                     context_end_sent_id = min(y_sent_id+2, len(my_dict["sentences"]))
                     sent_num += context_end_sent_id - context_start_sent_id
-
                     if rev_ind[x] < rev_ind[y]:
                         xy = 0
                     else:
                         xy = 1
                     relations.append(xy)
                     relation_stats[xy] += 1
-
                     labels_full[instance_id]["event_pairs"].append([i, j])
-
                     if params['td'] == 1:
                         x_sent, offset_x, new_start_x, new_end_x = add_tense_info(x_sent, my_dict["event_dict"][x]['tense'], my_dict['event_dict'][x]['_subword_id'], my_dict["event_dict"][x]['mention'], 2589, 1736)
                     else:
                         x_sent, offset_x, new_start_x, new_end_x = x_sent, 0, my_dict['event_dict'][x]['_subword_id'], my_dict['event_dict'][x]['_subword_id'] + len(tokenizer.encode(my_dict["event_dict"][x]['mention'])) - 2
-
                     if x_sent_id != y_sent_id:
                         if params['td'] == 1:
                             y_sent, offset_y, new_start_y, new_end_y = add_tense_info(y_sent, my_dict["event_dict"][y]['tense'], my_dict['event_dict'][y]['_subword_id'], my_dict["event_dict"][y]['mention'], 1404, 5400)
@@ -1004,7 +630,6 @@ def TDD_processor(split):
                                 TokenIDs += y_sent[1:]
                             else:
                                 TokenIDs += my_dict["sentences"][sid]["_subword_to_ID"][1:]
-
                     if len(TokenIDs) > max_len:
                         max_len = len(TokenIDs)
                     if pair_num < 5:
@@ -1030,33 +655,6 @@ def TDD_processor(split):
     
 #### TDDiscourse PROCESSING ENDS HERE ####
 """
-
-def print_event(event_extraction_results, f_out=None, NA_event=True):
-    return_value = ''
-    count = -1
-    # event_extraction_results: list
-    for event in event_extraction_results:
-        count += 1
-        #To_print = "Event: '{mention}' ({label}, {event_id})\t".format(event_id=event['event_id_docLevel'], mention=event['properties']['predicate'][0], label=event['label'])
-        To_print = "Event: '{mention}' ({event_id})\t".format(event_id=event['event_id_docLevel'], mention=event['label'])
-        for key in event['properties'].keys():
-            if key not in ["predicate", "sentence_id", "SenseNumber"]:
-                To_print += "{arg}: '{mention}' ({entityType}, {argument_id})\t".format(arg=key, mention=event['properties'][key]['mention'], entityType=event['properties'][key]['entityType'], argument_id=event['properties'][key]['argument_id'])
-                
-        if NA_event: # printing info for events with type "NA"
-            return_value += "--> " + str(count) + " " + To_print + '\n'
-            if f_out:
-                print(To_print, file = f_out)
-            else:
-                print(To_print)
-        else:
-            if event['label'] != 'NA':
-                return_value += "--> " + str(count) + " " + To_print + '\n'
-                if f_out:
-                    print(To_print, file = f_out)
-                else:
-                    print(To_print)
-    return return_value
 
 OnePassModel = transformers_mlp_cons(params)
 OnePassModel.to(cuda)
@@ -1090,32 +688,9 @@ class MyWebService(object):
 
         if hasJSON:
             t0 = time.time()
-            target_view = ''
-            if 'views' not in data.keys():
-                SRL_output = event_extractor(data['text'])
-                data = SRL_output
-                target_view = 'Event_extraction'
-            else:
-                target_view = 'SRL_VERB'
-            
-            
             art_split = {}
-            if 'folder' in data.keys():
-                folder = data['folder'] # 11/15/2022
-                service_text_id = 0
-            else:
-                directory = '/shared/corpora-tmp/nyt_event_temporal_graph/test'
-                import os
-                command = 'ls /shared/corpora-tmp/nyt_event_temporal_graph/test | wc -l'
-                service_text_id = int(os.popen(command,'r',1).read().strip()) + 1
-                folder = 'test'
-                
-            service_text_id = str(service_text_id)
-            print("$$$$$$$$$$$$$$$$$$ service_text_id: " + service_text_id)
+            folder = data['folder']
             print("$$$$$$$$$$$$$$$$$$ processing " + folder + " $$$$$$$$$$$$$$$$$$")
-                
-            
-            
             view_map = {}
             count = 0
             for view in data['views']:
@@ -1125,16 +700,13 @@ class MyWebService(object):
             event_pos = []
             event_pos_end = []
             char_ = tokenized_to_origin_span(data['text'], data['tokens'])
+            events = {}
+            event_id = -1
 
-            if target_view == 'SRL_VERB':
-                for constituent in data['views'][view_map[target_view]]['viewData'][0]['constituents']: # If original SRL
-                    if constituent['label'] == 'Predicate':
-                        event_pos.append(char_[constituent['start']][0])
-                        event_pos_end.append(char_[constituent['start']][1]+1)
-            
-            #for constituent in data['views'][view_map['SRL_ONTONOTES']]['viewData'][0]['constituents']:
-            if target_view == 'Event_extraction':
-                for constituent in data['views'][view_map[target_view]]['viewData'][0]['constituents']:
+            for constituent in data['views'][view_map['SRL_VERB']]['viewData'][0]['constituents']:
+                if constituent['label'] == 'Predicate':
+                    event_id += 1
+                    events[event_id] = constituent['properties']['predicate']
                     event_pos.append(char_[constituent['start']][0])
                     event_pos_end.append(char_[constituent['start']][1]+1)
 
@@ -1233,7 +805,6 @@ class MyWebService(object):
                         features_test.append(feature)
             art_split[art_dict['id']] = pairs
                 
-            #print(features_test)
             ######################
             ### FOR PREDICTION ###
             ######################
@@ -1270,42 +841,28 @@ class MyWebService(object):
 
             output_timeline = tl_construction(logits, art_split, long = True, softmax = False, predict_with_abstention = predict_with_abstention)
             
-            if folder == 'test':
-                directory = '/shared/corpora-tmp/nyt_event_temporal_graph/test'
-            else:
-                directory = '/shared/corpora-tmp/nyt_event_temporal_graph/' + folder.split('/')[-2]
-            
+            directory = '/shared/corpora-tmp/nyt_event_temporal_graph/' + folder.split('/')[-2]
             if not os.path.exists(directory):
                 os.makedirs(directory)
 
-            if folder == 'test':
-                with open(directory + '/' + service_text_id + '.etg', 'w') as f:
-                    json.dump(output_timeline, f)
-            else:
-                with open(directory + '/' + folder.split('/')[-1] + '.etg', 'w') as f:
-                    json.dump(output_timeline, f)
-            
+            with open(directory + '/' + folder.split('/')[-1] + '.etg', 'w') as f:
+                json.dump(output_timeline, f)
             elapsed = format_time(time.time() - t0)
-            if target_view == 'Event_extraction':
-                return {"status": "Success", "elasped_time": elapsed, "output_timeline": output_timeline, "event_info": print_event(data['views'][view_map[target_view]]['viewData'][0]['constituents'])}
-            else:
-                return {"status": "Success", "elasped_time": elapsed, "output_timeline": output_timeline}
+            return {"status": "Success", "elasped_time": elapsed, "text": data['text'], "events": events, "output_timeline": output_timeline}
     
 if __name__ == '__main__':
     print("")
     # INITIALIZE YOUR MODEL HERE
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", default=6011, type=int, required=False,
+    parser.add_argument("--port", default=6012, type=int, required=False,
                         help="port number to use")
-    parser.add_argument("--host", default='127.0.0.1', type=str, required=False,
-                        help="host to use")
     args = parser.parse_args()
     # IN ORDER TO KEEP IT IN MEMORY
     print("Starting rest service...")
     cherrypy_cors.install()
     config = {
         'global': {
-            'server.socket_host': args.host,
+            'server.socket_host': '127.0.0.1',
             'server.socket_port': args.port,
             'cors.expose.on': True
         },
@@ -1327,4 +884,3 @@ if __name__ == '__main__':
     }
     cherrypy.config.update(config)
     cherrypy.quickstart(MyWebService(), '/', config)
-    
