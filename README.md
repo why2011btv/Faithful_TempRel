@@ -1,15 +1,16 @@
 # Code for [Extracting or Guessing? Improving Faithfulness of Event Temporal Relation Extraction](https://arxiv.org/pdf/2210.04992.pdf)
 
-# Environment
-## Method 1: `conda activate EMNLP_env`
-## Method 2: `source /shared/why16gzl/conda/miniconda38/etc/profile.d/conda.sh` \ 
+## Environment
+### Method 1: 
 `conda activate EMNLP_env`
-### Note that the environment is at '/shared/why16gzl/conda/miniconda38/envs/EMNLP_env'
-### You can create a same environment using environment_droplet.yml
+### Method 2: 
+`source /shared/why16gzl/conda/miniconda38/etc/profile.d/conda.sh` \ 
+`conda activate EMNLP_env`
+#### Note that the environment is at '/shared/why16gzl/conda/miniconda38/envs/EMNLP_env'
+#### You can create a same environment using environment_droplet.yml
 
-
-# Feb 6, 2023:
-## backend.py: a CherryPy API; accepts raw text as input; running on holst 6011
+## Feb 6, 2023:
+### backend.py: a CherryPy API; accepts raw text as input; running on holst 6011
 ### How to run the backend service:
 `nohup python backend.py > backend.out 2>&1 &`
 ### Example curl command: 
@@ -17,7 +18,7 @@
 #### response of the command above: 
 {"status": "Success", "elasped_time": "0:00:03", "output_timeline": {"6": {"event_pairs": [[1, 0], [0, 2], [1, 2]], "conf": [0.9358216115822632, 0.6843115049770331, 0.8746635341117158], "event_pairs_pwa": [[1, 0]], "conf_pwa": [0.9358216115822632], "timeline_topo_sort_pwa": [[1, 0]]}}, "event_info": "--> 0 Event: 'reject' (0_0_3)\tARG0: 'The Supreme Court' (NA, 0_0_0)\tARG1: 'earlier appeals for a case review from five of the convicts' (NA, 0_0_4)\t\n--> 1 Event: 'appeal' (0_0_5)\tARG2: 'The Supreme Court' (NA, 0_0_0)\tSupport: 'rejected' (NA, 0_0_3)\tARGM-TMP: 'earlier' (NA, 0_0_4)\tARG1: 'for a case review from five of the convicts' (NA, 0_0_6)\t\n--> 2 Event: 'review' (0_0_9)\tARG1: 'case' (NA, 0_0_8)\tARG0: 'from five of the convicts' (NA, 0_0_10)\t\n"}
 
-# Nov 15, 2022:
+## Nov 15, 2022:
 ## backend_nov15.py: a CherryPy API; accepts SRL-processed NYTimes document (stored in /shared/corpora-tmp/annotated_nyt) as input; running on holst 6012
 
 ### How to run the backend service:
@@ -32,7 +33,7 @@
 ##### Note that the results are stored in the folder "/shared/corpora-tmp/nyt_event_temporal_graph/" (we create a corresponding folder for each NYT folder, e.g., 156); intermediate files are stored in "/shared/cache/"
 
 
-# Nov 11, 2022
+## Nov 11, 2022
 
 ## demo.py: accept a folder that contains srl results as input; output to a json file that contains all the event temporal graphs. 
 ### Problem: some files are too big so that either taking too much time to run or taking too much GPU memory -> error

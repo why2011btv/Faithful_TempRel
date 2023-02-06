@@ -13,7 +13,7 @@ def temporal_getter(line):
         SRL_output['folder'] = line
         
     headers = {'Content-type':'application/json'}
-    temporal_service = 'http://localhost:6011/annotate'
+    temporal_service = 'http://localhost:6012/annotate'
     print("Calling service from " + temporal_service)
     temporal_response = requests.post(temporal_service, json=SRL_output, headers=headers)
     
@@ -41,10 +41,8 @@ def timeout(func, args = (), kwds = {}, timeout = 1, default = None):
 #topic = 'Earthquake'
 #with open('/shared/why16gzl/Repositories/EventCausalityData/' + topic + '_files.txt') as f:
 parser = argparse.ArgumentParser()
-
 parser.add_argument("--files", default='samples.txt', type=str, required=False,
                     help="NYTimes files to run")
-
 args = parser.parse_args()
 with open(args.files) as f:
     lines = f.readlines()
